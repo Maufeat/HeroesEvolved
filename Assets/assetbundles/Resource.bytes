@@ -1,0 +1,1085 @@
+<AllResources>
+  <Resources>
+    <file name="Resources/Audio/AudioKill/Aced" type="mp3" />
+    <file name="Resources/Audio/AudioKill/Double_kill" type="mp3" />
+    <file name="Resources/Audio/AudioKill/Enemy_goblin" type="mp3" />
+    <file name="Resources/Audio/AudioKill/Failed" type="mp3" />
+    <file name="Resources/Audio/AudioKill/First_blood" type="mp3" />
+    <file name="Resources/Audio/AudioKill/our_base_is_under_attack" type="mp3" />
+    <file name="Resources/Audio/AudioKill/Our_Goblin" type="mp3" />
+    <file name="Resources/Audio/AudioKill/Our_Minions_ready" type="mp3" />
+    <file name="Resources/Audio/AudioKill/Triple_kill" type="mp3" />
+    <file name="Resources/Audio/AudioKill/Victory" type="mp3" />
+    <file name="Resources/Audio/EnvironAudio/GameOverDefeat" type="mp3" />
+    <file name="Resources/Audio/EnvironAudio/GameOverVictory" type="mp3" />
+    <file name="Resources/Audio/EnvironAudio/mus_fb_login_lp" type="mp3" />
+    <file name="Resources/Audio/EnvironAudio/mus_fb_PVP001_lp_seniorbattlefield" type="mp3" />
+    <file name="Resources/Audio/EnvironAudio/mus_fb_PVP002_lp_intermediatebattlefield" type="mp3" />
+    <file name="Resources/Audio/EnvironAudio/mus_fb_PVP004_lp_primarybattlefield" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Aige_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Aige_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Beinuyideyuanren_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Beinuyideyuanren_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Bianfu_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Bianfu_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Dianmanren_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Dianmanren_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Dongfashi_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Dongfashi_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Emo_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Emo_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Feilong_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Feilong_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Fengbaonv_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Fengbaonv_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Fushilong_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Fushilong_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Haiqishi_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Haiqishi_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Hanhuizhiyu_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Hanhuizhiyu_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Heimolv_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Heimolv_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Huobayuanren_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Huobayuanren_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Jiachong_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Jiachong_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Jialong_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Jialong_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Jianjiaolong_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Jianjiaolong_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Jinglingnan_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Jinglingnan_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Jinglingnv_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Jinglingnv_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Kulouqishi_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Kulouqishi_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Nvyao_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Nvyao_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Renma_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Renma_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Shifu_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Shifu_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Shihunzhe_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Shihunzhe_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Taiyushen_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Taiyushen_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Tanshigui_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Tanshigui_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/vo_merchant" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Wenyiwushi_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Wenyiwushi_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Xiong_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Xiong_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Xiyiren_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Xiyiren_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Yanmo_5sp_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Yanmo_5sp_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Yelang_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Yelang_5_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Yiliaoyuanren_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Yiliaoyuanren_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Yuren_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Yuren_line_02" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Zhizhu_5_line_01" type="mp3" />
+    <file name="Resources/Audio/HeroSelect/Zhizhu_5_line_02" type="mp3" />
+    <file name="Resources/Audio/newsguide/A1" type="mp3" />
+    <file name="Resources/Audio/newsguide/A2" type="mp3" />
+    <file name="Resources/Audio/newsguide/A3" type="mp3" />
+    <file name="Resources/Audio/newsguide/A4" type="mp3" />
+    <file name="Resources/Audio/newsguide/A5" type="mp3" />
+    <file name="Resources/Audio/newsguide/B" type="mp3" />
+    <file name="Resources/Audio/newsguide/B10" type="mp3" />
+    <file name="Resources/Audio/newsguide/B11" type="mp3" />
+    <file name="Resources/Audio/newsguide/B12" type="mp3" />
+    <file name="Resources/Audio/newsguide/B13" type="mp3" />
+    <file name="Resources/Audio/newsguide/B14" type="mp3" />
+    <file name="Resources/Audio/newsguide/B15" type="mp3" />
+    <file name="Resources/Audio/newsguide/B6" type="mp3" />
+    <file name="Resources/Audio/newsguide/B7" type="mp3" />
+    <file name="Resources/Audio/newsguide/B8" type="mp3" />
+    <file name="Resources/Audio/newsguide/B9" type="mp3" />
+    <file name="Resources/Audio/sounddead/Beinuyideyuanren5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Dianmanren5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Dongfashi5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/D_QT_J" type="mp3" />
+    <file name="Resources/Audio/sounddead/Jiachong_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Jialong5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Jianta_dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Jinglingnan5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Jinglingnv5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Kulouren5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Nvyao5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Xiong5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Xiyiren5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Yanmo5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Yelang5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Yiliaoyuanren5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Yuren5_Dead" type="mp3" />
+    <file name="Resources/Audio/sounddead/Zhizhu5_Dead" type="mp3" />
+    <file name="Resources/Audio/soundwalk/Beinuyideyuanren5_Walk_01" type="mp3" />
+    <file name="Resources/Audio/soundwalk/Daocaoren5_Walk_01" type="wav" />
+    <file name="Resources/Audio/soundwalk/Dongfashi5_Walk_01" type="wav" />
+    <file name="Resources/Audio/soundwalk/Emo5_Walk" type="mp3" />
+    <file name="Resources/Audio/soundwalk/Huobayuanren5_Walk_01" type="wav" />
+    <file name="Resources/Audio/soundwalk/Jialong5_Walk_01" type="mp3" />
+    <file name="Resources/Audio/soundwalk/Nvyao5_Walk_01" type="mp3" />
+    <file name="Resources/Audio/soundwalk/Yuren5_Walk" type="wav" />
+    <file name="Resources/Audio/UIAudio/B4" type="mp3" />
+    <file name="Resources/Audio/UIAudio/daojishi" type="mp3" />
+    <file name="Resources/Audio/UIAudio/DBackQuit" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Dchuangjian" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Ddengru" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Ddianji" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Dfasong" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Dguomai" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Djiangli" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Dtesudianji" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Dxiayiye" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Dxuanzhe" type="mp3" />
+    <file name="Resources/Audio/UIAudio/JTsj" type="mp3" />
+    <file name="Resources/Audio/UIAudio/lock" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Opening2" type="mp3" />
+    <file name="Resources/Audio/UIAudio/select_hero_pvp" type="mp3" />
+    <file name="Resources/Audio/UIAudio/set_up_button" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Tchushou" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Tdianji" type="wav" />
+    <file name="Resources/Audio/UIAudio/Tfuhui" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Tgoumai" type="wav" />
+    <file name="Resources/Audio/UIAudio/Tguanbi" type="wav" />
+    <file name="Resources/Audio/UIAudio/Thecheng" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Tjiantou" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Tjinbi" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Tjitanjianzao" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Tkaishi" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Tnuqi" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Tqueding" type="wav" />
+    <file name="Resources/Audio/UIAudio/Tqusuicong" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Tshengji" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Tsuic" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Tsuoding" type="mp3" />
+    <file name="Resources/Audio/UIAudio/Txianzheyingxiong" type="mp3" />
+    <file name="Resources/Audio/UIAudio/T_ready_pvp" type="mp3" />
+    <file name="Resources/Audio/UIAudio/xiaoditutishii" type="mp3" />
+    <file name="Resources/Build/JLBYPS001" type="prefab" />
+    <file name="Resources/Build/JLTPS001" type="prefab" />
+    <file name="Resources/Build/JLZJDPS001" type="prefab" />
+    <file name="Resources/Build/WLBYPS001" type="prefab" />
+    <file name="Resources/Build/WLTPS001" type="prefab" />
+    <file name="Resources/Build/WLZJDPS001" type="prefab" />
+    <file name="Resources/Config/absorb" type="xml" />
+    <file name="Resources/Config/AchievementTask" type="xml" />
+    <file name="Resources/Config/Animine" type="xml" />
+    <file name="Resources/Config/Audio" type="xml" />
+    <file name="Resources/Config/Award" type="xml" />
+    <file name="Resources/Config/bornnpc" type="xml" />
+    <file name="Resources/Config/BuffCfg" type="xml" />
+    <file name="Resources/Config/CameraRemotion" type="xml" />
+    <file name="Resources/Config/ClickButton" type="xml" />
+    <file name="Resources/Config/CombineCfg" type="xml" />
+    <file name="Resources/Config/CreepsConfig" type="xml" />
+    <file name="Resources/Config/dailybonus" type="xml" />
+    <file name="Resources/Config/DailyQuest" type="xml" />
+    <file name="Resources/Config/DiscountsCfg" type="xml" />
+    <file name="Resources/Config/FightingResultCfg" type="xml" />
+    <file name="Resources/Config/filter" type="txt" />
+    <file name="Resources/Config/gameobjctshow" type="xml" />
+    <file name="Resources/Config/GuideTask" type="xml" />
+    <file name="Resources/Config/HeadSelect" type="xml" />
+    <file name="Resources/Config/HelpTips" type="xml" />
+    <file name="Resources/Config/HeroBuyCfg" type="xml" />
+    <file name="Resources/Config/HeroCfg" type="xml" />
+    <file name="Resources/Config/HeroChooseCfg" type="xml" />
+    <file name="Resources/Config/HotAndNewCfg" type="xml" />
+    <file name="Resources/Config/HotCfg" type="xml" />
+    <file name="Resources/Config/ItemCfg" type="xml" />
+    <file name="Resources/Config/Junior" type="xml" />
+    <file name="Resources/Config/killhero" type="xml" />
+    <file name="Resources/Config/killnpc" type="xml" />
+    <file name="Resources/Config/LoadingTips" type="xml" />
+    <file name="Resources/Config/LowerGuide" type="xml" />
+    <file name="Resources/Config/MapLoadCfg" type="xml" />
+    <file name="Resources/Config/MapObjCfg" type="xml" />
+    <file name="Resources/Config/MsgCfg" type="xml" />
+    <file name="Resources/Config/MsgSettingCfg" type="xml" />
+    <file name="Resources/Config/NewCfg" type="xml" />
+    <file name="Resources/Config/NPCCfg" type="xml" />
+    <file name="Resources/Config/obstruct" type="xml" />
+    <file name="Resources/Config/OtherItemCfg" type="xml" />
+    <file name="Resources/Config/OtherItemCfg_Describe" type="xml" />
+    <file name="Resources/Config/path" type="xml" />
+    <file name="Resources/Config/PopWindow" type="xml" />
+    <file name="Resources/Config/PreLoad" type="xml" />
+    <file name="Resources/Config/RandomName" type="xml" />
+    <file name="Resources/Config/ReleaseResource" type="xml" />
+    <file name="Resources/Config/RuneCfg" type="xml" />
+    <file name="Resources/Config/RuneSlotCfg" type="xml" />
+    <file name="Resources/Config/SceneCfg" type="xml" />
+    <file name="Resources/Config/SdkCfg" type="xml" />
+    <file name="Resources/Config/ShopCfg" type="xml" />
+    <file name="Resources/Config/ShopfCfg" type="xml" />
+    <file name="Resources/Config/SkillCfg" type="xml" />
+    <file name="Resources/Config/SkillCfg_account" type="xml" />
+    <file name="Resources/Config/SkillCfg_area" type="xml" />
+    <file name="Resources/Config/SkillCfg_bloodseek" type="xml" />
+    <file name="Resources/Config/SkillCfg_buff" type="xml" />
+    <file name="Resources/Config/SkillCfg_Camera" type="xml" />
+    <file name="Resources/Config/SkillCfg_emit" type="xml" />
+    <file name="Resources/Config/SkillCfg_fly" type="xml" />
+    <file name="Resources/Config/SkillCfg_leading" type="xml" />
+    <file name="Resources/Config/SkillCfg_links" type="xml" />
+    <file name="Resources/Config/SkillCfg_manager" type="xml" />
+    <file name="Resources/Config/SkillCfg_move" type="xml" />
+    <file name="Resources/Config/SkillCfg_overlap" type="xml" />
+    <file name="Resources/Config/SkillCfg_passitive" type="xml" />
+    <file name="Resources/Config/SkillCfg_purification" type="xml" />
+    <file name="Resources/Config/SkillCfg_rebound" type="xml" />
+    <file name="Resources/Config/SkillCfg_relive" type="xml" />
+    <file name="Resources/Config/SkillCfg_summon" type="xml" />
+    <file name="Resources/Config/SkillCfg_switch" type="xml" />
+    <file name="Resources/Config/SkinCfg" type="xml" />
+    <file name="Resources/Config/SkinsPurchaseCfg" type="xml" />
+    <file name="Resources/Config/taskmanager" type="xml" />
+    <file name="Resources/Config/timectel" type="xml" />
+    <file name="Resources/Config/Title" type="xml" />
+    <file name="Resources/Config/UiTaskEvent" type="xml" />
+    <file name="Resources/Config/UiTaskmanager" type="xml" />
+    <file name="Resources/Config/UserAccountCfg" type="xml" />
+    <file name="Resources/Config/Vidicon" type="xml" />
+    <file name="Resources/Config/VIPIntegralCfg" type="xml" />
+    <file name="Resources/Config/VoipCfg" type="xml" />
+    <file name="Resources/Config/WildMonsterCfg" type="xml" />
+    <file name="Resources/Config/Platform/platform" type="xml" />
+    <file name="Resources/Config/Platform/talkingdata" type="xml" />
+    <file name="Resources/DailyBonus/AchieveItems" type="prefab" />
+    <file name="Resources/DailyBonus/Bonus" type="prefab" />
+    <file name="Resources/DailyBonus/DailyBonus" type="prefab" />
+    <file name="Resources/DailyBonus/Prize" type="prefab" />
+    <file name="Resources/DailyBonus/TaskItems" type="prefab" />
+    <file name="Resources/effect/building/Altar" type="prefab" />
+    <file name="Resources/effect/building/Altar_red" type="prefab" />
+    <file name="Resources/effect/building/Altar_touch" type="prefab" />
+    <file name="Resources/effect/building/Altar_touch_red" type="prefab" />
+    <file name="Resources/effect/building/jiantadeath_A" type="prefab" />
+    <file name="Resources/effect/building/jiantadeath_B" type="prefab" />
+    <file name="Resources/effect/building/jidideath_A" type="prefab" />
+    <file name="Resources/effect/building/jidideath_B" type="prefab" />
+    <file name="Resources/effect/other/baoqi" type="prefab" />
+    <file name="Resources/effect/other/energy_blue" type="prefab" />
+    <file name="Resources/effect/other/energy_red" type="prefab" />
+    <file name="Resources/effect/other/fuhuo" type="prefab" />
+    <file name="Resources/effect/other/guangquan_fanwei" type="prefab" />
+    <file name="Resources/effect/other/guangquan_green" type="prefab" />
+    <file name="Resources/effect/other/guangquan_jianta" type="prefab" />
+    <file name="Resources/effect/other/guangquan_red" type="prefab" />
+    <file name="Resources/effect/other/guangquan_yellow" type="prefab" />
+    <file name="Resources/effect/other/jiantou" type="prefab" />
+    <file name="Resources/effect/other/jiantou_2" type="prefab" />
+    <file name="Resources/effect/other/shengji" type="prefab" />
+    <file name="Resources/effect/other/soul_01" type="prefab" />
+    <file name="Resources/effect/other/soul_01_delete" type="prefab" />
+    <file name="Resources/effect/other/soul_02" type="prefab" />
+    <file name="Resources/effect/other/soul_02_delete" type="prefab" />
+    <file name="Resources/effect/other/soul_absorb" type="prefab" />
+    <file name="Resources/effect/other/soul_death" type="prefab" />
+    <file name="Resources/effect/shadow/shadow" type="prefab" />
+    <file name="Resources/effect/skill/buff/bat_slow" type="prefab" />
+    <file name="Resources/effect/skill/buff/bingdong" type="prefab" />
+    <file name="Resources/effect/skill/buff/blade_storm_ex" type="prefab" />
+    <file name="Resources/effect/skill/buff/burning" type="prefab" />
+    <file name="Resources/effect/skill/buff/chanrao" type="prefab" />
+    <file name="Resources/effect/skill/buff/chenmo" type="prefab" />
+    <file name="Resources/effect/skill/buff/Corrosion_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/dagger_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/diaoxue" type="prefab" />
+    <file name="Resources/effect/skill/buff/Giant_anger" type="prefab" />
+    <file name="Resources/effect/skill/buff/heal_last" type="prefab" />
+    <file name="Resources/effect/skill/buff/heimolv_skill1_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/iceshufu_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/iceskill1_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/ice_freezeover" type="prefab" />
+    <file name="Resources/effect/skill/buff/jiafang_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/jiagong_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/jianfang_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/jiangongsu_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/jiangong_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/jianmofang_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/jiansu_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/jiansu_buff_ice" type="prefab" />
+    <file name="Resources/effect/skill/buff/jiasu_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/jiasu_buff_juren" type="prefab" />
+    <file name="Resources/effect/skill/buff/Magicburn_skill2" type="prefab" />
+    <file name="Resources/effect/skill/buff/magic_last" type="prefab" />
+    <file name="Resources/effect/skill/buff/magic_shield" type="prefab" />
+    <file name="Resources/effect/skill/buff/meihuo" type="prefab" />
+    <file name="Resources/effect/skill/buff/meihuo1" type="prefab" />
+    <file name="Resources/effect/skill/buff/Passionate" type="prefab" />
+    <file name="Resources/effect/skill/buff/plaguewizard_skill1_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/plaguewizard_skill2_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/poison" type="prefab" />
+    <file name="Resources/effect/skill/buff/poison_sp" type="prefab" />
+    <file name="Resources/effect/skill/buff/prison" type="prefab" />
+    <file name="Resources/effect/skill/buff/Prohibited_weapon" type="prefab" />
+    <file name="Resources/effect/skill/buff/rebound" type="prefab" />
+    <file name="Resources/effect/skill/buff/sakuraarea" type="prefab" />
+    <file name="Resources/effect/skill/buff/sakuraarea_ex" type="prefab" />
+    <file name="Resources/effect/skill/buff/soul_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/stun" type="prefab" />
+    <file name="Resources/effect/skill/buff/thunderarea" type="prefab" />
+    <file name="Resources/effect/skill/buff/tys_hand" type="prefab" />
+    <file name="Resources/effect/skill/buff/tys_skill2_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/tys_skill2_buff_ex" type="prefab" />
+    <file name="Resources/effect/skill/buff/yelang_buff" type="prefab" />
+    <file name="Resources/effect/skill/buff/zhizhuwang" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitarrow" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitbaotou" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitblood" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitchongci" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitcutlight" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitfenshen" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitfire1" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitheal" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hithouyansj" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitice1" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitice2" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitjlxb_yc" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitliedizhan" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitmagic" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitmagic2" type="prefab" />
+    <file name="Resources/effect/skill/hit/HitMagicburn_skill1" type="prefab" />
+    <file name="Resources/effect/skill/hit/HitMagicburn_skill2_chufa" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitplaguewizard" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitpoison" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitpunch1" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitpunch2" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitsakura" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitsoul" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitsoul_ex" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitsoul_youhun" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitstoneboom" type="prefab" />
+    <file name="Resources/effect/skill/hit/HitStorm_bullet" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitsuoliansj" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitsuoming" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitthunder" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitthunderlight" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitwang" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitwater1" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitwater2" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitwlxb_yc" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitxbjz" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hitzhizhu" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hit_bat" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hit_giant_skill2" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hit_heimolv_attack" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hit_heimolv_skill2" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hit_icecollect" type="prefab" />
+    <file name="Resources/effect/skill/hit/hit_steal" type="prefab" />
+    <file name="Resources/effect/skill/hit/Hit_tys_skill2" type="prefab" />
+    <file name="Resources/effect/skill/release/appear" type="prefab" />
+    <file name="Resources/effect/skill/release/appear_gws" type="prefab" />
+    <file name="Resources/effect/skill/release/arrow" type="prefab" />
+    <file name="Resources/effect/skill/release/backtocity" type="prefab" />
+    <file name="Resources/effect/skill/release/baofengxue" type="prefab" />
+    <file name="Resources/effect/skill/release/baofengxue_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/bat_aoe" type="prefab" />
+    <file name="Resources/effect/skill/release/bat_aoe_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/bat_follow" type="prefab" />
+    <file name="Resources/effect/skill/release/bingqiutuowei2" type="prefab" />
+    <file name="Resources/effect/skill/release/bingqiutuowei_pao" type="prefab" />
+    <file name="Resources/effect/skill/release/blade_storm" type="prefab" />
+    <file name="Resources/effect/skill/release/blood_sucker" type="prefab" />
+    <file name="Resources/effect/skill/release/chongci_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/Corrosion_bullet" type="prefab" />
+    <file name="Resources/effect/skill/release/Corrosion_skill2" type="prefab" />
+    <file name="Resources/effect/skill/release/Corrosion_skill2_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/criticalhit" type="prefab" />
+    <file name="Resources/effect/skill/release/criticalhit_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/dagger" type="prefab" />
+    <file name="Resources/effect/skill/release/dagger_bullet" type="prefab" />
+    <file name="Resources/effect/skill/release/dagger_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/Defense_down_ring" type="prefab" />
+    <file name="Resources/effect/skill/release/Defense_ring" type="prefab" />
+    <file name="Resources/effect/skill/release/diliewave" type="prefab" />
+    <file name="Resources/effect/skill/release/dimianbaozha1" type="prefab" />
+    <file name="Resources/effect/skill/release/disappear" type="prefab" />
+    <file name="Resources/effect/skill/release/disappear_gws" type="prefab" />
+    <file name="Resources/effect/skill/release/DragEffect" type="prefab" />
+    <file name="Resources/effect/skill/release/Exciting_ring" type="prefab" />
+    <file name="Resources/effect/skill/release/feifu" type="prefab" />
+    <file name="Resources/effect/skill/release/feifu_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/firerotate" type="prefab" />
+    <file name="Resources/effect/skill/release/firespear" type="prefab" />
+    <file name="Resources/effect/skill/release/firevortex" type="prefab" />
+    <file name="Resources/effect/skill/release/firevortex_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/firewave" type="prefab" />
+    <file name="Resources/effect/skill/release/firewave_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/freezearea" type="prefab" />
+    <file name="Resources/effect/skill/release/Giant_skill1" type="prefab" />
+    <file name="Resources/effect/skill/release/Giant_skill1_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/Giant_skill2_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/groundimpact" type="prefab" />
+    <file name="Resources/effect/skill/release/guirenzhan" type="prefab" />
+    <file name="Resources/effect/skill/release/healarea" type="prefab" />
+    <file name="Resources/effect/skill/release/heimolv_appear" type="prefab" />
+    <file name="Resources/effect/skill/release/heimolv_disappear" type="prefab" />
+    <file name="Resources/effect/skill/release/heimolv_skill1_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/heimolv_skill1_trigger" type="prefab" />
+    <file name="Resources/effect/skill/release/heimolv_skill2" type="prefab" />
+    <file name="Resources/effect/skill/release/heimolv_skill2_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/hunmo_attack" type="prefab" />
+    <file name="Resources/effect/skill/release/huoqiu" type="prefab" />
+    <file name="Resources/effect/skill/release/huoqiu1" type="prefab" />
+    <file name="Resources/effect/skill/release/huoqiuhuti" type="prefab" />
+    <file name="Resources/effect/skill/release/huo_aoe" type="prefab" />
+    <file name="Resources/effect/skill/release/icearrow" type="prefab" />
+    <file name="Resources/effect/skill/release/icearrowboom" type="prefab" />
+    <file name="Resources/effect/skill/release/icearrow_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/iceskill1_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/iceskill2" type="prefab" />
+    <file name="Resources/effect/skill/release/iceskill2_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/icewall" type="prefab" />
+    <file name="Resources/effect/skill/release/icewall_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/ice_bullet" type="prefab" />
+    <file name="Resources/effect/skill/release/jiantaattack_A" type="prefab" />
+    <file name="Resources/effect/skill/release/jiantaattack_B" type="prefab" />
+    <file name="Resources/effect/skill/release/jlxb_ycattack" type="prefab" />
+    <file name="Resources/effect/skill/release/kaisaruizhua" type="prefab" />
+    <file name="Resources/effect/skill/release/kaisaruizhua_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/landcut" type="prefab" />
+    <file name="Resources/effect/skill/release/landcut_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/Magicburn_bullet" type="prefab" />
+    <file name="Resources/effect/skill/release/Magicburn_skill1_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/Magicburn_skill2_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/mainu_dao" type="prefab" />
+    <file name="Resources/effect/skill/release/Medical_ring" type="prefab" />
+    <file name="Resources/effect/skill/release/near" type="prefab" />
+    <file name="Resources/effect/skill/release/nothingness" type="prefab" />
+    <file name="Resources/effect/skill/release/nuhou" type="prefab" />
+    <file name="Resources/effect/skill/release/penhuo" type="prefab" />
+    <file name="Resources/effect/skill/release/plaguewizard_bullet" type="prefab" />
+    <file name="Resources/effect/skill/release/plaguewizard_skill2_bullet" type="prefab" />
+    <file name="Resources/effect/skill/release/poisonboom" type="prefab" />
+    <file name="Resources/effect/skill/release/poisonboom_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/poisonseed" type="prefab" />
+    <file name="Resources/effect/skill/release/prison_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/ravine" type="prefab" />
+    <file name="Resources/effect/skill/release/ravine_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/renascence" type="prefab" />
+    <file name="Resources/effect/skill/release/sakuraattack" type="prefab" />
+    <file name="Resources/effect/skill/release/sakuraline" type="prefab" />
+    <file name="Resources/effect/skill/release/sakuraline_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/shinjianyu" type="prefab" />
+    <file name="Resources/effect/skill/release/shinjianyu_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/sonic_bullet" type="prefab" />
+    <file name="Resources/effect/skill/release/sonic_skill1" type="prefab" />
+    <file name="Resources/effect/skill/release/sonic_skill1_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/sonic_skill2" type="prefab" />
+    <file name="Resources/effect/skill/release/sonic_skill2_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/soul_bullet" type="prefab" />
+    <file name="Resources/effect/skill/release/steal" type="prefab" />
+    <file name="Resources/effect/skill/release/stealth" type="prefab" />
+    <file name="Resources/effect/skill/release/steal_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/Storm_bullet" type="prefab" />
+    <file name="Resources/effect/skill/release/Storm_skill1" type="prefab" />
+    <file name="Resources/effect/skill/release/Storm_skill1_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/Storm_skill2" type="prefab" />
+    <file name="Resources/effect/skill/release/Storm_skill2_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/suckbloodbuff" type="prefab" />
+    <file name="Resources/effect/skill/release/suolian" type="prefab" />
+    <file name="Resources/effect/skill/release/suoming" type="prefab" />
+    <file name="Resources/effect/skill/release/sword" type="prefab" />
+    <file name="Resources/effect/skill/release/sword_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/thunderattack" type="prefab" />
+    <file name="Resources/effect/skill/release/thunderchain" type="prefab" />
+    <file name="Resources/effect/skill/release/watercannon" type="prefab" />
+    <file name="Resources/effect/skill/release/watercurrent" type="prefab" />
+    <file name="Resources/effect/skill/release/watergun" type="prefab" />
+    <file name="Resources/effect/skill/release/wlxb_ycattack" type="prefab" />
+    <file name="Resources/effect/skill/release/yishan_ex" type="prefab" />
+    <file name="Resources/effect/skill/release/zhizhuattack" type="prefab" />
+    <file name="Resources/effect/skill/release/zhuwangfeixing" type="prefab" />
+    <file name="Resources/effect/skill/release/zibao" type="prefab" />
+    <file name="Resources/effect/soul_act/gongchengyuanren" type="prefab" />
+    <file name="Resources/effect/soul_act/Haiqishi" type="prefab" />
+    <file name="Resources/effect/soul_act/Jialong" type="prefab" />
+    <file name="Resources/effect/soul_act/Kulouqishi" type="prefab" />
+    <file name="Resources/effect/soul_act/leiling" type="prefab" />
+    <file name="Resources/effect/soul_act/shimo" type="prefab" />
+    <file name="Resources/effect/soul_act/Xiong" type="prefab" />
+    <file name="Resources/effect/soul_act/Yiliaoyuanren" type="prefab" />
+    <file name="Resources/effect/soul_act/Yuren" type="prefab" />
+    <file name="Resources/effect/test/flare" type="tga" />
+    <file name="Resources/effect/ui_effect/anger_full" type="prefab" />
+    <file name="Resources/effect/ui_effect/Cooldown" type="prefab" />
+    <file name="Resources/effect/ui_effect/Cooldown_Click" type="prefab" />
+    <file name="Resources/effect/ui_effect/daily_bonus_burst" type="prefab" />
+    <file name="Resources/effect/ui_effect/guide_congratulation" type="prefab" />
+    <file name="Resources/effect/ui_effect/lock_effect" type="prefab" />
+    <file name="Resources/effect/ui_effect/majorcity_hit" type="prefab" />
+    <file name="Resources/effect/ui_effect/nowselection" type="prefab" />
+    <file name="Resources/effect/ui_effect/play_burst" type="prefab" />
+    <file name="Resources/effect/ui_effect/power_head" type="prefab" />
+    <file name="Resources/effect/ui_effect/power_skill" type="prefab" />
+    <file name="Resources/effect/ui_effect/prize_stars" type="prefab" />
+    <file name="Resources/effect/ui_effect/PVPmap_warning" type="prefab" />
+    <file name="Resources/effect/ui_effect/Remove_cooling_effect" type="prefab" />
+    <file name="Resources/effect/ui_effect/Selectportrait" type="prefab" />
+    <file name="Resources/effect/ui_effect/slot_combine" type="prefab" />
+    <file name="Resources/effect/ui_effect/slot_disappear" type="prefab" />
+    <file name="Resources/effect/ui_effect/slot_flash" type="prefab" />
+    <file name="Resources/effect/ui_effect/slot_light" type="prefab" />
+    <file name="Resources/effect/ui_effect/slot_refresh" type="prefab" />
+    <file name="Resources/effect/ui_effect/soul_01_burst" type="prefab" />
+    <file name="Resources/effect/ui_effect/soul_01_remove" type="prefab" />
+    <file name="Resources/effect/ui_effect/soul_02_burst" type="prefab" />
+    <file name="Resources/effect/ui_effect/soul_02_remove" type="prefab" />
+    <file name="Resources/effect/ui_effect/soul_fly" type="prefab" />
+    <file name="Resources/effect/ui_effect/start_burst" type="prefab" />
+    <file name="Resources/effect/ui_effect/start_stars" type="prefab" />
+    <file name="Resources/effect/ui_effect/tips_absorb_ring" type="prefab" />
+    <file name="Resources/effect/ui_effect/tips_button_ring" type="prefab" />
+    <file name="Resources/effect/ui_effect/tips_buy_remind" type="prefab" />
+    <file name="Resources/effect/ui_effect/tips_close_remind" type="prefab" />
+    <file name="Resources/effect/ui_effect/tips_scale" type="prefab" />
+    <file name="Resources/effect/ui_effect/vip_flash" type="prefab" />
+    <file name="Resources/effect/ui_effect/win" type="prefab" />
+    <file name="Resources/Game/GameLogin" type="prefab" />
+    <file name="Resources/Game/PlayMovie" type="prefab" />
+    <file name="Resources/Guide/CameraMoveManager" type="prefab" />
+    <file name="Resources/Guide/Captions_Camera2" type="prefab" />
+    <file name="Resources/Guide/character" type="prefab" />
+    <file name="Resources/Guide/Finger" type="prefab" />
+    <file name="Resources/Guide/frame" type="prefab" />
+    <file name="Resources/Guide/GuideCompeled" type="prefab" />
+    <file name="Resources/Guide/Hand" type="prefab" />
+    <file name="Resources/Guide/Line" type="prefab" />
+    <file name="Resources/Guide/LowerGuide" type="prefab" />
+    <file name="Resources/Guide/LowerGuide1" type="prefab" />
+    <file name="Resources/Guide/SecondaryBoot" type="prefab" />
+    <file name="Resources/Guide/Tips_wenz" type="prefab" />
+    <file name="Resources/Guide/Tips_wenz1" type="prefab" />
+    <file name="Resources/Guide/Tips_wenz2" type="prefab" />
+    <file name="Resources/Guide/Tips_wenz3" type="prefab" />
+    <file name="Resources/Guide/Tips_wenz4" type="prefab" />
+    <file name="Resources/Guide/Tips_wenz5" type="prefab" />
+    <file name="Resources/Guide/Tips_Window" type="prefab" />
+    <file name="Resources/Guide/Tips_Window1" type="prefab" />
+    <file name="Resources/Guide/Tips_Window2" type="prefab" />
+    <file name="Resources/Guide/TPS1" type="prefab" />
+    <file name="Resources/Guide/UIGuideBottomleft" type="prefab" />
+    <file name="Resources/Guide/UIGuideBottomRight" type="prefab" />
+    <file name="Resources/Guide/UIGuideCenter" type="prefab" />
+    <file name="Resources/Guide/UIGuideFrame" type="prefab" />
+    <file name="Resources/Guide/UIGuideInfo" type="prefab" />
+    <file name="Resources/Guide/UIGuideMask" type="prefab" />
+    <file name="Resources/Guide/UIGuideOneBtn" type="prefab" />
+    <file name="Resources/Guide/UIGuideParent" type="prefab" />
+    <file name="Resources/Guide/UIGuideTopleft" type="prefab" />
+    <file name="Resources/Guide/UIGuideTopRight" type="prefab" />
+    <file name="Resources/Guide/UIGuideTwoBtn" type="prefab" />
+    <file name="Resources/Guide/UINewsGuide" type="prefab" />
+    <file name="Resources/Guide/xuanzhi" type="prefab" />
+    <file name="Resources/Guis/Aisi" type="prefab" />
+    <file name="Resources/Guis/Countdown" type="prefab" />
+    <file name="Resources/Guis/CrticalStrike" type="prefab" />
+    <file name="Resources/Guis/Head1" type="prefab" />
+    <file name="Resources/Guis/JumpDigit" type="prefab" />
+    <file name="Resources/Guis/LoadingLogo" type="prefab" />
+    <file name="Resources/Guis/NoticeTitle" type="prefab" />
+    <file name="Resources/Guis/PP" type="prefab" />
+    <file name="Resources/Guis/SdkConnect" type="prefab" />
+    <file name="Resources/Guis/Server" type="prefab" />
+    <file name="Resources/Guis/SystemNotice" type="prefab" />
+    <file name="Resources/Guis/TeamHead2" type="prefab" />
+    <file name="Resources/Guis/UIatlas14" type="prefab" />
+    <file name="Resources/Guis/UIGameLobby" type="prefab" />
+    <file name="Resources/Guis/UIGameLogin" type="prefab" />
+    <file name="Resources/Guis/UIGameServer" type="prefab" />
+    <file name="Resources/Guis/UIMainWindow - Kopie" type="prefab" />
+    <file name="Resources/Guis/UIMainWindow" type="prefab" />
+    <file name="Resources/Guis/UIRegister" type="prefab" />
+    <file name="Resources/Guis/UIViewer" type="prefab" />
+    <file name="Resources/Guis/UpdatePatch" type="prefab" />
+    <file name="Resources/Guis/WaitingInterface" type="prefab" />
+    <file name="Resources/Guis/Lobby/AffordToPay" type="prefab" />
+    <file name="Resources/Guis/Lobby/BuddySystem" type="prefab" />
+    <file name="Resources/Guis/Lobby/ChargingTip" type="prefab" />
+    <file name="Resources/Guis/Lobby/ChatBox" type="prefab" />
+    <file name="Resources/Guis/Lobby/ChatMember" type="prefab" />
+    <file name="Resources/Guis/Lobby/Create_Maps" type="prefab" />
+    <file name="Resources/Guis/Lobby/ExtraBonus" type="prefab" />
+    <file name="Resources/Guis/Lobby/FrameTips" type="prefab" />
+    <file name="Resources/Guis/Lobby/Friend" type="prefab" />
+    <file name="Resources/Guis/Lobby/GameSetting" type="prefab" />
+    <file name="Resources/Guis/Lobby/HeadPhoto" type="prefab" />
+    <file name="Resources/Guis/Lobby/Hero" type="prefab" />
+    <file name="Resources/Guis/Lobby/HeroData" type="prefab" />
+    <file name="Resources/Guis/Lobby/HeroDataPhoto" type="prefab" />
+    <file name="Resources/Guis/Lobby/HeroOption" type="prefab" />
+    <file name="Resources/Guis/Lobby/HeroTag" type="prefab" />
+    <file name="Resources/Guis/Lobby/HeroTimeLimit" type="prefab" />
+    <file name="Resources/Guis/Lobby/HomePage" type="prefab" />
+    <file name="Resources/Guis/Lobby/InputArea" type="prefab" />
+    <file name="Resources/Guis/Lobby/InvitationList" type="prefab" />
+    <file name="Resources/Guis/Lobby/InvitationMembers" type="prefab" />
+    <file name="Resources/Guis/Lobby/InvitationTips" type="prefab" />
+    <file name="Resources/Guis/Lobby/MailAttach" type="prefab" />
+    <file name="Resources/Guis/Lobby/Mails" type="prefab" />
+    <file name="Resources/Guis/Lobby/MailTitle" type="prefab" />
+    <file name="Resources/Guis/Lobby/MakeFriends" type="prefab" />
+    <file name="Resources/Guis/Lobby/MallMenuOption" type="prefab" />
+    <file name="Resources/Guis/Lobby/MatchSearching" type="prefab" />
+    <file name="Resources/Guis/Lobby/Match_Friends" type="prefab" />
+    <file name="Resources/Guis/Lobby/Match_Maps" type="prefab" />
+    <file name="Resources/Guis/Lobby/Match_Member" type="prefab" />
+    <file name="Resources/Guis/Lobby/MyFriend" type="prefab" />
+    <file name="Resources/Guis/Lobby/PersonalDateOption" type="prefab" />
+    <file name="Resources/Guis/Lobby/PurchaseInterface" type="prefab" />
+    <file name="Resources/Guis/Lobby/PurchaseSuccess" type="prefab" />
+    <file name="Resources/Guis/Lobby/PvpOrGuideBase" type="prefab" />
+    <file name="Resources/Guis/Lobby/RecommendOption" type="prefab" />
+    <file name="Resources/Guis/Lobby/Room" type="prefab" />
+    <file name="Resources/Guis/Lobby/RuneCombine" type="prefab" />
+    <file name="Resources/Guis/Lobby/RuneEquip" type="prefab" />
+    <file name="Resources/Guis/Lobby/RuneItem" type="prefab" />
+    <file name="Resources/Guis/Lobby/RuneOption" type="prefab" />
+    <file name="Resources/Guis/Lobby/RuneRefresh" type="prefab" />
+    <file name="Resources/Guis/Lobby/RuneTag" type="prefab" />
+    <file name="Resources/Guis/Lobby/ScrollItem" type="prefab" />
+    <file name="Resources/Guis/Lobby/SearchResults" type="prefab" />
+    <file name="Resources/Guis/Lobby/SelectHero" type="prefab" />
+    <file name="Resources/Guis/Lobby/StartSelfDefine" type="prefab" />
+    <file name="Resources/Guis/Lobby/SureToBuyHero" type="prefab" />
+    <file name="Resources/Guis/Lobby/SureToBuyRune" type="prefab" />
+    <file name="Resources/Guis/Lobby/Talks" type="prefab" />
+    <file name="Resources/Guis/Lobby/TeamMatch" type="prefab" />
+    <file name="Resources/Guis/Lobby/UIRoom" type="prefab" />
+    <file name="Resources/Guis/Lobby/VIPInfo" type="prefab" />
+    <file name="Resources/Guis/Lobby/VIPPrerogative" type="prefab" />
+    <file name="Resources/Guis/Over/GameOver" type="prefab" />
+    <file name="Resources/Guis/Over/GoldSettlement" type="prefab" />
+    <file name="Resources/Guis/Over/ShowScore" type="prefab" />
+    <file name="Resources/Guis/Over/superwan" type="prefab" />
+    <file name="Resources/Guis/Play/AltarSoldierHead" type="prefab" />
+    <file name="Resources/Guis/Play/BarracksIcon" type="prefab" />
+    <file name="Resources/Guis/Play/BaseIcon" type="prefab" />
+    <file name="Resources/Guis/Play/BuffStatus" type="prefab" />
+    <file name="Resources/Guis/Play/ConnectionPanel" type="prefab" />
+    <file name="Resources/Guis/Play/CPAddItem" type="prefab" />
+    <file name="Resources/Guis/Play/CreepsIconHuge" type="prefab" />
+    <file name="Resources/Guis/Play/CreepsIconSmall" type="prefab" />
+    <file name="Resources/Guis/Play/CreepsLifePlate" type="prefab" />
+    <file name="Resources/Guis/Play/DeathInterface" type="prefab" />
+    <file name="Resources/Guis/Play/DeathInterfaceForGuide" type="prefab" />
+    <file name="Resources/Guis/Play/EnemyWindow" type="prefab" />
+    <file name="Resources/Guis/Play/EquipmentWindow" type="prefab" />
+    <file name="Resources/Guis/Play/HeroLifePlateGreen" type="prefab" />
+    <file name="Resources/Guis/Play/HeroLifePlateRed" type="prefab" />
+    <file name="Resources/Guis/Play/Information" type="prefab" />
+    <file name="Resources/Guis/Play/ItemsInfoPanel" type="prefab" />
+    <file name="Resources/Guis/Play/MapWarning" type="prefab" />
+    <file name="Resources/Guis/Play/MiniMapWindow" type="prefab" />
+    <file name="Resources/Guis/Play/MiniMap_001" type="prefab" />
+    <file name="Resources/Guis/Play/MiniMap_002" type="prefab" />
+    <file name="Resources/Guis/Play/MiniMap_004" type="prefab" />
+    <file name="Resources/Guis/Play/OccupyProcessbar" type="prefab" />
+    <file name="Resources/Guis/Play/PlayerIconGreen" type="prefab" />
+    <file name="Resources/Guis/Play/PlayerIconRed" type="prefab" />
+    <file name="Resources/Guis/Play/PlayerKillTip" type="prefab" />
+    <file name="Resources/Guis/Play/RuinWarning" type="prefab" />
+    <file name="Resources/Guis/Play/SelectPanel" type="prefab" />
+    <file name="Resources/Guis/Play/Shop" type="prefab" />
+    <file name="Resources/Guis/Play/ShopIcon" type="prefab" />
+    <file name="Resources/Guis/Play/SkillInfoPanel" type="prefab" />
+    <file name="Resources/Guis/Play/SkillWindow" type="prefab" />
+    <file name="Resources/Guis/Play/SoldierIconGreen" type="prefab" />
+    <file name="Resources/Guis/Play/SoldierIconRed" type="prefab" />
+    <file name="Resources/Guis/Play/SoldierLifePlateGreen" type="prefab" />
+    <file name="Resources/Guis/Play/SoldierLifePlateRed" type="prefab" />
+    <file name="Resources/Guis/Play/SummonedGreen" type="prefab" />
+    <file name="Resources/Guis/Play/SummonedRed" type="prefab" />
+    <file name="Resources/Guis/Play/TowerIcon" type="prefab" />
+    <file name="Resources/Guis/Play/TowerLifePlateGreen" type="prefab" />
+    <file name="Resources/Guis/Play/TowerLifePlateRed" type="prefab" />
+    <file name="Resources/Guis/Play/UIAltarSoldierSelect" type="prefab" />
+    <file name="Resources/Guis/Play/UISoulsReplace" type="prefab" />
+    <file name="Resources/Guis/Play/Update" type="prefab" />
+    <file name="Resources/LoadPros/LoadProcess" type="prefab" />
+    <file name="Resources/Map/1001" type="map" />
+    <file name="Resources/Map/1002" type="map" />
+    <file name="Resources/Map/1003" type="map" />
+    <file name="Resources/Monsters/Aige_5" type="prefab" />
+    <file name="Resources/Monsters/Beinuyideyuanren_5" type="prefab" />
+    <file name="Resources/Monsters/Bianfu_5" type="prefab" />
+    <file name="Resources/Monsters/Chengjiezhe_5" type="prefab" />
+    <file name="Resources/Monsters/Dianmanren_5" type="prefab" />
+    <file name="Resources/Monsters/Dongfashi_5" type="prefab" />
+    <file name="Resources/Monsters/Feilong_5" type="prefab" />
+    <file name="Resources/Monsters/Fushilong_5" type="prefab" />
+    <file name="Resources/Monsters/Gongchengche_5" type="prefab" />
+    <file name="Resources/Monsters/Haiqishi_5" type="prefab" />
+    <file name="Resources/Monsters/Hanhui_5" type="prefab" />
+    <file name="Resources/Monsters/Heimolv_5" type="prefab" />
+    <file name="Resources/Monsters/heimolv_skill1" type="prefab" />
+    <file name="Resources/Monsters/Hunmo_5" type="prefab" />
+    <file name="Resources/Monsters/Jiachong_5" type="prefab" />
+    <file name="Resources/Monsters/Jialong_5" type="prefab" />
+    <file name="Resources/Monsters/Jinglingnan_5" type="prefab" />
+    <file name="Resources/Monsters/Jinglingnan_6" type="prefab" />
+    <file name="Resources/Monsters/Jinglingnv_5" type="prefab" />
+    <file name="Resources/Monsters/Jinglingnv_6" type="prefab" />
+    <file name="Resources/Monsters/jlxb_jz_5" type="prefab" />
+    <file name="Resources/Monsters/jlxb_jz_6" type="prefab" />
+    <file name="Resources/Monsters/jlxb_yc_5" type="prefab" />
+    <file name="Resources/Monsters/jlxb_yc_6" type="prefab" />
+    <file name="Resources/Monsters/Juren_5" type="prefab" />
+    <file name="Resources/Monsters/Kuishe_5" type="prefab" />
+    <file name="Resources/Monsters/Kulouqishi_5" type="prefab" />
+    <file name="Resources/Monsters/Linghunzhanche_5" type="prefab" />
+    <file name="Resources/Monsters/Linghunzhanche_a5" type="prefab" />
+    <file name="Resources/Monsters/Lisa_5" type="prefab" />
+    <file name="Resources/Monsters/Mainu_5" type="prefab" />
+    <file name="Resources/Monsters/Nvyao_5" type="prefab" />
+    <file name="Resources/Monsters/Pangge_5" type="prefab" />
+    <file name="Resources/Monsters/Paotai" type="prefab" />
+    <file name="Resources/Monsters/Renma_5" type="prefab" />
+    <file name="Resources/Monsters/Saqier_5" type="prefab" />
+    <file name="Resources/Monsters/Shihunzhe_5" type="prefab" />
+    <file name="Resources/Monsters/Taiyushen_5" type="prefab" />
+    <file name="Resources/Monsters/Tanshigui_5" type="prefab" />
+    <file name="Resources/Monsters/Wenyi_5" type="prefab" />
+    <file name="Resources/Monsters/wlxb_jz_5" type="prefab" />
+    <file name="Resources/Monsters/wlxb_jz_6" type="prefab" />
+    <file name="Resources/Monsters/wlxb_yc_5" type="prefab" />
+    <file name="Resources/Monsters/wlxb_yc_6" type="prefab" />
+    <file name="Resources/Monsters/Xiong_5" type="prefab" />
+    <file name="Resources/Monsters/Xiyiren_5" type="prefab" />
+    <file name="Resources/Monsters/Yanmo_5sp" type="prefab" />
+    <file name="Resources/Monsters/Yelang_5" type="prefab" />
+    <file name="Resources/Monsters/Yiliaoyuanren_5" type="prefab" />
+    <file name="Resources/Monsters/Yuren_5" type="prefab" />
+    <file name="Resources/Monsters/Zhadanren_5" type="prefab" />
+    <file name="Resources/Monsters/Zhizhu_5" type="prefab" />
+    <file name="Resources/Scenes/001xiaowujian" type="prefab" />
+    <file name="Resources/Scenes/002xiaowujian" type="prefab" />
+    <file name="Resources/sound/Beinuyideyuanren5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Beinuyideyuanren5_Attack" type="mp3" />
+    <file name="Resources/sound/Beinuyideyuanren5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Beinuyideyuanren5_Skill 1_Hit 1" type="mp3" />
+    <file name="Resources/sound/Beinuyideyuanren5_Skill 1_Hit" type="mp3" />
+    <file name="Resources/sound/Beinuyideyuanren5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Beinuyideyuanren5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Beinuyideyuanren5_Skill 4" type="mp3" />
+    <file name="Resources/sound/Bianfu_Skill 1" type="mp3" />
+    <file name="Resources/sound/Bianfu_Skill 2" type="mp3" />
+    <file name="Resources/sound/Bianfu_Skill 3" type="mp3" />
+    <file name="Resources/sound/Bianfu_Skill 4" type="mp3" />
+    <file name="Resources/sound/bingqiuhuti 1" type="mp3" />
+    <file name="Resources/sound/bingqiuhuti" type="mp3" />
+    <file name="Resources/sound/bingqiutuowei2" type="mp3" />
+    <file name="Resources/sound/bingqiutuowei3" type="mp3" />
+    <file name="Resources/sound/bingqiutuowei_pao 1" type="mp3" />
+    <file name="Resources/sound/bingqiutuowei_pao" type="mp3" />
+    <file name="Resources/sound/Chenjiezhe5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Chenjiezhe5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Dianmanren5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Dianmanren5_Attack" type="mp3" />
+    <file name="Resources/sound/Dianmanren5_Attack_be attacked 1" type="mp3" />
+    <file name="Resources/sound/Dianmanren5_Attack_be attacked" type="mp3" />
+    <file name="Resources/sound/Dianmanren5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Dianmanren5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Dianmanren5_Skill 2_be attacked 1" type="mp3" />
+    <file name="Resources/sound/Dianmanren5_Skill 2_be attacked" type="mp3" />
+    <file name="Resources/sound/Dianmanren5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Dianmanren5_Skill 4" type="mp3" />
+    <file name="Resources/sound/Dongfashi5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Dongfashi5_Attack" type="mp3" />
+    <file name="Resources/sound/Dongfashi5_Attack_be attacked 1" type="mp3" />
+    <file name="Resources/sound/Dongfashi5_Attack_be attacked" type="mp3" />
+    <file name="Resources/sound/Dongfashi5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Dongfashi5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Dongfashi5_Skill 2_be attacked 1" type="mp3" />
+    <file name="Resources/sound/Dongfashi5_Skill 2_be attacked" type="mp3" />
+    <file name="Resources/sound/Dongfashi5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Dongfashi5_Skill 4" type="mp3" />
+    <file name="Resources/sound/Emo5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Emo5_Attack" type="mp3" />
+    <file name="Resources/sound/Feilong5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Feilong5_Attack" type="mp3" />
+    <file name="Resources/sound/Feilong5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Feilong5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Feilong5_Skill 2EX 1" type="mp3" />
+    <file name="Resources/sound/Feilong5_Skill 2EX" type="mp3" />
+    <file name="Resources/sound/Feilong5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Feilong5_Skill 4" type="mp3" />
+    <file name="Resources/sound/fog 1" type="mp3" />
+    <file name="Resources/sound/fog" type="mp3" />
+    <file name="Resources/sound/Gongchenche_Attack 1" type="mp3" />
+    <file name="Resources/sound/Gongchenche_Attack" type="mp3" />
+    <file name="Resources/sound/gongfangup 1" type="mp3" />
+    <file name="Resources/sound/gongfangup" type="mp3" />
+    <file name="Resources/sound/grasp 1" type="mp3" />
+    <file name="Resources/sound/grasp" type="mp3" />
+    <file name="Resources/sound/groundimpact 1" type="mp3" />
+    <file name="Resources/sound/groundimpact" type="mp3" />
+    <file name="Resources/sound/groundimpact_ex 1" type="mp3" />
+    <file name="Resources/sound/groundimpact_ex" type="mp3" />
+    <file name="Resources/sound/guangqiu2" type="mp3" />
+    <file name="Resources/sound/guangqiu3" type="mp3" />
+    <file name="Resources/sound/guirenzhan 1" type="mp3" />
+    <file name="Resources/sound/guirenzhan" type="mp3" />
+    <file name="Resources/sound/Haiqishi5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Haiqishi5_Attack" type="mp3" />
+    <file name="Resources/sound/Haiqishi5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Haiqishi5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Haiqishi5_Skill 2_be attacked 1" type="mp3" />
+    <file name="Resources/sound/Haiqishi5_Skill 2_be attacked" type="mp3" />
+    <file name="Resources/sound/Haiqishi5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Haiqishi5_Skill 4" type="mp3" />
+    <file name="Resources/sound/Heimolv_Skill 1" type="mp3" />
+    <file name="Resources/sound/Heimolv_Skill 2" type="mp3" />
+    <file name="Resources/sound/Heimolv_Skill 3" type="mp3" />
+    <file name="Resources/sound/Heimolv_Skill 4" type="mp3" />
+    <file name="Resources/sound/horn 1" type="mp3" />
+    <file name="Resources/sound/horn" type="mp3" />
+    <file name="Resources/sound/huicheng 1" type="mp3" />
+    <file name="Resources/sound/huicheng" type="mp3" />
+    <file name="Resources/sound/huimo 1" type="mp3" />
+    <file name="Resources/sound/huimo" type="mp3" />
+    <file name="Resources/sound/huoqiuhuti 1" type="mp3" />
+    <file name="Resources/sound/huoqiuhuti" type="mp3" />
+    <file name="Resources/sound/icearrow 1" type="mp3" />
+    <file name="Resources/sound/icearrow" type="mp3" />
+    <file name="Resources/sound/icewall6" type="mp3" />
+    <file name="Resources/sound/icewall7" type="mp3" />
+    <file name="Resources/sound/Jiachong_Attack 1" type="mp3" />
+    <file name="Resources/sound/Jiachong_Attack" type="mp3" />
+    <file name="Resources/sound/Jiachong_Skill 1" type="mp3" />
+    <file name="Resources/sound/Jiachong_Skill 1_Hit 1" type="mp3" />
+    <file name="Resources/sound/Jiachong_Skill 1_Hit" type="mp3" />
+    <file name="Resources/sound/Jiachong_Skill 2" type="mp3" />
+    <file name="Resources/sound/Jiachong_Skill 3" type="mp3" />
+    <file name="Resources/sound/Jiachong_Skill 4" type="mp3" />
+    <file name="Resources/sound/jialan 1" type="mp3" />
+    <file name="Resources/sound/jialan" type="mp3" />
+    <file name="Resources/sound/Jialong5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Jialong5_Attack" type="mp3" />
+    <file name="Resources/sound/Jialong5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Jialong5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Jialong5_Skill 2_Hit 1" type="mp3" />
+    <file name="Resources/sound/Jialong5_Skill 2_Hit" type="mp3" />
+    <file name="Resources/sound/Jialong5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Jialong5_Skill 4" type="mp3" />
+    <file name="Resources/sound/jianci 1" type="mp3" />
+    <file name="Resources/sound/jianci" type="mp3" />
+    <file name="Resources/sound/jianci_ex 1" type="mp3" />
+    <file name="Resources/sound/jianci_ex" type="mp3" />
+    <file name="Resources/sound/jianyushouji 1" type="mp3" />
+    <file name="Resources/sound/jianyushouji" type="mp3" />
+    <file name="Resources/sound/jiaxue 1" type="mp3" />
+    <file name="Resources/sound/jiaxue" type="mp3" />
+    <file name="Resources/sound/jinglingJ 1" type="mp3" />
+    <file name="Resources/sound/jinglingJ" type="mp3" />
+    <file name="Resources/sound/jinglingjianta 1" type="mp3" />
+    <file name="Resources/sound/jinglingjianta" type="mp3" />
+    <file name="Resources/sound/Jinglingnan5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Jinglingnan5_Attack" type="mp3" />
+    <file name="Resources/sound/Jinglingnan5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Jinglingnan5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Jinglingnan5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Jinglingnan5_Skill 4" type="mp3" />
+    <file name="Resources/sound/Jinglingnv5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Jinglingnv5_Attack" type="mp3" />
+    <file name="Resources/sound/Jinglingnv5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Jinglingnv5_Skill 1_Hit 1" type="mp3" />
+    <file name="Resources/sound/Jinglingnv5_Skill 1_Hit" type="mp3" />
+    <file name="Resources/sound/Jinglingnv5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Jinglingnv5_Skill 2_Hit 1" type="mp3" />
+    <file name="Resources/sound/Jinglingnv5_Skill 2_Hit" type="mp3" />
+    <file name="Resources/sound/Jinglingnv5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Jinglingnv5_Skill 4" type="mp3" />
+    <file name="Resources/sound/jinglinnv 1" type="mp3" />
+    <file name="Resources/sound/jinglinnv" type="mp3" />
+    <file name="Resources/sound/kaisaruizhua 1" type="mp3" />
+    <file name="Resources/sound/kaisaruizhua" type="mp3" />
+    <file name="Resources/sound/Kulouqishi5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Kulouqishi5_Attack" type="mp3" />
+    <file name="Resources/sound/Kulouqishi5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Kulouqishi5_Skill 1_Hit 1" type="mp3" />
+    <file name="Resources/sound/Kulouqishi5_Skill 1_Hit" type="mp3" />
+    <file name="Resources/sound/Kulouqishi5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Kulouqishi5_Skill 2_Hit 1" type="mp3" />
+    <file name="Resources/sound/Kulouqishi5_Skill 2_Hit" type="mp3" />
+    <file name="Resources/sound/Kulouqishi5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Kulouqishi5_Skill 4" type="mp3" />
+    <file name="Resources/sound/Kulouren5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Kulouren5_Attack" type="mp3" />
+    <file name="Resources/sound/Kulouren5_be attacked 1" type="mp3" />
+    <file name="Resources/sound/Kulouren5_be attacked" type="mp3" />
+    <file name="Resources/sound/Kulouren5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Kulouren5_Skill 1_be attacked 1" type="mp3" />
+    <file name="Resources/sound/Kulouren5_Skill 1_be attacked" type="mp3" />
+    <file name="Resources/sound/Kulouren5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Kulouren5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Kulouren5_Skill 4" type="mp3" />
+    <file name="Resources/sound/landcut 1" type="mp3" />
+    <file name="Resources/sound/landcut" type="mp3" />
+    <file name="Resources/sound/Nvyao5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Nvyao5_Attack" type="mp3" />
+    <file name="Resources/sound/Nvyao5_Attack_Hit 1" type="mp3" />
+    <file name="Resources/sound/Nvyao5_Attack_Hit" type="mp3" />
+    <file name="Resources/sound/Nvyao5_Attack~1" type="mp3" />
+    <file name="Resources/sound/Nvyao5_Attack~2" type="mp3" />
+    <file name="Resources/sound/Nvyao5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Nvyao5_Skill 1_Hit 1" type="mp3" />
+    <file name="Resources/sound/Nvyao5_Skill 1_Hit" type="mp3" />
+    <file name="Resources/sound/Nvyao5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Nvyao5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Nvyao5_Skill 4" type="mp3" />
+    <file name="Resources/sound/parasite 1" type="mp3" />
+    <file name="Resources/sound/parasite" type="mp3" />
+    <file name="Resources/sound/poisonseed 1" type="mp3" />
+    <file name="Resources/sound/poisonseed" type="mp3" />
+    <file name="Resources/sound/prison 1" type="mp3" />
+    <file name="Resources/sound/prison" type="mp3" />
+    <file name="Resources/sound/punch 1" type="mp3" />
+    <file name="Resources/sound/punch" type="mp3" />
+    <file name="Resources/sound/ravine 1" type="mp3" />
+    <file name="Resources/sound/ravine" type="mp3" />
+    <file name="Resources/sound/Renma_Skill 1" type="mp3" />
+    <file name="Resources/sound/Renma_Skill 1FX 1" type="mp3" />
+    <file name="Resources/sound/Renma_Skill 1FX" type="mp3" />
+    <file name="Resources/sound/Renma_Skill 1_Hit 1" type="mp3" />
+    <file name="Resources/sound/Renma_Skill 1_Hit" type="mp3" />
+    <file name="Resources/sound/Renma_Skill 2" type="mp3" />
+    <file name="Resources/sound/Renma_Skill 2_Hit 1" type="mp3" />
+    <file name="Resources/sound/Renma_Skill 2_Hit" type="mp3" />
+    <file name="Resources/sound/Renma_Skill 2_Hit2" type="mp3" />
+    <file name="Resources/sound/Renma_Skill 2_Hit3" type="mp3" />
+    <file name="Resources/sound/Renma_Skill 3" type="mp3" />
+    <file name="Resources/sound/Renma_Skill 4" type="mp3" />
+    <file name="Resources/sound/sakuraarea 1" type="mp3" />
+    <file name="Resources/sound/sakuraarea" type="mp3" />
+    <file name="Resources/sound/sakuraattack 1" type="mp3" />
+    <file name="Resources/sound/sakuraattack" type="mp3" />
+    <file name="Resources/sound/sakuraline 1" type="mp3" />
+    <file name="Resources/sound/sakuraline" type="mp3" />
+    <file name="Resources/sound/Shihunzhe_Attack 1" type="mp3" />
+    <file name="Resources/sound/Shihunzhe_Attack" type="mp3" />
+    <file name="Resources/sound/Shihunzhe_Skill 1" type="mp3" />
+    <file name="Resources/sound/Shihunzhe_Skill 2" type="mp3" />
+    <file name="Resources/sound/Shihunzhe_Skill 3" type="mp3" />
+    <file name="Resources/sound/Shihunzhe_Skill 4" type="mp3" />
+    <file name="Resources/sound/shitousuilie3" type="mp3" />
+    <file name="Resources/sound/shitousuilie4" type="mp3" />
+    <file name="Resources/sound/skull 1" type="mp3" />
+    <file name="Resources/sound/skull" type="mp3" />
+    <file name="Resources/sound/slash 1" type="mp3" />
+    <file name="Resources/sound/slash" type="mp3" />
+    <file name="Resources/sound/staffdark 1" type="mp3" />
+    <file name="Resources/sound/staffdark" type="mp3" />
+    <file name="Resources/sound/stonehit 1" type="mp3" />
+    <file name="Resources/sound/stonehit" type="mp3" />
+    <file name="Resources/sound/suolian 1" type="mp3" />
+    <file name="Resources/sound/suolian" type="mp3" />
+    <file name="Resources/sound/Taiyushen_Skill 1" type="mp3" />
+    <file name="Resources/sound/Taiyushen_Skill 2" type="mp3" />
+    <file name="Resources/sound/Taiyushen_Skill 3" type="mp3" />
+    <file name="Resources/sound/Taiyushen_Skill 4" type="mp3" />
+    <file name="Resources/sound/Tanshigui_Attack 1" type="mp3" />
+    <file name="Resources/sound/Tanshigui_Attack" type="mp3" />
+    <file name="Resources/sound/Tanshigui_Skill 1" type="mp3" />
+    <file name="Resources/sound/Tanshigui_Skill 2" type="mp3" />
+    <file name="Resources/sound/Tanshigui_Skill 3" type="mp3" />
+    <file name="Resources/sound/Tanshigui_Skill 4" type="mp3" />
+    <file name="Resources/sound/thunder 1" type="mp3" />
+    <file name="Resources/sound/thunder" type="mp3" />
+    <file name="Resources/sound/thunderattack 1" type="mp3" />
+    <file name="Resources/sound/thunderattack" type="mp3" />
+    <file name="Resources/sound/Txifu 1" type="mp3" />
+    <file name="Resources/sound/Txifu" type="mp3" />
+    <file name="Resources/sound/wanglingjianta 1" type="mp3" />
+    <file name="Resources/sound/wanglingjianta" type="mp3" />
+    <file name="Resources/sound/wanglingJ_Attack 1" type="mp3" />
+    <file name="Resources/sound/wanglingJ_Attack" type="mp3" />
+    <file name="Resources/sound/Wenyiwushi_Attack 1" type="mp3" />
+    <file name="Resources/sound/Wenyiwushi_Attack" type="mp3" />
+    <file name="Resources/sound/Wenyiwushi_Skill 1" type="mp3" />
+    <file name="Resources/sound/Wenyiwushi_Skill 1_hit 1" type="mp3" />
+    <file name="Resources/sound/Wenyiwushi_Skill 1_hit" type="mp3" />
+    <file name="Resources/sound/Wenyiwushi_Skill 1_hit1" type="mp3" />
+    <file name="Resources/sound/Wenyiwushi_Skill 1_hit2" type="mp3" />
+    <file name="Resources/sound/Wenyiwushi_Skill 1_hit3" type="mp3" />
+    <file name="Resources/sound/Wenyiwushi_Skill 1_hit4" type="mp3" />
+    <file name="Resources/sound/Wenyiwushi_Skill 2" type="mp3" />
+    <file name="Resources/sound/Wenyiwushi_Skill 2_hit 1" type="mp3" />
+    <file name="Resources/sound/Wenyiwushi_Skill 2_hit" type="mp3" />
+    <file name="Resources/sound/Xiong5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Xiong5_Attack" type="mp3" />
+    <file name="Resources/sound/Xiong5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Xiong5_Skill 1_hit 1" type="mp3" />
+    <file name="Resources/sound/Xiong5_Skill 1_hit" type="mp3" />
+    <file name="Resources/sound/Xiong5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Xiong5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Xiong5_Skill 4" type="mp3" />
+    <file name="Resources/sound/xiong6" type="mp3" />
+    <file name="Resources/sound/xiong7" type="mp3" />
+    <file name="Resources/sound/Xiyiren5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Xiyiren5_Attack" type="mp3" />
+    <file name="Resources/sound/Xiyiren5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Xiyiren5_Skill 1_hit 1" type="mp3" />
+    <file name="Resources/sound/Xiyiren5_Skill 1_hit" type="mp3" />
+    <file name="Resources/sound/Xiyiren5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Xiyiren5_Skill 2_hit 1" type="mp3" />
+    <file name="Resources/sound/Xiyiren5_Skill 2_hit" type="mp3" />
+    <file name="Resources/sound/Xiyiren5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Xiyiren5_Skill 4" type="mp3" />
+    <file name="Resources/sound/Yanmo5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Yanmo5_Attack" type="mp3" />
+    <file name="Resources/sound/Yanmo5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Yanmo5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Yanmo5_Skill 2_hit 1" type="mp3" />
+    <file name="Resources/sound/Yanmo5_Skill 2_hit" type="mp3" />
+    <file name="Resources/sound/Yanmo5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Yanmo5_Skill 4" type="mp3" />
+    <file name="Resources/sound/Yelang5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Yelang5_Attack" type="mp3" />
+    <file name="Resources/sound/Yelang5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Yelang5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Yelang5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Yelang5_Skill 4" type="mp3" />
+    <file name="Resources/sound/Yiliaoyuanren5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Yiliaoyuanren5_Attack" type="mp3" />
+    <file name="Resources/sound/Yiliaoyuanren5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Yiliaoyuanren5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Yiliaoyuanren5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Yiliaoyuanren5_Skill 4" type="mp3" />
+    <file name="Resources/sound/yishan 1" type="mp3" />
+    <file name="Resources/sound/yishan" type="mp3" />
+    <file name="Resources/sound/Yuren5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Yuren5_Attack" type="mp3" />
+    <file name="Resources/sound/Yuren5_be attacked 1" type="mp3" />
+    <file name="Resources/sound/Yuren5_be attacked" type="mp3" />
+    <file name="Resources/sound/Yuren5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Yuren5_Skill 1_be attacked 1" type="mp3" />
+    <file name="Resources/sound/Yuren5_Skill 1_be attacked" type="mp3" />
+    <file name="Resources/sound/Yuren5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Yuren5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Yuren5_Skill 4" type="mp3" />
+    <file name="Resources/sound/Zhizhu5_Attack 1" type="mp3" />
+    <file name="Resources/sound/Zhizhu5_Attack" type="mp3" />
+    <file name="Resources/sound/Zhizhu5_Skill 1" type="mp3" />
+    <file name="Resources/sound/Zhizhu5_Skill 1_hit 1" type="mp3" />
+    <file name="Resources/sound/Zhizhu5_Skill 1_hit" type="mp3" />
+    <file name="Resources/sound/Zhizhu5_Skill 2" type="mp3" />
+    <file name="Resources/sound/Zhizhu5_Skill 2_hit 1" type="mp3" />
+    <file name="Resources/sound/Zhizhu5_Skill 2_hit" type="mp3" />
+    <file name="Resources/sound/Zhizhu5_Skill 3" type="mp3" />
+    <file name="Resources/sound/Zhizhu5_Skill 4" type="mp3" />
+  </Resources>
+  <Level>
+    <file name="Scenes/pvp_002" type="unity" />
+    <file name="Scenes/pvp_004" type="unity" />
+    <file name="Scenes/Pvp_Login" type="unity" />
+  </Level>
+</AllResources>
