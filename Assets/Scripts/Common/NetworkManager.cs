@@ -384,7 +384,7 @@ namespace BlGame.Network
                         msgName = ((GCToSS.MsgNum)n32MsgID).ToString();
                     }
 
-                    using (System.IO.StreamWriter sw = new System.IO.StreamWriter(@"E:\Log.txt", true))
+                    using (System.IO.StreamWriter sw = new System.IO.StreamWriter(@".\Log.txt", true))
                     {
                         sw.WriteLine(Time.time + "   发送消息：\t" + n32MsgID + "\t" + msgName);
                     }
@@ -515,7 +515,7 @@ namespace BlGame.Network
                         msgName = ((GSToGC.MsgID)type).ToString();
                     }
 
-                   using (System.IO.StreamWriter sw = new System.IO.StreamWriter(@"E:\Log.txt", true))
+                   using (System.IO.StreamWriter sw = new System.IO.StreamWriter(@".\Log.txt", true))
                    {
                        sw.WriteLine(Time.time + "  收到消息：\t" + type + "\t" + msgName);
                     }
