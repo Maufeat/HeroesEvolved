@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <languages>
-  <English>
+  <French>
     <string name="lbl_username">Nom de compte</string>
     <string name="lbl_password">mot de pass</string>
-  </English>
+  </French>
 </languages>
