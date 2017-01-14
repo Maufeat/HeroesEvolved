@@ -17,7 +17,6 @@ namespace BlGame.Ctrl
         public void Enter()
         {
             EventCenter.Broadcast(EGameEvent.eGameEvent_LoginEnter);
-
             SdkLink();
         }
 

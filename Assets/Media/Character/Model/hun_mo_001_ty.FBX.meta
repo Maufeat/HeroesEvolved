@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: b40ecd8c7443cb946b3378489ab7974e
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
     100002: hun_mo_001_ty
@@ -55,6 +55,46 @@ ModelImporter:
     100098: CATRigSpine1
     100100: CATRigSpine2
     100102: Character001
+    100104: "CATRigHub002\u9AA8\u9ABC001"
+    100106: "CATRigHub002\u9AA8\u9ABC001\u9AA8\u9ABC001"
+    100108: "CATRigL\u624B\u81C21"
+    100110: "CATRigL\u624B\u81C22"
+    100112: "CATRigL\u624B\u81C2Collarbone"
+    100114: "CATRigL\u624B\u81C2Palm"
+    100116: "CATRigL\u624B\u81C2\u624B\u630711"
+    100118: "CATRigL\u624B\u81C2\u624B\u630712"
+    100120: "CATRigL\u624B\u81C2\u624B\u630713"
+    100122: "CATRigL\u624B\u81C2\u624B\u630721"
+    100124: "CATRigL\u624B\u81C2\u624B\u630722"
+    100126: "CATRigL\u624B\u81C2\u624B\u630723"
+    100128: "CATRigL\u624B\u81C2\u624B\u630731"
+    100130: "CATRigL\u624B\u81C2\u624B\u630732"
+    100132: "CATRigL\u624B\u81C2\u624B\u630733"
+    100134: "CATRigL\u624B\u81C2\u624B\u630741"
+    100136: "CATRigL\u624B\u81C2\u624B\u630742"
+    100138: "CATRigL\u624B\u81C2\u624B\u630743"
+    100140: "CATRigL\u624B\u81C2\u624B\u630751"
+    100142: "CATRigL\u624B\u81C2\u624B\u630752"
+    100144: "CATRigL\u624B\u81C2\u624B\u630753"
+    100146: "CATRigR\u624B\u81C21"
+    100148: "CATRigR\u624B\u81C22"
+    100150: "CATRigR\u624B\u81C2Collarbone"
+    100152: "CATRigR\u624B\u81C2Palm"
+    100154: "CATRigR\u624B\u81C2\u624B\u630711"
+    100156: "CATRigR\u624B\u81C2\u624B\u630712"
+    100158: "CATRigR\u624B\u81C2\u624B\u630713"
+    100160: "CATRigR\u624B\u81C2\u624B\u630721"
+    100162: "CATRigR\u624B\u81C2\u624B\u630722"
+    100164: "CATRigR\u624B\u81C2\u624B\u630723"
+    100166: "CATRigR\u624B\u81C2\u624B\u630731"
+    100168: "CATRigR\u624B\u81C2\u624B\u630732"
+    100170: "CATRigR\u624B\u81C2\u624B\u630733"
+    100172: "CATRigR\u624B\u81C2\u624B\u630741"
+    100174: "CATRigR\u624B\u81C2\u624B\u630742"
+    100176: "CATRigR\u624B\u81C2\u624B\u630743"
+    100178: "CATRigR\u624B\u81C2\u624B\u630751"
+    100180: "CATRigR\u624B\u81C2\u624B\u630752"
+    100182: "CATRigR\u624B\u81C2\u624B\u630753"
     400000: //RootNode
     400002: hun_mo_001_ty
     400004: Object002
@@ -107,6 +147,46 @@ ModelImporter:
     400098: CATRigSpine1
     400100: CATRigSpine2
     400102: Character001
+    400104: "CATRigHub002\u9AA8\u9ABC001"
+    400106: "CATRigHub002\u9AA8\u9ABC001\u9AA8\u9ABC001"
+    400108: "CATRigL\u624B\u81C21"
+    400110: "CATRigL\u624B\u81C22"
+    400112: "CATRigL\u624B\u81C2Collarbone"
+    400114: "CATRigL\u624B\u81C2Palm"
+    400116: "CATRigL\u624B\u81C2\u624B\u630711"
+    400118: "CATRigL\u624B\u81C2\u624B\u630712"
+    400120: "CATRigL\u624B\u81C2\u624B\u630713"
+    400122: "CATRigL\u624B\u81C2\u624B\u630721"
+    400124: "CATRigL\u624B\u81C2\u624B\u630722"
+    400126: "CATRigL\u624B\u81C2\u624B\u630723"
+    400128: "CATRigL\u624B\u81C2\u624B\u630731"
+    400130: "CATRigL\u624B\u81C2\u624B\u630732"
+    400132: "CATRigL\u624B\u81C2\u624B\u630733"
+    400134: "CATRigL\u624B\u81C2\u624B\u630741"
+    400136: "CATRigL\u624B\u81C2\u624B\u630742"
+    400138: "CATRigL\u624B\u81C2\u624B\u630743"
+    400140: "CATRigL\u624B\u81C2\u624B\u630751"
+    400142: "CATRigL\u624B\u81C2\u624B\u630752"
+    400144: "CATRigL\u624B\u81C2\u624B\u630753"
+    400146: "CATRigR\u624B\u81C21"
+    400148: "CATRigR\u624B\u81C22"
+    400150: "CATRigR\u624B\u81C2Collarbone"
+    400152: "CATRigR\u624B\u81C2Palm"
+    400154: "CATRigR\u624B\u81C2\u624B\u630711"
+    400156: "CATRigR\u624B\u81C2\u624B\u630712"
+    400158: "CATRigR\u624B\u81C2\u624B\u630713"
+    400160: "CATRigR\u624B\u81C2\u624B\u630721"
+    400162: "CATRigR\u624B\u81C2\u624B\u630722"
+    400164: "CATRigR\u624B\u81C2\u624B\u630723"
+    400166: "CATRigR\u624B\u81C2\u624B\u630731"
+    400168: "CATRigR\u624B\u81C2\u624B\u630732"
+    400170: "CATRigR\u624B\u81C2\u624B\u630733"
+    400172: "CATRigR\u624B\u81C2\u624B\u630741"
+    400174: "CATRigR\u624B\u81C2\u624B\u630742"
+    400176: "CATRigR\u624B\u81C2\u624B\u630743"
+    400178: "CATRigR\u624B\u81C2\u624B\u630751"
+    400180: "CATRigR\u624B\u81C2\u624B\u630752"
+    400182: "CATRigR\u624B\u81C2\u624B\u630753"
     2300000: hun_mo_001_ty
     2300002: Object002
     2300004: CATRigHub001
@@ -263,12 +343,17 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 2
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations:
@@ -282,6 +367,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -400,6 +486,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: free
       takeName: Take 001
@@ -410,6 +497,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -528,6 +616,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: idle
       takeName: Take 001
@@ -538,6 +627,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -656,6 +746,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: attack
       takeName: Take 001
@@ -666,6 +757,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -784,6 +876,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: attack2
       takeName: Take 001
@@ -794,6 +887,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -912,6 +1006,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: skill
       takeName: Take 001
@@ -922,6 +1017,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1040,6 +1136,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: skill2
       takeName: Take 001
@@ -1050,6 +1147,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1168,6 +1266,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: death
       takeName: Take 001
@@ -1178,6 +1277,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1296,10 +1396,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 0.01
     meshCompression: 3
     addColliders: 0
     importBlendShapes: 1
@@ -1307,30 +1408,39 @@ ModelImporter:
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
+  humanoidOversampling: 1
   additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

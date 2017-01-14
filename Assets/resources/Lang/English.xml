@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languages>
+  <English>
+    <string name="lbl_username">Username</string>
+    <string name="lbl_password">Password</string>
+  </English>
+</languages>

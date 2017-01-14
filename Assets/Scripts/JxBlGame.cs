@@ -26,6 +26,7 @@ using BlGame.View;
 using BlGame;
 using BlGame.Ctrl;
 using BlGame.Model;
+using System.IO;
 
 public class JxBlGame : MonoBehaviour {
 
@@ -48,8 +49,14 @@ public class JxBlGame : MonoBehaviour {
     public List<string> ipList = new List<string>();
 
   //  public List<string> ServerIpList = new List<string>();
-    public string LoginServerAdress = "127.0.0.1";
+    public string LoginServerAdress { get { return "104.168.222.21"; } set { } }
     public int LoginServerPort = 49996;
+
+    public LanguageManager lang
+    {
+        get;
+        private set;
+    }
 
     public BlGame.AudioManager AudioPlay
     {
@@ -68,13 +75,16 @@ public class JxBlGame : MonoBehaviour {
 		DontDestroyOnLoad (this.gameObject);
         Application.runInBackground = true;
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
-
+        string currentLanguage = Application.systemLanguage.ToString();
+        string path = Path.Combine(Application.dataPath + "/Resources/Lang", currentLanguage + ".xml");
+        lang = new LanguageManager(path, currentLanguage, false);
         WindowManager.Instance.ChangeScenseToLogin(EScenesType.EST_None);
     }
 
 	// Use this for initialization
-	void Start () {
-		new PlayerManager ();
+	void Start ()
+    {
+        new PlayerManager ();
 		new NpcManager(); 
         NetworkManager.Instance.Close();
 
