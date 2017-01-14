@@ -3,7 +3,7 @@
 	<info id="1001">
 		<centerpoint>22.5;60.5;140</centerpoint>
 		<targetpoint>29;60.5;146</targetpoint>
-		<text>点击按钮完成吸附任务进入下一步。</text>
+		<text>Click the button to complete the adsorption task to the next step.</text>
 		<time>5</time>
 		<path>Guide/Tips_Window1</path>
 		<count>3</count>
@@ -11,7 +11,7 @@
 	<info id="1002">
 		<centerpoint>97.5;60.5;112.5</centerpoint>
 		<targetpoint>110;60.5;124</targetpoint>
-		<text>请先完成任务后进入下一步。</text>
+		<text>Please complete the task before proceeding to the next step.</text>
 		<time>5</time>
 		<path>Guide/Tips_Window1</path>
 		<count>3</count>
@@ -19,7 +19,7 @@
 	<info id="1003">
 		<centerpoint>22.5;60.5;140</centerpoint>
 		<targetpoint>29;60.5;146</targetpoint>
-		<text>请先完成任务后进入下一步。</text>
+		<text>Please complete the task before proceeding to the next step.</text>
 		<time>5</time>
 		<path>Guide/Tips_Window1</path>
 		<count>3</count>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OtherItemCfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<info ID="130001">
-		<Name>双倍金币卡(1天)</Name>
+		<Name>Double gold card(1 day)</Name>
 		<EffectID>1001</EffectID>
 		<EffectValue>100</EffectValue>
 		<ConsumeType>0</ConsumeType>
@@ -12,7 +12,7 @@
 		<Icon>11</Icon>
 	</info>
 	<info ID="130002">
-		<Name>双倍经验卡(1天)</Name>
+		<Name>Double experience card(1 day)</Name>
 		<EffectID>1002</EffectID>
 		<EffectValue>100</EffectValue>
 		<ConsumeType>0</ConsumeType>
@@ -111,7 +111,7 @@
 		<Icon>6</Icon>
 	</info>
 	<info ID="130011">
-		<Name>符文页</Name>
+		<Name>Rune page</Name>
 		<EffectID>1006</EffectID>
 		<EffectValue>1</EffectValue>
 		<ConsumeType>2</ConsumeType>

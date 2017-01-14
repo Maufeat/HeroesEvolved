@@ -7,15 +7,15 @@
 		<EffectDescribe>战斗结算经验+{0}%</EffectDescribe>
 	</info>
 	<info EffectID="1003">
-		<EffectDescribe>解锁全部英雄({0}天)</EffectDescribe>
+		<EffectDescribe>Unlock all heroes({0} days)</EffectDescribe>
 	</info>
 	<info EffectID="1004">
-		<EffectDescribe>解锁一个英雄({0}天)</EffectDescribe>
+		<EffectDescribe>Unlock a hero({0} days)</EffectDescribe>
 	</info>
 	<info EffectID="1005">
-		<EffectDescribe>用于洗炼{0}级及以下等级的符文</EffectDescribe>
+		<EffectDescribe>Rune {0} and below for the grade of runes</EffectDescribe>
 	</info>
 	<info EffectID="1006">
-		<EffectDescribe>增加{0}个符文页</EffectDescribe>
+		<EffectDescribe>Add {0} runes</EffectDescribe>
 	</info>
 </OtherItemCfg_Describe>
