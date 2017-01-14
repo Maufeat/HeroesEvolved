@@ -6,147 +6,147 @@
 		<type>1</type>
 	</info>
 	<info id="10">
-		<content>请选择英雄</content>
+		<content>Please select a hero</content>
 		<effect>5</effect>
 		<type>1</type>
 	</info>
 	<info id="-12">
-		<content>目标已死亡</content>
+		<content>The target is dead</content>
 		<effect>1</effect>
 		<type>1</type>
 	</info>
 	<info id="-13">
-		<content>无法对友方单位施放</content>
+		<content>Can not cast to friendly units</content>
 		<effect>1</effect>
 		<type>1</type>
 	</info>
 	<info id="-14">
-		<content>无效的目标</content>
+		<content>Invalid destination</content>
 		<effect>1</effect>
 		<type>1</type>
 	</info>
 	<info id="-15">
-		<content>怒气不足</content>
+		<content>Not enough rage</content>
 		<effect>1</effect>
 		<type>1</type>
 	</info>
 	<info id="-16">
-		<content>发送内容不能为空</content>
+		<content>Sending can not be empty</content>
 		<effect>4</effect>
 		<type>1</type>
 	</info>
 	<info id="-65476">
-		<content>帐号不存在</content>
+		<content>Account does not exist</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-65492">
-		<content>错误的消息号</content>
+		<content>Wrong message number</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130751">
-		<content>已领取</content>
+		<content>Received</content>
 		<effect>1</effect>
 		<type>1</type>
 	</info>
 	<info id="-130752">
-		<content>邮件已过期</content>
+		<content>The message has expired</content>
 		<effect>1</effect>
 		<type>1</type>
 	</info>
 	<info id="-130756">
-		<content>该账号正在游戏中</content>
+		<content>The account is in the game</content>
 		<effect>1</effect>
 		<type>1</type>
 	</info>
 	<info id="-130762">
-		<content>队友还在游戏中</content>
+		<content>Teammates are still in the game</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130766">
-		<content>加入失败</content>
+		<content>Failed to join</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130767">
-		<content>游戏已开始</content>
+		<content>The game has started</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130771">
-		<content>钻石不足</content>
+		<content>Not enough diamonds</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130773">
-		<content>对方好友已满</content>
+		<content>Your friend is full :(</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130774">
-		<content>添加成功</content>
+		<content>Successfully added</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130775">
-		<content>请求已发送</content>
+		<content>Request sent</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130776">
-		<content>玩家正在战斗中</content>
+		<content>Players are fighting</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130777">
-		<content>用户不在线或不存在</content>
+		<content>User is not online or does not exist</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130788">
-		<content>请输入密码</content>
+		<content>Please enter a password</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130804">
-		<content>尚未拥有该英雄</content>
+		<content>Not yet owned by the hero</content>
 		<effect>5</effect>
 		<type>1</type>
 	</info>
 	<info id="-130812">
-		<content>死亡时不能购买该物品</content>
+		<content>Can not purchase the item at death</content>
 		<effect>1</effect>
 		<type>1</type>
 	</info>
 	<info id="-130813">
-		<content>死亡时无法出售物品</content>
+		<content>When the death can not sell items</content>
 		<effect>1</effect>
 		<type>1</type>
 	</info>
 	<info id="-130814">
-		<content>请勿重复发送</content>
+		<content>Do not repeat</content>
 		<effect>1</effect>
 		<type>1</type>
 	</info>
 	<info id="-130820">
-		<content>对方已在您的黑名单列表中</content>
+		<content>The other party is already in your blacklist</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130821">
-		<content>对方已在您的好友列表中</content>
+		<content>The person is already in your Friends list</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130822">
-		<content>黑名单已满</content>
+		<content>Blacklist is full</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
 	<info id="-130823">
-		<content>好友列表已满</content>
+		<content>Friends list is full</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>
@@ -632,7 +632,7 @@
 		<type>1</type>
 	</info>
 	<info id="10043">
-		<content>敬请期待</content>
+		<content>Stay tuned</content>
 		<effect>3</effect>
 		<type>1</type>
 	</info>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <RuneCfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<info un32ID="120101">
-		<RuneName>一级物攻符文</RuneName>
+		<RuneName>PD Rune</RuneName>
 		<un8Level>1</un8Level>
 		<un8EffectID>5</un8EffectID>
 		<n32EffectVal>0.4</n32EffectVal>
@@ -11,11 +11,11 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点物理攻击</Description>
+		<Description>+{0} physical damage</Description>
 		<Icon>1401</Icon>
 	</info>
 	<info un32ID="120102">
-		<RuneName>一级攻速符文</RuneName>
+		<RuneName>AS Rune</RuneName>
 		<un8Level>1</un8Level>
 		<un8EffectID>10</un8EffectID>
 		<n32EffectVal>0</n32EffectVal>
@@ -25,11 +25,11 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{1}%攻击速度</Description>
+		<Description>+{1}% attack speed</Description>
 		<Icon>1201</Icon>
 	</info>
 	<info un32ID="120103">
-		<RuneName>一级狂暴符文</RuneName>
+		<RuneName>Crit Rune</RuneName>
 		<un8Level>1</un8Level>
 		<un8EffectID>24</un8EffectID>
 		<n32EffectVal>4.1</n32EffectVal>
@@ -39,11 +39,11 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}%暴击伤害</Description>
+		<Description>+{0}% crit damage</Description>
 		<Icon>201</Icon>
 	</info>
 	<info un32ID="120104">
-		<RuneName>一级暴击符文</RuneName>
+		<RuneName>Crit chance Rune</RuneName>
 		<un8Level>1</un8Level>
 		<un8EffectID>23</un8EffectID>
 		<n32EffectVal>1.9</n32EffectVal>
@@ -53,7 +53,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}%暴击几率</Description>
+		<Description>+{0}% crit chance</Description>
 		<Icon>301</Icon>
 	</info>
 	<info un32ID="120105">
@@ -67,7 +67,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点魔法攻击</Description>
+		<Description>+{0} magic damage</Description>
 		<Icon>501</Icon>
 	</info>
 	<info un32ID="120106">
@@ -81,7 +81,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点物理防御</Description>
+		<Description>+{0} armor</Description>
 		<Icon>1301</Icon>
 	</info>
 	<info un32ID="120107">
@@ -95,7 +95,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点魔法防御</Description>
+		<Description>+{0} magic resist</Description>
 		<Icon>401</Icon>
 	</info>
 	<info un32ID="120108">
@@ -109,7 +109,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点生命值</Description>
+		<Description>+{0} HP</Description>
 		<Icon>1101</Icon>
 	</info>
 	<info un32ID="120109">
@@ -123,7 +123,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{1}%生命值</Description>
+		<Description>+{1}% HP</Description>
 		<Icon>901</Icon>
 	</info>
 	<info un32ID="120110">
@@ -137,7 +137,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>0</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点/秒生命回复</Description>
+		<Description>+{0} HP/s</Description>
 		<Icon>1001</Icon>
 	</info>
 	<info un32ID="120111">
@@ -151,7 +151,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点魔法值</Description>
+		<Description>+{0} MP</Description>
 		<Icon>801</Icon>
 	</info>
 	<info un32ID="120112">
@@ -165,7 +165,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点/秒魔法回复</Description>
+		<Description>+{0} MP/s</Description>
 		<Icon>701</Icon>
 	</info>
 	<info un32ID="120113">
@@ -179,7 +179,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{1}%魔法回复</Description>
+		<Description>+{1}% Magic reply</Description>
 		<Icon>601</Icon>
 	</info>
 	<info un32ID="120114">
@@ -193,7 +193,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点/秒CP回复</Description>
+		<Description>+{0} CP/s</Description>
 		<Icon>101</Icon>
 	</info>
 	<info un32ID="120115">
@@ -207,7 +207,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>0</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点移动速度</Description>
+		<Description>+{0} move speed</Description>
 		<Icon>0</Icon>
 	</info>
 	<info un32ID="120201">
@@ -221,7 +221,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120101</n32ComposedSubID>
-		<Description>+{0}点物理攻击</Description>
+		<Description>+{0} physical damage</Description>
 		<Icon>1402</Icon>
 	</info>
 	<info un32ID="120202">
@@ -235,7 +235,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120102</n32ComposedSubID>
-		<Description>+{1}%攻击速度</Description>
+		<Description>+{1}% attack speed</Description>
 		<Icon>1202</Icon>
 	</info>
 	<info un32ID="120203">
@@ -249,7 +249,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120103</n32ComposedSubID>
-		<Description>+{0}%暴击伤害</Description>
+		<Description>+{0}% crit damage</Description>
 		<Icon>202</Icon>
 	</info>
 	<info un32ID="120204">
@@ -263,7 +263,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120104</n32ComposedSubID>
-		<Description>+{0}%暴击几率</Description>
+		<Description>+{0}% crit chance</Description>
 		<Icon>302</Icon>
 	</info>
 	<info un32ID="120205">
@@ -277,7 +277,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120105</n32ComposedSubID>
-		<Description>+{0}点魔法攻击</Description>
+		<Description>+{0} magic damage</Description>
 		<Icon>502</Icon>
 	</info>
 	<info un32ID="120206">
@@ -291,7 +291,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120106</n32ComposedSubID>
-		<Description>+{0}点物理防御</Description>
+		<Description>+{0} armor</Description>
 		<Icon>1302</Icon>
 	</info>
 	<info un32ID="120207">
@@ -305,7 +305,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120107</n32ComposedSubID>
-		<Description>+{0}点魔法防御</Description>
+		<Description>+{0} magic resist</Description>
 		<Icon>402</Icon>
 	</info>
 	<info un32ID="120208">
@@ -319,7 +319,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120108</n32ComposedSubID>
-		<Description>+{0}点生命值</Description>
+		<Description>+{0} HP</Description>
 		<Icon>1102</Icon>
 	</info>
 	<info un32ID="120209">
@@ -333,7 +333,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120109</n32ComposedSubID>
-		<Description>+{1}%生命值</Description>
+		<Description>+{1}% HP</Description>
 		<Icon>902</Icon>
 	</info>
 	<info un32ID="120210">
@@ -347,7 +347,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120110</n32ComposedSubID>
-		<Description>+{0}点/秒生命回复</Description>
+		<Description>+{0} HP/s</Description>
 		<Icon>1002</Icon>
 	</info>
 	<info un32ID="120211">
@@ -361,7 +361,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120111</n32ComposedSubID>
-		<Description>+{0}点魔法值</Description>
+		<Description>+{0} MP</Description>
 		<Icon>802</Icon>
 	</info>
 	<info un32ID="120212">
@@ -375,7 +375,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120112</n32ComposedSubID>
-		<Description>+{0}点/秒魔法回复</Description>
+		<Description>+{0} MP/s</Description>
 		<Icon>702</Icon>
 	</info>
 	<info un32ID="120213">
@@ -389,7 +389,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120113</n32ComposedSubID>
-		<Description>+{1}%魔法回复</Description>
+		<Description>+{1}% magic reply</Description>
 		<Icon>602</Icon>
 	</info>
 	<info un32ID="120214">
@@ -403,7 +403,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120114</n32ComposedSubID>
-		<Description>+{0}点/秒CP回复</Description>
+		<Description>+{0} CP/s</Description>
 		<Icon>102</Icon>
 	</info>
 	<info un32ID="120215">
@@ -417,7 +417,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>0</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点移动速度</Description>
+		<Description>+{0} move speed</Description>
 		<Icon>0</Icon>
 	</info>
 	<info un32ID="120301">
@@ -431,7 +431,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120201</n32ComposedSubID>
-		<Description>+{0}点物理攻击</Description>
+		<Description>+{0} physical damage</Description>
 		<Icon>1403</Icon>
 	</info>
 	<info un32ID="120302">
@@ -445,7 +445,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120202</n32ComposedSubID>
-		<Description>+{1}%攻击速度</Description>
+		<Description>+{1}% attack speed</Description>
 		<Icon>1203</Icon>
 	</info>
 	<info un32ID="120303">
@@ -459,7 +459,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120203</n32ComposedSubID>
-		<Description>+{0}%暴击伤害</Description>
+		<Description>+{0}% crit damage</Description>
 		<Icon>203</Icon>
 	</info>
 	<info un32ID="120304">
@@ -473,7 +473,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120204</n32ComposedSubID>
-		<Description>+{0}%暴击几率</Description>
+		<Description>+{0}% crit chance</Description>
 		<Icon>303</Icon>
 	</info>
 	<info un32ID="120305">
@@ -487,7 +487,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120205</n32ComposedSubID>
-		<Description>+{0}点魔法攻击</Description>
+		<Description>+{0} magic damage</Description>
 		<Icon>503</Icon>
 	</info>
 	<info un32ID="120306">
@@ -501,7 +501,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120206</n32ComposedSubID>
-		<Description>+{0}点物理防御</Description>
+		<Description>+{0} armor</Description>
 		<Icon>1303</Icon>
 	</info>
 	<info un32ID="120307">
@@ -515,7 +515,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120207</n32ComposedSubID>
-		<Description>+{0}点魔法防御</Description>
+		<Description>+{0} magic resist</Description>
 		<Icon>403</Icon>
 	</info>
 	<info un32ID="120308">
@@ -529,7 +529,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120208</n32ComposedSubID>
-		<Description>+{0}点生命值</Description>
+		<Description>+{0} HP</Description>
 		<Icon>1103</Icon>
 	</info>
 	<info un32ID="120309">
@@ -543,7 +543,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120209</n32ComposedSubID>
-		<Description>+{1}%生命值</Description>
+		<Description>+{1}% HP</Description>
 		<Icon>903</Icon>
 	</info>
 	<info un32ID="120310">
@@ -557,7 +557,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120210</n32ComposedSubID>
-		<Description>+{0}点/秒生命回复</Description>
+		<Description>+{0} HP/s</Description>
 		<Icon>1003</Icon>
 	</info>
 	<info un32ID="120311">
@@ -571,7 +571,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120211</n32ComposedSubID>
-		<Description>+{0}点魔法值</Description>
+		<Description>+{0} MP</Description>
 		<Icon>803</Icon>
 	</info>
 	<info un32ID="120312">
@@ -585,7 +585,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120212</n32ComposedSubID>
-		<Description>+{0}点/秒魔法回复</Description>
+		<Description>+{0} MP/s</Description>
 		<Icon>703</Icon>
 	</info>
 	<info un32ID="120313">
@@ -599,7 +599,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120213</n32ComposedSubID>
-		<Description>+{1}%魔法回复</Description>
+		<Description>+{1}% magic reply</Description>
 		<Icon>603</Icon>
 	</info>
 	<info un32ID="120314">
@@ -613,7 +613,7 @@
 		<bIsShowInShop>1</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120214</n32ComposedSubID>
-		<Description>+{0}点/秒CP回复</Description>
+		<Description>+{0} CP/s</Description>
 		<Icon>103</Icon>
 	</info>
 	<info un32ID="120315">
@@ -627,7 +627,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>0</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点移动速度</Description>
+		<Description>+{0} move speed</Description>
 		<Icon>0</Icon>
 	</info>
 	<info un32ID="120401">
@@ -641,7 +641,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120301</n32ComposedSubID>
-		<Description>+{0}点物理攻击</Description>
+		<Description>+{0} physical damage</Description>
 		<Icon>1404</Icon>
 	</info>
 	<info un32ID="120402">
@@ -655,7 +655,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120302</n32ComposedSubID>
-		<Description>+{1}%攻击速度</Description>
+		<Description>+{1}% attack speed</Description>
 		<Icon>1204</Icon>
 	</info>
 	<info un32ID="120403">
@@ -669,7 +669,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120303</n32ComposedSubID>
-		<Description>+{0}%暴击伤害</Description>
+		<Description>+{0}% crit damage</Description>
 		<Icon>204</Icon>
 	</info>
 	<info un32ID="120404">
@@ -683,7 +683,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120304</n32ComposedSubID>
-		<Description>+{0}%暴击几率</Description>
+		<Description>+{0}% crit chance</Description>
 		<Icon>304</Icon>
 	</info>
 	<info un32ID="120405">
@@ -697,7 +697,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120305</n32ComposedSubID>
-		<Description>+{0}点魔法攻击</Description>
+		<Description>+{0} magic damage</Description>
 		<Icon>504</Icon>
 	</info>
 	<info un32ID="120406">
@@ -711,7 +711,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120306</n32ComposedSubID>
-		<Description>+{0}点物理防御</Description>
+		<Description>+{0} armor</Description>
 		<Icon>1304</Icon>
 	</info>
 	<info un32ID="120407">
@@ -725,7 +725,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120307</n32ComposedSubID>
-		<Description>+{0}点魔法防御</Description>
+		<Description>+{0} magic resist</Description>
 		<Icon>404</Icon>
 	</info>
 	<info un32ID="120408">
@@ -739,7 +739,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120308</n32ComposedSubID>
-		<Description>+{0}点生命值</Description>
+		<Description>+{0} HP</Description>
 		<Icon>1104</Icon>
 	</info>
 	<info un32ID="120409">
@@ -753,7 +753,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120309</n32ComposedSubID>
-		<Description>+{1}%生命值</Description>
+		<Description>+{1}% HP</Description>
 		<Icon>904</Icon>
 	</info>
 	<info un32ID="120410">
@@ -767,7 +767,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120310</n32ComposedSubID>
-		<Description>+{0}点/秒生命回复</Description>
+		<Description>+{0} HP/s</Description>
 		<Icon>1004</Icon>
 	</info>
 	<info un32ID="120411">
@@ -781,7 +781,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120311</n32ComposedSubID>
-		<Description>+{0}点魔法值</Description>
+		<Description>+{0} MP</Description>
 		<Icon>804</Icon>
 	</info>
 	<info un32ID="120412">
@@ -795,7 +795,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120312</n32ComposedSubID>
-		<Description>+{0}点/秒魔法回复</Description>
+		<Description>+{0} MP/s</Description>
 		<Icon>704</Icon>
 	</info>
 	<info un32ID="120413">
@@ -809,7 +809,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120313</n32ComposedSubID>
-		<Description>+{1}%魔法回复</Description>
+		<Description>+{1}% maigc reply</Description>
 		<Icon>604</Icon>
 	</info>
 	<info un32ID="120414">
@@ -823,7 +823,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120314</n32ComposedSubID>
-		<Description>+{0}点/秒CP回复</Description>
+		<Description>+{0} CP/s</Description>
 		<Icon>104</Icon>
 	</info>
 	<info un32ID="120415">
@@ -837,7 +837,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>0</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点移动速度</Description>
+		<Description>+{0} move speed</Description>
 		<Icon>0</Icon>
 	</info>
 	<info un32ID="120501">
@@ -851,7 +851,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120401</n32ComposedSubID>
-		<Description>+{0}点物理攻击</Description>
+		<Description>+{0} physical damage</Description>
 		<Icon>1405</Icon>
 	</info>
 	<info un32ID="120502">
@@ -865,7 +865,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120402</n32ComposedSubID>
-		<Description>+{1}%攻击速度</Description>
+		<Description>+{1}% attack speed</Description>
 		<Icon>1205</Icon>
 	</info>
 	<info un32ID="120503">
@@ -879,7 +879,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120403</n32ComposedSubID>
-		<Description>+{0}%暴击伤害</Description>
+		<Description>+{0}% crit damage</Description>
 		<Icon>205</Icon>
 	</info>
 	<info un32ID="120504">
@@ -893,7 +893,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120404</n32ComposedSubID>
-		<Description>+{0}%暴击几率</Description>
+		<Description>+{0}% crit chance</Description>
 		<Icon>305</Icon>
 	</info>
 	<info un32ID="120505">
@@ -907,7 +907,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120405</n32ComposedSubID>
-		<Description>+{0}点魔法攻击</Description>
+		<Description>+{0} magic damage</Description>
 		<Icon>505</Icon>
 	</info>
 	<info un32ID="120506">
@@ -921,7 +921,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120406</n32ComposedSubID>
-		<Description>+{0}点物理防御</Description>
+		<Description>+{0} armor</Description>
 		<Icon>1305</Icon>
 	</info>
 	<info un32ID="120507">
@@ -935,7 +935,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120407</n32ComposedSubID>
-		<Description>+{0}点魔法防御</Description>
+		<Description>+{0} magic resist</Description>
 		<Icon>405</Icon>
 	</info>
 	<info un32ID="120508">
@@ -949,7 +949,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120408</n32ComposedSubID>
-		<Description>+{0}点生命值</Description>
+		<Description>+{0} HP</Description>
 		<Icon>1105</Icon>
 	</info>
 	<info un32ID="120509">
@@ -963,7 +963,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120409</n32ComposedSubID>
-		<Description>+{1}%生命值</Description>
+		<Description>+{1}% HP</Description>
 		<Icon>905</Icon>
 	</info>
 	<info un32ID="120510">
@@ -977,7 +977,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120410</n32ComposedSubID>
-		<Description>+{0}点/秒生命回复</Description>
+		<Description>+{0} HP/s</Description>
 		<Icon>1005</Icon>
 	</info>
 	<info un32ID="120511">
@@ -991,7 +991,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120411</n32ComposedSubID>
-		<Description>+{0}点魔法值</Description>
+		<Description>+{0} MP</Description>
 		<Icon>805</Icon>
 	</info>
 	<info un32ID="120512">
@@ -1005,7 +1005,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120412</n32ComposedSubID>
-		<Description>+{0}点/秒魔法回复</Description>
+		<Description>+{0} MP/s</Description>
 		<Icon>705</Icon>
 	</info>
 	<info un32ID="120513">
@@ -1019,7 +1019,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120413</n32ComposedSubID>
-		<Description>+{1}%魔法回复</Description>
+		<Description>+{1}% magic reply</Description>
 		<Icon>605</Icon>
 	</info>
 	<info un32ID="120514">
@@ -1033,7 +1033,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>1</bIsCanRandomComposed>
 		<n32ComposedSubID>120414</n32ComposedSubID>
-		<Description>+{0}点/秒CP回复</Description>
+		<Description>+{0} CP/s</Description>
 		<Icon>105</Icon>
 	</info>
 	<info un32ID="120515">
@@ -1047,7 +1047,7 @@
 		<bIsShowInShop>0</bIsShowInShop>
 		<bIsCanRandomComposed>0</bIsCanRandomComposed>
 		<n32ComposedSubID>0</n32ComposedSubID>
-		<Description>+{0}点移动速度</Description>
+		<Description>+{0} move speed</Description>
 		<Icon>0</Icon>
 	</info>
 </RuneCfg>
