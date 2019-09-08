@@ -54,14 +54,14 @@ namespace BlGame.View
         protected override void InitWidget()
         {
             mLastObj = null;
-            CloseChat = mRoot.FindChild("CloseBtn").gameObject;
-            MsgInfo = mRoot.FindChild("ChatWindow/InputArea").GetComponent<UIInput>();
-            SendMsgInfo = mRoot.FindChild("ChatWindow/SendMSg").gameObject;
-            mChatTaskNameGrid = mRoot.FindChild("ChatList/Panel/Grid").GetComponent<UIGrid>();
-            TalkTable = mRoot.FindChild("ChatWindow/Scroll View/Table").GetComponent<UITable>();
-            ScrollView = mRoot.FindChild("ChatWindow/Scroll View").GetComponent<UIScrollView>();
-            ScrollBar = mRoot.FindChild("ChatWindow/Control - Simple Vertical Scroll Bar").GetComponent<UIScrollBar>();
-            ScrollMemBer = mRoot.FindChild("ChatList/Control - Simple Vertical Scroll Bar").GetComponent<UIScrollBar>();
+            CloseChat = mRoot.Find("CloseBtn").gameObject;
+            MsgInfo = mRoot.Find("ChatWindow/InputArea").GetComponent<UIInput>();
+            SendMsgInfo = mRoot.Find("ChatWindow/SendMSg").gameObject;
+            mChatTaskNameGrid = mRoot.Find("ChatList/Panel/Grid").GetComponent<UIGrid>();
+            TalkTable = mRoot.Find("ChatWindow/Scroll View/Table").GetComponent<UITable>();
+            ScrollView = mRoot.Find("ChatWindow/Scroll View").GetComponent<UIScrollView>();
+            ScrollBar = mRoot.Find("ChatWindow/Control - Simple Vertical Scroll Bar").GetComponent<UIScrollBar>();
+            ScrollMemBer = mRoot.Find("ChatList/Control - Simple Vertical Scroll Bar").GetComponent<UIScrollBar>();
             UIEventListener.Get(CloseChat).onClick += CloseChatPress;
             UIEventListener.Get(SendMsgInfo).onClick += SendChatPress;
             bool isTure = false;
@@ -136,9 +136,9 @@ namespace BlGame.View
                 obj.transform.localScale = Vector3.one;
 
                 ChatNameMember chat = new ChatNameMember();
-                chat.mNickName = obj.transform.FindChild("Name").GetComponent<UILabel>();
-                chat.mHighlight = obj.transform.FindChild("Highlight").gameObject;
-                chat.mTwinkle = obj.transform.FindChild("Twinkle").gameObject;
+                chat.mNickName = obj.transform.Find("Name").GetComponent<UILabel>();
+                chat.mHighlight = obj.transform.Find("Highlight").gameObject;
+                chat.mTwinkle = obj.transform.Find("Twinkle").gameObject;
                 chat.mNickName.text = friend.NiceName;
                 chat.sGUID = temp;
 
@@ -276,9 +276,9 @@ namespace BlGame.View
 
         void SetVib(string name, GameObject obj, string info, int head, bool isLoc)
         {
-            UILabel label1 = obj.transform.FindChild("Conversation1/Show/Label").GetComponent<UILabel>();
-            UISprite sprite1 = obj.transform.FindChild("Conversation1/Portrait/Head").GetComponent<UISprite>();
-            UISprite sprite2 = obj.transform.FindChild("Conversation1/Show/BG").GetComponent<UISprite>();
+            UILabel label1 = obj.transform.Find("Conversation1/Show/Label").GetComponent<UILabel>();
+            UISprite sprite1 = obj.transform.Find("Conversation1/Portrait/Head").GetComponent<UISprite>();
+            UISprite sprite2 = obj.transform.Find("Conversation1/Show/BG").GetComponent<UISprite>();
             BoxCollider bc = obj.transform.GetComponent<BoxCollider>();
             label1.transform.parent.parent.gameObject.SetActive(true);
             label1.text = info;

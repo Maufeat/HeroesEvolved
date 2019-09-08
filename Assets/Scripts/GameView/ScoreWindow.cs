@@ -44,22 +44,22 @@ namespace BlGame.View
             mWinTip = mRoot.Find("results/Win").GetComponent<UISprite>();
             mLossTip.gameObject.SetActive(false);
             mWinTip.gameObject.SetActive(false);
-            Transform tran = mRoot.FindChild("Player");
+            Transform tran = mRoot.Find("Player");
             int num = tran.childCount;
             mListPlayer.Clear();
             for (int i = 0; i < num; i++)
             {
-                Transform temp = tran.FindChild("Player" + (i + 1));
+                Transform temp = tran.Find("Player" + (i + 1));
                 mListPlayer.Add(new UIShowScoreInfo(temp));
             }
-            mReTurnBtn = mRoot.FindChild("BackButton").gameObject;
-            mHeadIcon = mRoot.FindChild("PlayerGet/Head").GetComponent<UISprite>();
-            mLevel = mRoot.FindChild("PlayerGet/EXP/Level").GetComponent<UILabel>();
-            mExpBar = mRoot.FindChild("PlayerGet/EXP/Bar").GetComponent<UISprite>();
-            mExpNum = mRoot.FindChild("PlayerGet/EXP/EXPNum").GetComponent<UILabel>();
+            mReTurnBtn = mRoot.Find("BackButton").gameObject;
+            mHeadIcon = mRoot.Find("PlayerGet/Head").GetComponent<UISprite>();
+            mLevel = mRoot.Find("PlayerGet/EXP/Level").GetComponent<UILabel>();
+            mExpBar = mRoot.Find("PlayerGet/EXP/Bar").GetComponent<UISprite>();
+            mExpNum = mRoot.Find("PlayerGet/EXP/EXPNum").GetComponent<UILabel>();
 
-            mGold = mRoot.FindChild("PlayerGet/Gold/Num").GetComponent<UILabel>();
-            mNickName = mRoot.FindChild("PlayerGet/Name").GetComponent<UILabel>();
+            mGold = mRoot.Find("PlayerGet/Gold/Num").GetComponent<UILabel>();
+            mNickName = mRoot.Find("PlayerGet/Name").GetComponent<UILabel>();
             UIEventListener.Get(mReTurnBtn).onClick += BackRoom;
         }
 
@@ -310,14 +310,14 @@ namespace BlGame.View
             public UIShowScoreInfo(Transform temp)
             {
                 tran = temp;
-                HeadNameLabel = temp.FindChild("Name").GetComponent<UILabel>();
-                HeroLevelLabel = temp.FindChild("Level").GetComponent<UILabel>();
-                HeroKillsLabel = temp.FindChild("Kills").GetComponent<UILabel>();
-                HeroDeadTimesLabel = temp.FindChild("Death").GetComponent<UILabel>();
-                HeadIcon = temp.FindChild("Head").GetComponent<UISprite>();
-                HeroAssLabel = temp.FindChild("Assists").GetComponent<UILabel>();
-                HeroTotalLabel = temp.FindChild("CP").GetComponent<UILabel>();
-                HeroLastHitLabel = temp.FindChild("LastHits").GetComponent<UILabel>();
+                HeadNameLabel = temp.Find("Name").GetComponent<UILabel>();
+                HeroLevelLabel = temp.Find("Level").GetComponent<UILabel>();
+                HeroKillsLabel = temp.Find("Kills").GetComponent<UILabel>();
+                HeroDeadTimesLabel = temp.Find("Death").GetComponent<UILabel>();
+                HeadIcon = temp.Find("Head").GetComponent<UISprite>();
+                HeroAssLabel = temp.Find("Assists").GetComponent<UILabel>();
+                HeroTotalLabel = temp.Find("CP").GetComponent<UILabel>();
+                HeroLastHitLabel = temp.Find("LastHits").GetComponent<UILabel>();
 
                 HeadNameLabel.text = "";
                 HeroLevelLabel.text = "";

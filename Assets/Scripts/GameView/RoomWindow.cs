@@ -47,27 +47,27 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            mMidObj = mRoot.FindChild("Animator_Area").gameObject;
-            mBallObj = mRoot.FindChild("Ball_effect/thunder_gravity").gameObject;
-            mStartObj = mRoot.FindChild("StartBtn_effect/start_stars").gameObject;
-            mReadyObj = mRoot.FindChild("StartBtn_effect/start_burst").gameObject;
+            mMidObj = mRoot.Find("Animator_Area").gameObject;
+            mBallObj = mRoot.Find("Ball_effect/thunder_gravity").gameObject;
+            mStartObj = mRoot.Find("StartBtn_effect/start_stars").gameObject;
+            mReadyObj = mRoot.Find("StartBtn_effect/start_burst").gameObject;
 
             //获得队伍名称Label
             for (int i = 0; i < TeamCount; i++)
             {
-                mTteamObj[i] = mRoot.FindChild("TeamBackground" + (i + 1).ToString()).gameObject;
-                UILabel label = mTteamObj[i].transform.FindChild("TeamPlate/Label").GetComponent<UILabel>();
+                mTteamObj[i] = mRoot.Find("TeamBackground" + (i + 1).ToString()).gameObject;
+                UILabel label = mTteamObj[i].transform.Find("TeamPlate/Label").GetComponent<UILabel>();
                 mTeamNameLabelList.Add(label);
             }
 
             //获得房间号Label
-            mRoomNumLabel = mRoot.FindChild("Animator_Area/RoomID/Label").GetComponent<UILabel>();
+            mRoomNumLabel = mRoot.Find("Animator_Area/RoomID/Label").GetComponent<UILabel>();
 
             //获得控制按钮，开始，退出
-            mBtnStart = mRoot.FindChild("Animator_Area/CtrlBtn/Start").GetComponent<ButtonOnPress>();
-            mBtnQuit = mRoot.FindChild("Animator_Area/CtrlBtn/Quit").GetComponent<ButtonOnPress>();
-            InvaitaionBtn = mRoot.FindChild("Animator_Area/CtrlBtn/Mall").GetComponent<UIButton>();
-            mQuitGameLabel = mRoot.FindChild("Animator_Area/CtrlBtn/Quit/Label").GetComponent<UILabel>();
+            mBtnStart = mRoot.Find("Animator_Area/CtrlBtn/Start").GetComponent<ButtonOnPress>();
+            mBtnQuit = mRoot.Find("Animator_Area/CtrlBtn/Quit").GetComponent<ButtonOnPress>();
+            InvaitaionBtn = mRoot.Find("Animator_Area/CtrlBtn/Mall").GetComponent<UIButton>();
+            mQuitGameLabel = mRoot.Find("Animator_Area/CtrlBtn/Quit/Label").GetComponent<UILabel>();
 
             
 
@@ -83,18 +83,18 @@ namespace BlGame.View
                 {
                     team = mTteamObj[1].transform;
                 }
-                Transform seatParent = team.FindChild("Player" + (i + 1).ToString());
-                Transform master = seatParent.FindChild("HostSign");
+                Transform seatParent = team.Find("Player" + (i + 1).ToString());
+                Transform master = seatParent.Find("HostSign");
                 Transform name;
                 if (i < SeatTeam)
                 {
-                    Transform head = seatParent.FindChild("Hero").FindChild("Thumbnail");
-                    name = seatParent.FindChild("Name");
-                    Transform money = seatParent.FindChild("Gold").FindChild("GoldNumber");
-                    Transform moneyIcon = seatParent.FindChild("Gold").FindChild("Icon");
+                    Transform head = seatParent.Find("Hero").Find("Thumbnail");
+                    name = seatParent.Find("Name");
+                    Transform money = seatParent.Find("Gold").Find("GoldNumber");
+                    Transform moneyIcon = seatParent.Find("Gold").Find("Icon");
 
-                    Transform ready = seatParent.FindChild("Preparation");
-                    Transform tip = seatParent.FindChild("Tip");
+                    Transform ready = seatParent.Find("Preparation");
+                    Transform tip = seatParent.Find("Tip");
                     mHeadList.Add(head.GetComponent<UISprite>());
                     mNameList.Add(name.GetComponent<UILabel>());
                     mTipList.Add(tip.GetComponent<UILabel>());
@@ -102,13 +102,13 @@ namespace BlGame.View
                     mMoneyIconList.Add(moneyIcon.GetComponent<UISprite>());
                     mMasterList.Add(master.GetComponent<UISprite>());
                     mReadyList.Add(ready.GetComponent<UISprite>());
-                    mSoulObj[i] = mRoot.FindChild("soul_fly" + (i + 1).ToString()).gameObject;
+                    mSoulObj[i] = mRoot.Find("soul_fly" + (i + 1).ToString()).gameObject;
                 }
                 else
                 {
                     mMasterList.Add(master.GetComponent<UISprite>());
-                    name = seatParent.FindChild("Name");
-                    Transform tip = seatParent.FindChild("Tip");
+                    name = seatParent.Find("Name");
+                    Transform tip = seatParent.Find("Tip");
                     mNameList.Add(name.GetComponent<UILabel>());
                     mTipList.Add(tip.GetComponent<UILabel>());
                 }
@@ -118,24 +118,24 @@ namespace BlGame.View
             mLeftDefaultSprite = mHeadList[1].spriteName;
 
             //聊天
-            Transform talkParent = mRoot.FindChild("Animator_Area/TalkArea");
-            mBtnSend = mRoot.FindChild("Animator_Area/TalkArea/SendMsg").GetComponent<ButtonOnPress>();
-            mInputTalk = mRoot.FindChild("Animator_Area/TalkArea/Input").GetComponent<UIInput>();
+            Transform talkParent = mRoot.Find("Animator_Area/TalkArea");
+            mBtnSend = mRoot.Find("Animator_Area/TalkArea/SendMsg").GetComponent<ButtonOnPress>();
+            mInputTalk = mRoot.Find("Animator_Area/TalkArea/Input").GetComponent<UIInput>();
             mInputTalkList = mInputTalk.GetComponent<UITextList>();
-            mTalkShow = talkParent.FindChild("ShowTalk").GetComponent<UITextList>();
+            mTalkShow = talkParent.Find("ShowTalk").GetComponent<UITextList>();
 
             //控制按钮
            
             for (int i = 0; i < 2; i++)
             {
-                UISprite parentBg = mBtnStart.transform.FindChild("BG/BG" + (i + 1).ToString()).GetComponent<UISprite>();
+                UISprite parentBg = mBtnStart.transform.Find("BG/BG" + (i + 1).ToString()).GetComponent<UISprite>();
                 mBgSprite.Add(parentBg);
-                UISprite parentReady = mBtnStart.transform.FindChild("Ready/Ready" + (i + 1).ToString()).GetComponent<UISprite>();
+                UISprite parentReady = mBtnStart.transform.Find("Ready/Ready" + (i + 1).ToString()).GetComponent<UISprite>();
                 mReadySprite.Add(parentReady);
-                UISprite parentStart = mBtnStart.transform.FindChild("Start/Start" + (i + 1).ToString()).GetComponent<UISprite>();
+                UISprite parentStart = mBtnStart.transform.Find("Start/Start" + (i + 1).ToString()).GetComponent<UISprite>();
                 mStartSprite.Add(parentStart);
             }
-            mObStart = mBtnStart.transform.FindChild("Start3").GetComponent<UISprite>();
+            mObStart = mBtnStart.transform.Find("Start3").GetComponent<UISprite>();
 
             mBtnStart.GetComponent<ButtonSelectPic>().AddListener(PressStartBtn);
 

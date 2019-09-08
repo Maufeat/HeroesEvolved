@@ -35,8 +35,8 @@ public class UIFrameTips : MonoBehaviour {
 	}
     void Init()
     {
-        LeftButton = transform.FindChild("Status1/Button1").GetComponent<ButtonOnPress>();
-        RightButton = transform.FindChild("Status1/Button2").GetComponent<ButtonOnPress>();
+        LeftButton = transform.Find("Status1/Button1").GetComponent<ButtonOnPress>();
+        RightButton = transform.Find("Status1/Button2").GetComponent<ButtonOnPress>();
     }
     void ButtonPress(int ie, bool isPress)
     {

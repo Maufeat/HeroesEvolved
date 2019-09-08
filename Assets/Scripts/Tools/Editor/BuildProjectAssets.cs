@@ -55,8 +55,6 @@ public class BuildProjectAssets
         string platformPath = "";
         switch (bTarget)
         {
-            case BuildTarget.WebPlayerStreamed:
-            case BuildTarget.WebPlayer:
             case BuildTarget.StandaloneWindows:
                 {
                     platformPath = "Windows";
@@ -620,8 +618,6 @@ public class BuildProjectAssets
         string platformPath = "";
         switch (bTarget)
         {
-            case BuildTarget.WebPlayerStreamed:
-            case BuildTarget.WebPlayer:
             case BuildTarget.StandaloneWindows:
                 {
                     platformPath = "Windows";
@@ -840,8 +836,6 @@ public class BuildProjectAssets
         string platformPath = "";
         switch (bTarget)
         {
-            case BuildTarget.WebPlayerStreamed:
-            case BuildTarget.WebPlayer:
             case BuildTarget.StandaloneWindows:
                 {
                     platformPath = "Windows";

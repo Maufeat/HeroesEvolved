@@ -39,11 +39,11 @@ namespace BlGame.View
         protected override void InitWidget()
         {
             //技能按钮初始化
-            Transform Adjust = mRoot.FindChild("Adjust");
+            Transform Adjust = mRoot.Find("Adjust");
             mBtnArray = new ButtonOnPress[Adjust.childCount];
             for (int i = 0; i < mBtnArray.Length; i++)
             {
-                ButtonOnPress btn = mRoot.FindChild("Adjust/Button_" + i).GetComponent<ButtonOnPress>();
+                ButtonOnPress btn = mRoot.Find("Adjust/Button_" + i).GetComponent<ButtonOnPress>();
                 mBtnArray[i] = btn;
 
                 //事件注册
@@ -72,10 +72,10 @@ namespace BlGame.View
                 //状态控制组件初始化
                 if (i < SkillCount)
                 {
-                    GameObject obj = btn.transform.FindChild("Light").gameObject;
+                    GameObject obj = btn.transform.Find("Light").gameObject;
                     mCanPressEffect.Add((ShortCutBarBtn)i, obj);
 
-                    UISprite sprite = mRoot.FindChild("Adjust/Button_" + i + "/CutBar_" + i).GetComponent<UISprite>();
+                    UISprite sprite = mRoot.Find("Adjust/Button_" + i + "/CutBar_" + i).GetComponent<UISprite>();
                     mBtnSprite.Add((ShortCutBarBtn)i, sprite);
 
                     ButtonSelectPic selectPic = btn.GetComponent<ButtonSelectPic>();

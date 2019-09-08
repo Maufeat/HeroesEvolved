@@ -44,67 +44,67 @@ namespace BlGame.View
         protected override void InitWidget()
         {
             GamePlayCtrl.Instance.showaudiotimeold = System.DateTime.Now;
-            CPLabel = mRoot.FindChild("GameRecord/Panel/CP/CpLabel").GetComponent<UILabel>();
-            TimeLabel = mRoot.FindChild("GameRecord/Panel/Time/TimeLabel").GetComponent<UILabel>();
-            DeadLabel = mRoot.FindChild("GameRecord/Panel/Dead/DeadLabel").GetComponent<UILabel>();
-            KillLabel = mRoot.FindChild("GameRecord/Panel/Kill/KillLabel").GetComponent<UILabel>();
-            AssistLabel = mRoot.FindChild("GameRecord/Panel/Assists/AssistsLabel").GetComponent<UILabel>();
+            CPLabel = mRoot.Find("GameRecord/Panel/CP/CpLabel").GetComponent<UILabel>();
+            TimeLabel = mRoot.Find("GameRecord/Panel/Time/TimeLabel").GetComponent<UILabel>();
+            DeadLabel = mRoot.Find("GameRecord/Panel/Dead/DeadLabel").GetComponent<UILabel>();
+            KillLabel = mRoot.Find("GameRecord/Panel/Kill/KillLabel").GetComponent<UILabel>();
+            AssistLabel = mRoot.Find("GameRecord/Panel/Assists/AssistsLabel").GetComponent<UILabel>();
             AssistLabel.text = "0";
             DeadLabel.text = "0";
             KillLabel.text = "0";
-            spriteHomeBaseA = mRoot.FindChild("GameRecord/Panel/ElfLifeBar/xts").GetComponent<UISprite>();
-            spriteHomeBaseB = mRoot.FindChild("GameRecord/Panel/UndeadLifeBar/xts").GetComponent<UISprite>();
-            BattleInfo = mRoot.FindChild("ExtraButton/Adjust/InfoBtn").gameObject;
-            ShopInfo = mRoot.FindChild("ExtraButton/Adjust/ShopBtn").gameObject;
+            spriteHomeBaseA = mRoot.Find("GameRecord/Panel/ElfLifeBar/xts").GetComponent<UISprite>();
+            spriteHomeBaseB = mRoot.Find("GameRecord/Panel/UndeadLifeBar/xts").GetComponent<UISprite>();
+            BattleInfo = mRoot.Find("ExtraButton/Adjust/InfoBtn").gameObject;
+            ShopInfo = mRoot.Find("ExtraButton/Adjust/ShopBtn").gameObject;
             UIGuideCtrl.Instance.AddUiGuideEventBtn(ShopInfo);
             UIEventListener.Get(BattleInfo).onClick += BattlePlay;
             UIEventListener.Get(ShopInfo).onClick += ShopBtn;
 
             //LockHead
-            mLockRoot = mRoot.FindChild("LockPhoto/Adjust/Head");
-            spriteLock = mRoot.FindChild("LockPhoto/Adjust/Head").GetComponent<UISprite>();
-            spriteLockBg1 = spriteLock.transform.FindChild("BG1").GetComponent<UISprite>();
-            spriteLockBg2 = spriteLock.transform.FindChild("BG2").GetComponent<UISprite>();
-            spriteLockHp = mRoot.FindChild("LockPhoto/Adjust/Head/HP").GetComponent<UISprite>();
-            spriteLockMp = mRoot.FindChild("LockPhoto/Adjust/Head/MP").GetComponent<UISprite>();
+            mLockRoot = mRoot.Find("LockPhoto/Adjust/Head");
+            spriteLock = mRoot.Find("LockPhoto/Adjust/Head").GetComponent<UISprite>();
+            spriteLockBg1 = spriteLock.transform.Find("BG1").GetComponent<UISprite>();
+            spriteLockBg2 = spriteLock.transform.Find("BG2").GetComponent<UISprite>();
+            spriteLockHp = mRoot.Find("LockPhoto/Adjust/Head/HP").GetComponent<UISprite>();
+            spriteLockMp = mRoot.Find("LockPhoto/Adjust/Head/MP").GetComponent<UISprite>();
             mLockPos = mLockRoot.localPosition;
             mLockRoot.localPosition = new Vector3(5000, 0, 0);
             UIGuideCtrl.Instance.AddUiGuideEventBtn(spriteLock.gameObject);
             UIEventListener.Get(spriteLock.gameObject).onClick += AbsorbLockHead;
 
-            BackToCity = mRoot.FindChild("BackToCity/Adjust").gameObject;
+            BackToCity = mRoot.Find("BackToCity/Adjust").gameObject;
             UIEventListener.Get(BackToCity).onClick += BackToCityBtn;
 
             //
-            sliderHp = mRoot.FindChild("UI_AvatarInfos/Adjust/Avatar/bar red/Foreground").GetComponent<UISprite>();
-            sliderMp = mRoot.FindChild("UI_AvatarInfos/Adjust/Avatar/bar blue/Foreground").GetComponent<UISprite>();
-            sliderExp = mRoot.FindChild("UI_AvatarInfos/Adjust/Avatar/bar yellow/Foreground").GetComponent<UISprite>();
+            sliderHp = mRoot.Find("UI_AvatarInfos/Adjust/Avatar/bar red/Foreground").GetComponent<UISprite>();
+            sliderMp = mRoot.Find("UI_AvatarInfos/Adjust/Avatar/bar blue/Foreground").GetComponent<UISprite>();
+            sliderExp = mRoot.Find("UI_AvatarInfos/Adjust/Avatar/bar yellow/Foreground").GetComponent<UISprite>();
 
-            labelHp = sliderHp.transform.parent.FindChild("Label").GetComponent<UILabel>();
-            labelMp = sliderMp.transform.parent.FindChild("Label").GetComponent<UILabel>();
-            labelExp = sliderExp.transform.parent.FindChild("Label").GetComponent<UILabel>();
-            labelLevel = mRoot.FindChild("UI_AvatarInfos/Adjust/Avatar/level_Label").GetComponent<UILabel>();
+            labelHp = sliderHp.transform.parent.Find("Label").GetComponent<UILabel>();
+            labelMp = sliderMp.transform.parent.Find("Label").GetComponent<UILabel>();
+            labelExp = sliderExp.transform.parent.Find("Label").GetComponent<UILabel>();
+            labelLevel = mRoot.Find("UI_AvatarInfos/Adjust/Avatar/level_Label").GetComponent<UILabel>();
 
-            spriteHead = mRoot.FindChild("UI_AvatarInfos/Adjust/Avatar/touxiang_Sprite").GetComponent<UISprite>();
+            spriteHead = mRoot.Find("UI_AvatarInfos/Adjust/Avatar/touxiang_Sprite").GetComponent<UISprite>();
             spritePing = new UISprite[3];
 
-            spritePing[(int)PingEnum.GreenTag] = mRoot.FindChild("UI_AvatarInfos/Adjust/Avatar/PingIcon/GreenIcon").GetComponent<UISprite>();
-            spritePing[(int)PingEnum.YellowTag] = mRoot.FindChild("UI_AvatarInfos/Adjust/Avatar/PingIcon/YellowIcon").GetComponent<UISprite>();
-            spritePing[(int)PingEnum.RedTag] = mRoot.FindChild("UI_AvatarInfos/Adjust/Avatar/PingIcon/RedIcon").GetComponent<UISprite>();
+            spritePing[(int)PingEnum.GreenTag] = mRoot.Find("UI_AvatarInfos/Adjust/Avatar/PingIcon/GreenIcon").GetComponent<UISprite>();
+            spritePing[(int)PingEnum.YellowTag] = mRoot.Find("UI_AvatarInfos/Adjust/Avatar/PingIcon/YellowIcon").GetComponent<UISprite>();
+            spritePing[(int)PingEnum.RedTag] = mRoot.Find("UI_AvatarInfos/Adjust/Avatar/PingIcon/RedIcon").GetComponent<UISprite>();
             for (int i = 0; i < spritePing.Length; i++)
             {
                 spritePing[i].gameObject.SetActive(false);
             }
             isPress = false;
             sliderExp.fillAmount = 0f;
-            mPassiveSkill = mRoot.FindChild("UI_AvatarInfos/Adjust/Button_7/CutBar_7").GetComponent<UISprite>();
-            mSpritePassiveSkill = mRoot.FindChild("UI_AvatarInfos/Adjust/Button_7/Foreground").GetComponent<UISprite>();
-            mSpritePassiveInfo = mRoot.FindChild("UI_AvatarInfos/Adjust/Button_7/Overlay").GetComponent<UILabel>();
+            mPassiveSkill = mRoot.Find("UI_AvatarInfos/Adjust/Button_7/CutBar_7").GetComponent<UISprite>();
+            mSpritePassiveSkill = mRoot.Find("UI_AvatarInfos/Adjust/Button_7/Foreground").GetComponent<UISprite>();
+            mSpritePassiveInfo = mRoot.Find("UI_AvatarInfos/Adjust/Button_7/Overlay").GetComponent<UILabel>();
             UIEventListener.Get(mPassiveSkill.transform.parent.gameObject).onPress += mPassivePress;
 
-            mAltarSoldierHeadPoint = mRoot.FindChild("AltarManager");
+            mAltarSoldierHeadPoint = mRoot.Find("AltarManager");
 
-            sliderFury = mRoot.FindChild("UI_AvatarInfos/Adjust/EnergyPool/FurySlider").GetComponent<UISprite>();
+            sliderFury = mRoot.Find("UI_AvatarInfos/Adjust/EnergyPool/FurySlider").GetComponent<UISprite>();
             btnFury = sliderFury.transform.parent.gameObject;
             UIEventListener.Get(btnFury).onClick += OnFuryClick;
             UIGuideCtrl.Instance.AddUiGuideEventBtn(btnFury.gameObject); 
@@ -200,11 +200,11 @@ namespace BlGame.View
                     desObj.transform.localScale = Vector3.one;
                     desObj.transform.localPosition = new Vector3(550, -450, 0);
                     UnityEngine.GameObject.DestroyImmediate(desObj.GetComponent<UIAnchor>());
-                    UILabel skillCd = desObj.transform.FindChild("Skill_Cooldown").GetComponent<UILabel>();
-                    UILabel skillDes = desObj.transform.FindChild("Skill_Describe").GetComponent<UILabel>();
-                    UILabel skillLv = desObj.transform.FindChild("Skill_Level").GetComponent<UILabel>();
-                    UILabel skillName = desObj.transform.FindChild("Skill_Name").GetComponent<UILabel>();
-                    UILabel skillMpCost = desObj.transform.FindChild("Skill_HP").GetComponent<UILabel>();
+                    UILabel skillCd = desObj.transform.Find("Skill_Cooldown").GetComponent<UILabel>();
+                    UILabel skillDes = desObj.transform.Find("Skill_Describe").GetComponent<UILabel>();
+                    UILabel skillLv = desObj.transform.Find("Skill_Level").GetComponent<UILabel>();
+                    UILabel skillName = desObj.transform.Find("Skill_Name").GetComponent<UILabel>();
+                    UILabel skillMpCost = desObj.transform.Find("Skill_HP").GetComponent<UILabel>();
                     if (skillInfo.isShowCoolTime)
                         skillCd.text = (skillInfo.coolTime / 1000f).ToString();
                     else
@@ -217,7 +217,7 @@ namespace BlGame.View
                     skillName.text = skillInfo.name;
                     if (skillInfo.Mp != 0)
                         skillMpCost.text = skillInfo.Mp.ToString();
-                    skillMpCost.transform.FindChild("Label").GetComponent<UILabel>().gameObject.SetActive(skillInfo.Mp != 0);
+                    skillMpCost.transform.Find("Label").GetComponent<UILabel>().gameObject.SetActive(skillInfo.Mp != 0);
                 }
             }
         }
@@ -355,7 +355,7 @@ namespace BlGame.View
             ResourceUnit objHomeBaseUnit = ResourcesManager.Instance.loadImmediate(GameConstDefine.HomeBaseBeAtkEffect, ResourceType.PREFAB);
             objHomeBase = GameObject.Instantiate(objHomeBaseUnit.Asset) as GameObject;
 
-            objHomeBase.transform.parent = mRoot.FindChild("GameRecord/Panel/Bk/Frame");
+            objHomeBase.transform.parent = mRoot.Find("GameRecord/Panel/Bk/Frame");
             objHomeBase.transform.localPosition = Vector3.zero;
             objHomeBase.transform.localScale = Vector3.one;
         }

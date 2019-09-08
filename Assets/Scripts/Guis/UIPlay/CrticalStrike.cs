@@ -29,7 +29,7 @@ public class CrticalStrike : MonoBehaviour {
 	}
     void Awake()
     {
-        DigitNum = transform.FindChild("DigitNum").GetComponent<UILabel>();
+        DigitNum = transform.Find("DigitNum").GetComponent<UILabel>();
     }
     public Ientity CrticalOwner
     {

@@ -37,9 +37,9 @@ public class UIStartSelfDefine : MonoBehaviour {
 
     void Init()
 	{
-        posParent = transform.FindChild("Postion");
+        posParent = transform.Find("Postion");
 		TypeMap = MAPTYPE.MIDDLEMAP;
-        RoomTran = posParent.FindChild("Mapselect");
+        RoomTran = posParent.Find("Mapselect");
 		//获取三张图。监听         
 		for (int i = 0; i < RoomTran.childCount; i ++) {
 			SpriteEasyOrHigh[i] = RoomTran.Find (Coord[i]).GetComponent<ButtonOnPress>();		 			

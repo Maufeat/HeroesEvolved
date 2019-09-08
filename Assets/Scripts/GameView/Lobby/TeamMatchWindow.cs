@@ -41,17 +41,17 @@ namespace BlGame.View
         protected override void InitWidget()
         {
             //地图
-            mMapNameLabel = mRoot.FindChild("MapInfo/Name").GetComponent<UILabel>();
-            mMapTypeLabel = mRoot.FindChild("MapInfo/Type").GetComponent<UILabel>();
-            mQuitBtn = mRoot.FindChild("QuitBtn").GetComponent<UIButton>();
-            mMatchBtn = mRoot.FindChild("MatchBtn").GetComponent<UIButton>();
+            mMapNameLabel = mRoot.Find("MapInfo/Name").GetComponent<UILabel>();
+            mMapTypeLabel = mRoot.Find("MapInfo/Type").GetComponent<UILabel>();
+            mQuitBtn = mRoot.Find("QuitBtn").GetComponent<UIButton>();
+            mMatchBtn = mRoot.Find("MatchBtn").GetComponent<UIButton>();
 
             //好友
-            mFriendList = mRoot.FindChild("InvitationList/Grid");
-            mInvitation = mRoot.FindChild("InvitationBtn").GetComponent<UIButton>();
+            mFriendList = mRoot.Find("InvitationList/Grid");
+            mInvitation = mRoot.Find("InvitationBtn").GetComponent<UIButton>();
 
             //队友
-            mTeammateList = mRoot.FindChild("TeamMember");
+            mTeammateList = mRoot.Find("TeamMember");
 
             EventDelegate.Add(mQuitBtn.onClick, OnQuit);
             EventDelegate.Add(mInvitation.onClick, OnInvitation);
@@ -194,7 +194,7 @@ namespace BlGame.View
             if (obj != null)
             {
                 obj.name = info.NiceName;
-                obj.transform.FindChild("Name").GetComponent<UILabel>().text = info.NiceName;
+                obj.transform.Find("Name").GetComponent<UILabel>().text = info.NiceName;
                 UIEventListener.Get(obj).onClick += OnFriendSelect;
             }
         }
@@ -278,9 +278,9 @@ namespace BlGame.View
             if (obj != null)
             {
                 obj.name = team.mName;
-                obj.transform.FindChild("Name").GetComponent<UILabel>().text = team.mName;
-                obj.transform.FindChild("Head").GetComponent<UISprite>().spriteName = team.mPic;
-                obj.transform.FindChild("Level").GetComponent<UILabel>().text = "LV" + team.mLv;
+                obj.transform.Find("Name").GetComponent<UILabel>().text = team.mName;
+                obj.transform.Find("Head").GetComponent<UISprite>().spriteName = team.mPic;
+                obj.transform.Find("Level").GetComponent<UILabel>().text = "LV" + team.mLv;
 
                 //找出队长名称
                 if (team.mPostion == 0)

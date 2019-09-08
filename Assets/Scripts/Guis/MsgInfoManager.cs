@@ -227,17 +227,17 @@ public class MsgInfoManager
 
                 root = GameObjectPool.Instance.GetGO(res);
             }
-            NameLabelKill = root.transform.FindChild("name/Name1").gameObject.GetComponent<UILabel>();
-            NameLabelDead = root.transform.FindChild("name/Name2").gameObject.GetComponent<UILabel>();
-            NameDate = root.transform.FindChild("name/NameDate").GetComponent<UILabel>();
-            SerialKill = root.transform.FindChild("name/SerialKill").GetComponent<UILabel>();
+            NameLabelKill = root.transform.Find("name/Name1").gameObject.GetComponent<UILabel>();
+            NameLabelDead = root.transform.Find("name/Name2").gameObject.GetComponent<UILabel>();
+            NameDate = root.transform.Find("name/NameDate").GetComponent<UILabel>();
+            SerialKill = root.transform.Find("name/SerialKill").GetComponent<UILabel>();
             Anima = NameDate.transform.parent.GetComponent<Animation>();
             Anima.enabled = false;
-            objKill = root.transform.FindChild("kill").gameObject;
-            objAced = root.transform.FindChild("aced").gameObject;
-            objDoubleKill = root.transform.FindChild("dk").gameObject;
-            objThrebleKill = root.transform.FindChild("tk").gameObject;
-            objFirstBlood = root.transform.FindChild("fb").gameObject;
+            objKill = root.transform.Find("kill").gameObject;
+            objAced = root.transform.Find("aced").gameObject;
+            objDoubleKill = root.transform.Find("dk").gameObject;
+            objThrebleKill = root.transform.Find("tk").gameObject;
+            objFirstBlood = root.transform.Find("fb").gameObject;
             objKill.SetActive(false);
             objAced.SetActive(false);
             objDoubleKill.SetActive(false);
@@ -333,7 +333,7 @@ public class MsgInfoManager
                 {
                     root = GameObject.Instantiate(objUnit.Asset) as GameObject;
                     Content = root.GetComponentInChildren<UILabel>();
-                    frame = root.transform.FindChild("digitLable/frame").GetComponent<UISprite>();               
+                    frame = root.transform.Find("digitLable/frame").GetComponent<UISprite>();               
                 }
             }
         }

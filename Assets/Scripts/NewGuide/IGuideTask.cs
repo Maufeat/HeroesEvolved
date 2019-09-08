@@ -107,7 +107,7 @@ namespace BlGame.GuideDate
                 ButtonOnPress btn;
                 for (int i = 0; i < 2; i++)
                 {
-                    btn = objSkipNewsGuide.transform.FindChild("Btn" + (i + 1).ToString()).GetComponent<ButtonOnPress>();
+                    btn = objSkipNewsGuide.transform.Find("Btn" + (i + 1).ToString()).GetComponent<ButtonOnPress>();
                     btn.AddListener(i, SelectSkillNewsGuide);
                     if (btn.GetComponent<UIWidget>() == null)
                     {

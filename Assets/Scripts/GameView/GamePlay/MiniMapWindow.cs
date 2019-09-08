@@ -42,7 +42,7 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            mMapPanel = mRoot.FindChild("Hold/Panel");
+            mMapPanel = mRoot.Find("Hold/Panel");
 
             MapInfo map = MapLoadConfig.Instance.GetMapInfo(GameUserModel.Instance.GameMapID);
 

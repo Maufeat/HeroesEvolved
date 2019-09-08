@@ -38,9 +38,9 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            mExchangeBtn = mRoot.FindChild("ExchangeBtn").GetComponent<UIButton>();
-            mInputKey = mRoot.FindChild("InputArea").GetComponent<UIInput>();
-            mClose = mRoot.FindChild("CloseBtn").GetComponent<UIButton>();
+            mExchangeBtn = mRoot.Find("ExchangeBtn").GetComponent<UIButton>();
+            mInputKey = mRoot.Find("InputArea").GetComponent<UIInput>();
+            mClose = mRoot.Find("CloseBtn").GetComponent<UIButton>();
 
             EventDelegate.Add(mExchangeBtn.onClick, ExchangePress);
             EventDelegate.Add(mClose.onClick, ClosePress);

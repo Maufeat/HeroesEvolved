@@ -935,7 +935,7 @@ namespace BlGame.GameEntity
 
         public virtual void OnCreateShadow()
         {
-            if (this.realObject.transform.FindChild("shadow(Clone)"))
+            if (this.realObject.transform.Find("shadow(Clone)"))
                 return;
 
             int id = (int)ObjTypeID;

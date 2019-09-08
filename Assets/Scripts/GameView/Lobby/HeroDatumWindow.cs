@@ -39,18 +39,18 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            mPopupButton = mRoot.FindChild("KindSelect/PopupList").GetComponent<UIButton>();
-            mOpenHeroKind = mRoot.FindChild("KindSelect/HeroKind");
-            mGrid = mRoot.FindChild("ScrollView/Grid").GetComponent<UIGrid>();
-            mHeroAttributive = mPopupButton.transform.FindChild("Label").GetComponent<UILabel>();
+            mPopupButton = mRoot.Find("KindSelect/PopupList").GetComponent<UIButton>();
+            mOpenHeroKind = mRoot.Find("KindSelect/HeroKind");
+            mGrid = mRoot.Find("ScrollView/Grid").GetComponent<UIGrid>();
+            mHeroAttributive = mPopupButton.transform.Find("Label").GetComponent<UILabel>();
 
-            mHeroAll = mRoot.FindChild("KindSelect/HeroKind/All").GetComponent<UIButton>();
-            mHeroAttack = mRoot.FindChild("KindSelect/HeroKind/Attack").GetComponent<UIButton>();
-            mHeroSpell = mRoot.FindChild("KindSelect/HeroKind/Spell").GetComponent<UIButton>();
-            mHeroDefend = mRoot.FindChild("KindSelect/HeroKind/Defend").GetComponent<UIButton>();
-            mHeroAssist = mRoot.FindChild("KindSelect/HeroKind/Assist").GetComponent<UIButton>();
-            mClose = mRoot.FindChild("CloseBtn").GetComponent<UIButton>();
-            mScroll = mRoot.FindChild("ScrollView").GetComponent<UIScrollView>();
+            mHeroAll = mRoot.Find("KindSelect/HeroKind/All").GetComponent<UIButton>();
+            mHeroAttack = mRoot.Find("KindSelect/HeroKind/Attack").GetComponent<UIButton>();
+            mHeroSpell = mRoot.Find("KindSelect/HeroKind/Spell").GetComponent<UIButton>();
+            mHeroDefend = mRoot.Find("KindSelect/HeroKind/Defend").GetComponent<UIButton>();
+            mHeroAssist = mRoot.Find("KindSelect/HeroKind/Assist").GetComponent<UIButton>();
+            mClose = mRoot.Find("CloseBtn").GetComponent<UIButton>();
+            mScroll = mRoot.Find("ScrollView").GetComponent<UIScrollView>();
 
             EventDelegate.Add(mPopupButton.onClick, OpenHeroKindButton);
             EventDelegate.Add(mHeroAll.onClick, OpenAllHeroButton);
@@ -223,11 +223,11 @@ namespace BlGame.View
                 obj.transform.localScale = Vector3.one;
                 HeroDataPhoto hdp = new HeroDataPhoto();
                 hdp.mRoot = obj;
-                hdp.mHeroNick = obj.transform.FindChild("Name").GetComponent<UILabel>();
-                hdp.mHeroIcon = obj.transform.FindChild("Photo").GetComponent<UISprite>();
-                hdp.mOwn = obj.transform.FindChild("IsOwn").gameObject;
-                hdp.mLastTime = obj.transform.FindChild("LastTime").GetComponent<UILabel>();
-                hdp.mGray = obj.transform.FindChild("Gray").GetComponent<UISprite>();
+                hdp.mHeroNick = obj.transform.Find("Name").GetComponent<UILabel>();
+                hdp.mHeroIcon = obj.transform.Find("Photo").GetComponent<UISprite>();
+                hdp.mOwn = obj.transform.Find("IsOwn").gameObject;
+                hdp.mLastTime = obj.transform.Find("LastTime").GetComponent<UILabel>();
+                hdp.mGray = obj.transform.Find("Gray").GetComponent<UISprite>();
                 UIEventListener.Get(obj).onClick += hdp.OnItemSelect;
                 HeroDataList.Add(hdp);
             }

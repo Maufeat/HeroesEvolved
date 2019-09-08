@@ -55,15 +55,15 @@ public class UIGameOver : MonoBehaviour {
         lossTip.gameObject.SetActive(false);
         winTip.gameObject.SetActive(false);
 		ExitButton = this.transform.Find("Button").GetComponent<ButtonOnPress>();
-		Transform tran = this.transform.FindChild ("Player");
+		Transform tran = this.transform.Find ("Player");
 		int num = tran.childCount;
 		for (int i = 0; i < num; i++) {
-			Transform temp = tran.FindChild("Player" + (i + 1));
+			Transform temp = tran.Find("Player" + (i + 1));
 //			AddFriendBtn = temp.FindChild("AddFriends").GetComponent<ButtonOnPress>();
 //			AddFriendBtn.AddListener(i + i,BtnPress);
 			ListPlayer.Add(new UIShowScoreInfo(temp));
 		}
-		CountDown = this.transform.FindChild("CountDown/Label").GetComponent<UILabel>();
+		CountDown = this.transform.Find("CountDown/Label").GetComponent<UILabel>();
 	}
 
 
@@ -213,11 +213,11 @@ public class UIGameOver : MonoBehaviour {
 		public UIShowScoreInfo(Transform temp)
 		{
 			tran = temp;
-			HeadNameLabel = temp.FindChild("Name").GetComponent<UILabel>();
-			HeroLevelLabel = temp.FindChild("Level/Label").GetComponent<UILabel>();
-			HeroKillsLabel = temp.FindChild("Kills/Label").GetComponent<UILabel>();
-            HeroDeadTimesLabel = temp.FindChild("Death/Label").GetComponent<UILabel>();
-			HeadIcon = temp.FindChild("Head/thumbnail").GetComponent<UISprite>();
+			HeadNameLabel = temp.Find("Name").GetComponent<UILabel>();
+			HeroLevelLabel = temp.Find("Level/Label").GetComponent<UILabel>();
+			HeroKillsLabel = temp.Find("Kills/Label").GetComponent<UILabel>();
+            HeroDeadTimesLabel = temp.Find("Death/Label").GetComponent<UILabel>();
+			HeadIcon = temp.Find("Head/thumbnail").GetComponent<UISprite>();
             HeadNameLabel.text = "";
             HeroLevelLabel.text = "";
             HeroKillsLabel.text = "";

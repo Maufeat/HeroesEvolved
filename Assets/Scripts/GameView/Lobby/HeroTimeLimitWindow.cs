@@ -61,15 +61,15 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            mAllKindBtn = mRoot.FindChild("SelectKind/All").GetComponent<UIToggle>();
-            mMagicKindBtn = mRoot.FindChild("SelectKind/Spell").GetComponent<UIToggle>();
-            mAtkKindBtn = mRoot.FindChild("SelectKind/Damage").GetComponent<UIToggle>();
-            mAssistKindBtn = mRoot.FindChild("SelectKind/Support").GetComponent<UIToggle>();
-            mTankKindBtn = mRoot.FindChild("SelectKind/Tank").GetComponent<UIToggle>();
-            mScroll = mRoot.FindChild("HeroScrollView").GetComponent<UIScrollView>();
-            mGrid = mRoot.FindChild("HeroScrollView/OptionItems").GetComponent<UIGrid>();
-            mLeft = mRoot.FindChild("Arrow/Left").gameObject;
-            mRight = mRoot.FindChild("Arrow/Right").gameObject;
+            mAllKindBtn = mRoot.Find("SelectKind/All").GetComponent<UIToggle>();
+            mMagicKindBtn = mRoot.Find("SelectKind/Spell").GetComponent<UIToggle>();
+            mAtkKindBtn = mRoot.Find("SelectKind/Damage").GetComponent<UIToggle>();
+            mAssistKindBtn = mRoot.Find("SelectKind/Support").GetComponent<UIToggle>();
+            mTankKindBtn = mRoot.Find("SelectKind/Tank").GetComponent<UIToggle>();
+            mScroll = mRoot.Find("HeroScrollView").GetComponent<UIScrollView>();
+            mGrid = mRoot.Find("HeroScrollView/OptionItems").GetComponent<UIGrid>();
+            mLeft = mRoot.Find("Arrow/Left").gameObject;
+            mRight = mRoot.Find("Arrow/Right").gameObject;
             EventDelegate.Add(mAllKindBtn.onChange, OnAllKind);
             EventDelegate.Add(mMagicKindBtn.onChange, OnMagicKind);
             EventDelegate.Add(mAtkKindBtn.onChange, OnAtkKind);
@@ -288,19 +288,19 @@ namespace BlGame.View
                 HeroCard card = new HeroCard();
                 card.mRoot = obj;
                 card.mGoodsId = hero;
-                card.mSpriteIcon = obj.transform.FindChild("Portrait").GetComponent<UISprite>();
-                Transform cost = obj.transform.FindChild("Cost");
-                card.mDiamond_Common = cost.FindChild("Crystal1").gameObject;
-                card.mDiamond_DisCount = cost.FindChild("Crystal2").gameObject;
-                card.mGold_Common = cost.FindChild("Gold1").gameObject;
-                card.mGold_DisCount = cost.FindChild("Gold2").gameObject;
-                card.mGoldLine = cost.FindChild("Gold/Line");
-                card.mCrystalLine = cost.FindChild("Crystal/Line");
-                card.IsOwn = obj.transform.FindChild("IsOwn");
-                card.mName = obj.transform.FindChild("NamePlate/Name").GetComponent<UILabel>();
-                card.TagList.Add(obj.transform.FindChild("Discount").gameObject);
-                card.TagList.Add(obj.transform.FindChild("Hot").gameObject);
-                card.TagList.Add(obj.transform.FindChild("New").gameObject);
+                card.mSpriteIcon = obj.transform.Find("Portrait").GetComponent<UISprite>();
+                Transform cost = obj.transform.Find("Cost");
+                card.mDiamond_Common = cost.Find("Crystal1").gameObject;
+                card.mDiamond_DisCount = cost.Find("Crystal2").gameObject;
+                card.mGold_Common = cost.Find("Gold1").gameObject;
+                card.mGold_DisCount = cost.Find("Gold2").gameObject;
+                card.mGoldLine = cost.Find("Gold/Line");
+                card.mCrystalLine = cost.Find("Crystal/Line");
+                card.IsOwn = obj.transform.Find("IsOwn");
+                card.mName = obj.transform.Find("NamePlate/Name").GetComponent<UILabel>();
+                card.TagList.Add(obj.transform.Find("Discount").gameObject);
+                card.TagList.Add(obj.transform.Find("Hot").gameObject);
+                card.TagList.Add(obj.transform.Find("New").gameObject);
                 HeroTimeLimitList.Add(card);
             }
             if (HeroTimeLimitList.Count != 0)
@@ -459,8 +459,8 @@ namespace BlGame.View
                 }
                 if (conInfo.Consume != null && conInfo.Consume.Count > 1)
                 {
-                    mGold_Common.transform.FindChild("LabelMoney1").GetComponent<UILabel>().text = conInfo.Consume.ElementAt(0).Value.ToString();
-                    mDiamond_Common.transform.FindChild("LabelMoney1").GetComponent<UILabel>().text = conInfo.Consume.ElementAt(1).Value.ToString();
+                    mGold_Common.transform.Find("LabelMoney1").GetComponent<UILabel>().text = conInfo.Consume.ElementAt(0).Value.ToString();
+                    mDiamond_Common.transform.Find("LabelMoney1").GetComponent<UILabel>().text = conInfo.Consume.ElementAt(1).Value.ToString();
                     mGold_Common.SetActive(true);
                     mDiamond_Common.SetActive(true);
                 }

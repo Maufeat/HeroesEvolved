@@ -36,9 +36,9 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            mTimeLabel = mRoot.FindChild("Time").GetComponent<UILabel>();
-            mNumberLabel = mRoot.FindChild("MatchedNum").GetComponent<UILabel>();
-            mCancel = mRoot.FindChild("CancelBtn").GetComponent<UIButton>();
+            mTimeLabel = mRoot.Find("Time").GetComponent<UILabel>();
+            mNumberLabel = mRoot.Find("MatchedNum").GetComponent<UILabel>();
+            mCancel = mRoot.Find("CancelBtn").GetComponent<UIButton>();
 
             EventDelegate.Add(mCancel.onClick, OnCancel);
         }

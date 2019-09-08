@@ -24,10 +24,10 @@ public class UIBuffUnityInterface : MonoBehaviour
         Instance = this;
         for (int i = 1; i <= 14; ++i)
         {
-            GameObject obj = gameObject.transform.FindChild("Buff" + i).gameObject;
-            GameObject backObj = obj.transform.FindChild("Background").gameObject;
-            GameObject spriteObj = obj.transform.FindChild("Sprite").gameObject;
-            GameObject frameObj = obj.transform.FindChild("Frame").gameObject;
+            GameObject obj = gameObject.transform.Find("Buff" + i).gameObject;
+            GameObject backObj = obj.transform.Find("Background").gameObject;
+            GameObject spriteObj = obj.transform.Find("Sprite").gameObject;
+            GameObject frameObj = obj.transform.Find("Frame").gameObject;
             BuffUIItem bItem= new BuffUIItem();
             bItem.effect = spriteObj.GetComponent<UISprite>();
             bItem.spriteIcon = backObj.GetComponent<UISprite>();

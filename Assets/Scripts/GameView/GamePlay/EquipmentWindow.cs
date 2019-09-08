@@ -37,49 +37,49 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-           mPanel = mRoot.FindChild("Panel");
+           mPanel = mRoot.Find("Panel");
 
-           mBackPackage = mRoot.FindChild("Panel/Adjust/Package/BackPackage");
+           mBackPackage = mRoot.Find("Panel/Adjust/Package/BackPackage");
            for (int i = 0; i < 3; i++)
            {
-               mSpriteBackPack.Add(mBackPackage.FindChild("ItemPack" + (i + 1).ToString()).FindChild("icon").GetComponent<UISprite>());
-               mBoxList.Add(mBackPackage.FindChild("ItemPack" + (i + 1).ToString()).gameObject);
+               mSpriteBackPack.Add(mBackPackage.Find("ItemPack" + (i + 1).ToString()).Find("icon").GetComponent<UISprite>());
+               mBoxList.Add(mBackPackage.Find("ItemPack" + (i + 1).ToString()).gameObject);
            }
 
             //pack
-            Transform package = mRoot.FindChild("Panel/Adjust/Package");
+            Transform package = mRoot.Find("Panel/Adjust/Package");
             for (int it = 0; it < 3; it++)
             {
                 int iti = it + 1;
-                ButtonOnPress itBtn = package.FindChild("Item" + iti.ToString()).GetComponent<ButtonOnPress>();
+                ButtonOnPress itBtn = package.Find("Item" + iti.ToString()).GetComponent<ButtonOnPress>();
                 mBtnItems.Add(itBtn);
-                mItemDic.Add(it, itBtn.transform.FindChild("icon").GetComponent<UISprite>());
+                mItemDic.Add(it, itBtn.transform.Find("icon").GetComponent<UISprite>());
 
-                mItemSelect.Add(it, itBtn.transform.FindChild("SpriteSelect").GetComponent<UISprite>());
-                mItemCost.Add(it, itBtn.transform.FindChild("Cost").gameObject);
-                mItemCountDic.Add(it, itBtn.transform.FindChild("LabelCount").GetComponent<UILabel>());
+                mItemSelect.Add(it, itBtn.transform.Find("SpriteSelect").GetComponent<UISprite>());
+                mItemCost.Add(it, itBtn.transform.Find("Cost").gameObject);
+                mItemCountDic.Add(it, itBtn.transform.Find("LabelCount").GetComponent<UILabel>());
                 mItemCdDic.Add(it, itBtn.transform.GetComponent<CdCountDown>());
                 mBoxList.Add(itBtn.gameObject);
             }
 
             //pack page btn
-            mBtnPage = mRoot.FindChild("Panel/Adjust/Package/pack").GetComponent<ButtonOnPress>();
+            mBtnPage = mRoot.Find("Panel/Adjust/Package/pack").GetComponent<ButtonOnPress>();
 
             for (int i = 0; i < 2; i++)
             {
-                UISprite sprite = mBtnPage.transform.FindChild("Fg" + (i + 1).ToString()).GetComponent<UISprite>();
+                UISprite sprite = mBtnPage.transform.Find("Fg" + (i + 1).ToString()).GetComponent<UISprite>();
                 mSpritePage.Add(sprite);
             }
-            mAdjust = mRoot.FindChild("Panel/Adjust");
+            mAdjust = mRoot.Find("Panel/Adjust");
 			//设置比例
 			AdjustUI adjust = mAdjust.GetComponent<AdjustUI> ();
 			adjust.ForceUpdate ();
 
 
-            mObjPack = mAdjust.FindChild("Package").gameObject;
-            mShowBtn = mAdjust.FindChild("ShowButton").GetComponent<ButtonOnPress>();
+            mObjPack = mAdjust.Find("Package").gameObject;
+            mShowBtn = mAdjust.Find("ShowButton").GetComponent<ButtonOnPress>();
             
-            mBg = mShowBtn.transform.FindChild("BG2").gameObject;
+            mBg = mShowBtn.transform.Find("BG2").gameObject;
             mBtnPage.AddListener(OnSelectpage);
             mShowBtn.AddListener(OnShowEquipBlank);
 
@@ -322,7 +322,7 @@ namespace BlGame.View
 
             int index = GetIndexOfItem(obj);
             SetItemEnableByIndex(index, false);
-            mObjMove = obj.transform.FindChild("SpriteMove").gameObject;
+            mObjMove = obj.transform.Find("SpriteMove").gameObject;
             UISprite sprite = mObjMove.GetComponent<UISprite>();
             UISprite icon;
             mItemDic.TryGetValue(index, out icon);

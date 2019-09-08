@@ -53,12 +53,12 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            mCloseBtn = mRoot.FindChild("CloseBtn").GetComponent<UIButton>();
-            mGrid = mRoot.FindChild("Interface/SignInterface/ScrollView/Grid").GetComponent<UIGrid>();
-            mDailyTaskGrid = mRoot.FindChild("Interface/DailyTask/Grid").GetComponent<UIGrid>();
-            mInfiniteTaskGrid = mRoot.FindChild("Interface/AchieveInterface/Grid").GetComponent<UIGrid>();
-            mNewDailyLabel = mRoot.FindChild("CheckButton/TaskBtn/Tips");
-            mDailyUIToggle = mRoot.FindChild("CheckButton/TaskBtn").GetComponent<UIToggle>();
+            mCloseBtn = mRoot.Find("CloseBtn").GetComponent<UIButton>();
+            mGrid = mRoot.Find("Interface/SignInterface/ScrollView/Grid").GetComponent<UIGrid>();
+            mDailyTaskGrid = mRoot.Find("Interface/DailyTask/Grid").GetComponent<UIGrid>();
+            mInfiniteTaskGrid = mRoot.Find("Interface/AchieveInterface/Grid").GetComponent<UIGrid>();
+            mNewDailyLabel = mRoot.Find("CheckButton/TaskBtn/Tips");
+            mDailyUIToggle = mRoot.Find("CheckButton/TaskBtn").GetComponent<UIToggle>();
             EventDelegate.Add(mCloseBtn.onClick, OnCloseBtnClick);
             EventDelegate.Add(mDailyUIToggle.onChange, OnDailyUIToggleChange);
             OnEvent_DailyBonusUpdate();
@@ -199,94 +199,94 @@ namespace BlGame.View
                 addobj.transform.parent = mGrid.transform;
                 addobj.transform.localScale = Vector3.one;
                 addobj.name = (DaliyGameObjs.Count + 1).ToString();
-                addobj.transform.FindChild("BG/Label").GetComponent<UILabel>().text = "累计签到" + (i + 1).ToString() + "天";
+                addobj.transform.Find("BG/Label").GetComponent<UILabel>().text = "累计签到" + (i + 1).ToString() + "天";
                 DaliyGameObjs.Add(addobj);
                 string hookname = "Interface/SignInterface/Calendar/Date" + (i + 1).ToString() + "/Hook";
                 //////////////////////////////////////////////////////////////////////////
                 if (i < DailyBonusCtrl.Instance.mHadDay)
                 {//已领取
-                    mRoot.FindChild(hookname).GetComponent<UISprite>().gameObject.SetActive(true);
-                    addobj.transform.FindChild("Done").GetComponent<UISprite>().gameObject.SetActive(true);
-                    addobj.transform.FindChild("NotDone").GetComponent<UISprite>().gameObject.SetActive(false);
-                    addobj.transform.FindChild("UnDone").GetComponent<UISprite>().gameObject.SetActive(false);
+                    mRoot.Find(hookname).GetComponent<UISprite>().gameObject.SetActive(true);
+                    addobj.transform.Find("Done").GetComponent<UISprite>().gameObject.SetActive(true);
+                    addobj.transform.Find("NotDone").GetComponent<UISprite>().gameObject.SetActive(false);
+                    addobj.transform.Find("UnDone").GetComponent<UISprite>().gameObject.SetActive(false);
                 }
                 else if (i == DailyBonusCtrl.Instance.mHadDay)
                 {
                     if (DailyBonusCtrl.Instance.mTodayCan)
                     {//可领取
-                        mRoot.FindChild(hookname).GetComponent<UISprite>().gameObject.SetActive(false);
-                        addobj.transform.FindChild("Done").GetComponent<UISprite>().gameObject.SetActive(false);
-                        addobj.transform.FindChild("NotDone").GetComponent<UISprite>().gameObject.SetActive(true);
-                        addobj.transform.FindChild("UnDone").GetComponent<UISprite>().gameObject.SetActive(false);
+                        mRoot.Find(hookname).GetComponent<UISprite>().gameObject.SetActive(false);
+                        addobj.transform.Find("Done").GetComponent<UISprite>().gameObject.SetActive(false);
+                        addobj.transform.Find("NotDone").GetComponent<UISprite>().gameObject.SetActive(true);
+                        addobj.transform.Find("UnDone").GetComponent<UISprite>().gameObject.SetActive(false);
                         //LinkGameObjs = addobj.transform.FindChild("NotDone").gameObject;
                         LinkGameObjs = addobj;
                         UIEventListener.Get(LinkGameObjs).onClick += OnDaliyGameObjsClick;
                     }
                     else
                     {//无法领取
-                        mRoot.FindChild(hookname).GetComponent<UISprite>().gameObject.SetActive(false);
-                        addobj.transform.FindChild("Done").GetComponent<UISprite>().gameObject.SetActive(false);
-                        addobj.transform.FindChild("NotDone").GetComponent<UISprite>().gameObject.SetActive(false);
-                        addobj.transform.FindChild("UnDone").GetComponent<UISprite>().gameObject.SetActive(true);
+                        mRoot.Find(hookname).GetComponent<UISprite>().gameObject.SetActive(false);
+                        addobj.transform.Find("Done").GetComponent<UISprite>().gameObject.SetActive(false);
+                        addobj.transform.Find("NotDone").GetComponent<UISprite>().gameObject.SetActive(false);
+                        addobj.transform.Find("UnDone").GetComponent<UISprite>().gameObject.SetActive(true);
                     }
                 }
                 else
                 {//无法领取
-                    mRoot.FindChild(hookname).GetComponent<UISprite>().gameObject.SetActive(false);
-                    addobj.transform.FindChild("Done").GetComponent<UISprite>().gameObject.SetActive(false);
-                    addobj.transform.FindChild("NotDone").GetComponent<UISprite>().gameObject.SetActive(false);
-                    addobj.transform.FindChild("UnDone").GetComponent<UISprite>().gameObject.SetActive(true);
+                    mRoot.Find(hookname).GetComponent<UISprite>().gameObject.SetActive(false);
+                    addobj.transform.Find("Done").GetComponent<UISprite>().gameObject.SetActive(false);
+                    addobj.transform.Find("NotDone").GetComponent<UISprite>().gameObject.SetActive(false);
+                    addobj.transform.Find("UnDone").GetComponent<UISprite>().gameObject.SetActive(true);
                 }
                 //////////////////////////////////////////////////////////////////////////
                 int pos = -1;
                 foreach (string itemStr in bonus.n32ItemID)
                 {
                     ++pos;
-                    UIGrid tmpGrid = addobj.transform.FindChild("Grid").GetComponent<UIGrid>();
+                    UIGrid tmpGrid = addobj.transform.Find("Grid").GetComponent<UIGrid>();
                     GameObject oneBouns = LoadUiResource.AddChildObject(tmpGrid.transform, GameConstDefine.LoadDailyOneBonusUI);
-                    oneBouns.transform.FindChild("Num").GetComponent<UILabel>().text = "x" + bonus.n32ItemNum[pos];// 数量
+                    oneBouns.transform.Find("Num").GetComponent<UILabel>().text = "x" + bonus.n32ItemNum[pos];// 数量
                     bool isHadExtend = bonus.n32Type[pos] == "2";//是否有额外奖励
                     if (isHadExtend)
                     {
                         string starname = "Interface/SignInterface/Calendar/Date" + (i + 1).ToString() + "/Star";
-                        mRoot.FindChild(starname).gameObject.SetActive(true);
-                        oneBouns.transform.FindChild("Tip").gameObject.SetActive(true);
+                        mRoot.Find(starname).gameObject.SetActive(true);
+                        oneBouns.transform.Find("Tip").gameObject.SetActive(true);
                     }
                     UInt32 itemID = Convert.ToUInt32(itemStr);//根据id获取图片id，显示图片和数量和名称
                     if (itemID == 1)
                     {
                         oneBouns.transform.GetComponent<UISprite>().spriteName = (9).ToString();
-                        oneBouns.transform.FindChild("Name").GetComponent<UILabel>().text = "金币";
+                        oneBouns.transform.Find("Name").GetComponent<UILabel>().text = "金币";
                     }
                     else if (itemID == 2)
                     {
                         oneBouns.transform.GetComponent<UISprite>().spriteName = (10).ToString();
-                        oneBouns.transform.FindChild("Name").GetComponent<UILabel>().text = "钻石";
+                        oneBouns.transform.Find("Name").GetComponent<UILabel>().text = "钻石";
                     }
                     else if (itemID > 100000 && itemID < 110000)
                     {
                         oneBouns.transform.GetComponent<UISprite>().atlas = uia_hero;
-                        oneBouns.transform.FindChild("Name").GetComponent<UILabel>().text = ConfigReader.HeroBuyXmlInfoDict[(int)itemID].Name;
+                        oneBouns.transform.Find("Name").GetComponent<UILabel>().text = ConfigReader.HeroBuyXmlInfoDict[(int)itemID].Name;
                         oneBouns.transform.GetComponent<UISprite>().spriteName = ConfigReader.HeroBuyXmlInfoDict[(int)itemID].DefaultIcon;
                     }
                     else if (itemID > 110000 && itemID < 120000)
                     {
-                        oneBouns.transform.FindChild("Name").GetComponent<UILabel>().text = "皮肤";
+                        oneBouns.transform.Find("Name").GetComponent<UILabel>().text = "皮肤";
                         oneBouns.transform.GetComponent<UISprite>().spriteName = ConfigReader.HeroSkinXmlInfoDict[(int)itemID].Icon;
                     }
                     else if (itemID > 120000 && itemID < 130000)
                     {
-                        oneBouns.transform.FindChild("Name").GetComponent<UILabel>().text = "符文";
+                        oneBouns.transform.Find("Name").GetComponent<UILabel>().text = "符文";
                         oneBouns.transform.GetComponent<UISprite>().spriteName = ConfigReader.RuneXmlInfoDict[itemID].Icon;
                     }
                     else if (itemID > 130000 && itemID < 140000)
                     {
-                        oneBouns.transform.FindChild("Name").GetComponent<UILabel>().text = ConfigReader.OtherItemXmlInfoDic[itemID].sName;
+                        oneBouns.transform.Find("Name").GetComponent<UILabel>().text = ConfigReader.OtherItemXmlInfoDic[itemID].sName;
                         oneBouns.transform.GetComponent<UISprite>().spriteName = ConfigReader.OtherItemXmlInfoDic[itemID].icon;
                     }
                     else
                     {
-                        oneBouns.transform.FindChild("Name").GetComponent<UILabel>().text = "????";
+                        oneBouns.transform.Find("Name").GetComponent<UILabel>().text = "????";
                         oneBouns.transform.GetComponent<UISprite>().spriteName = (115).ToString();
                         Debug.LogError("unknow itemid in daliybouns " + itemStr);
                     }
@@ -295,7 +295,7 @@ namespace BlGame.View
             for (uint i = DailyBonusCtrl.Instance.mMaxDay; i < 31; ++i)
             {
                 string lightname = "Interface/SignInterface/Calendar/Date" + (i + 1).ToString() + "/Light";
-                mRoot.FindChild(lightname).gameObject.SetActive(false);
+                mRoot.Find(lightname).gameObject.SetActive(false);
             }
             mGrid.Reposition();
         }
@@ -313,7 +313,7 @@ namespace BlGame.View
             {
                 GameObject addobj = LoadUiResource.AddChildObject(mDailyTaskGrid.transform, GameConstDefine.LoadDailyTaskUI);
                 addobj.name = Convert.ToString(one.Value.mGuid);
-                addobj.transform.FindChild("TaskName").GetComponent<UILabel>().text = one.Value.mConfig.taskDesc;
+                addobj.transform.Find("TaskName").GetComponent<UILabel>().text = one.Value.mConfig.taskDesc;
                 UpdateTaskToUI(addobj, one.Value);
             }
             mDailyTaskGrid.Reposition();
@@ -328,7 +328,7 @@ namespace BlGame.View
             {
                 GameObject addobj = LoadUiResource.AddChildObject(mInfiniteTaskGrid.transform, GameConstDefine.LoadInfiniteTaskUI);
                 addobj.name = Convert.ToString(one.Value.mGuid);
-                addobj.transform.FindChild("TaskName").GetComponent<UILabel>().text = one.Value.mConfig.taskDesc;
+                addobj.transform.Find("TaskName").GetComponent<UILabel>().text = one.Value.mConfig.taskDesc;
                 UpdateTaskToUI(addobj,one.Value);
             }
             mInfiniteTaskGrid.Reposition();
@@ -343,7 +343,7 @@ namespace BlGame.View
                     {
                         GameObject addobj = LoadUiResource.AddChildObject(mDailyTaskGrid.transform, GameConstDefine.LoadDailyTaskUI);
                         addobj.name = Convert.ToString(task.mGuid);
-                        addobj.transform.FindChild("TaskName").GetComponent<UILabel>().text = task.mConfig.taskDesc;
+                        addobj.transform.Find("TaskName").GetComponent<UILabel>().text = task.mConfig.taskDesc;
                         UpdateTaskToUI(addobj, task);
                         mDailyTaskGrid.Reposition();
                     }
@@ -352,7 +352,7 @@ namespace BlGame.View
                     {
                         GameObject addobj = LoadUiResource.AddChildObject(mInfiniteTaskGrid.transform, GameConstDefine.LoadInfiniteTaskUI);
                         addobj.name = Convert.ToString(task.mGuid);
-                        addobj.transform.FindChild("TaskName").GetComponent<UILabel>().text = task.mConfig.taskDesc;
+                        addobj.transform.Find("TaskName").GetComponent<UILabel>().text = task.mConfig.taskDesc;
                         UpdateTaskToUI(addobj, task);
                         mInfiniteTaskGrid.Reposition();
                     }
@@ -481,18 +481,18 @@ namespace BlGame.View
             uint curCount = task.mCurCount;
             if (task.mCurCount == UInt32.MaxValue)
             {//已领取
-                uiTask.transform.FindChild("Complete").gameObject.SetActive(false);
-                uiTask.transform.FindChild("Done").gameObject.SetActive(true);
+                uiTask.transform.Find("Complete").gameObject.SetActive(false);
+                uiTask.transform.Find("Done").gameObject.SetActive(true);
                 UIEventListener.Get(uiTask.transform.gameObject).onClick = null;
                 curCount = task.mConfig.taskMaxCount;
             }
             else if (task.mCurCount == task.mConfig.taskMaxCount)
             {//已完成
-                uiTask.transform.FindChild("Complete").gameObject.SetActive(true);
-                uiTask.transform.FindChild("Done").gameObject.SetActive(false);
+                uiTask.transform.Find("Complete").gameObject.SetActive(true);
+                uiTask.transform.Find("Done").gameObject.SetActive(false);
                 UIEventListener.Get(uiTask.transform.gameObject).onClick += OnTaskFinishBtnClick;
             }
-            uiTask.transform.FindChild("ProgressLabel").GetComponent<UILabel>().text = Convert.ToString(curCount) + "/" + Convert.ToString(task.mConfig.taskMaxCount);
+            uiTask.transform.Find("ProgressLabel").GetComponent<UILabel>().text = Convert.ToString(curCount) + "/" + Convert.ToString(task.mConfig.taskMaxCount);
         }
     }
 }

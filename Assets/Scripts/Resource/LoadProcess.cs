@@ -240,7 +240,7 @@ namespace BlGame.Resource
             foreach (KeyValuePair<int, Texture2D> kv in lightMapDic)
             {
                 LightmapData ld = new LightmapData();
-                ld.lightmapLight = kv.Value;
+                ld.lightmapColor = kv.Value;
                 ldarr[kv.Key] = ld;
             }
             LightmapSettings.lightmaps = ldarr;

@@ -41,7 +41,7 @@ public class XueTiaoUI : MonoBehaviour
 	public virtual void Init(Ientity entity){
 		_mainCamera = Camera.main;
 		_ui2dCamera = GameMethod.GetUiCamera;
-        uiDebugInfo = this.transform.FindChild("Name").GetComponent<UILabel>();
+        uiDebugInfo = this.transform.Find("Name").GetComponent<UILabel>();
         uiDebugInfo.gameObject.SetActive(true);
         if (entity.entityType != EntityType.Player)
         {

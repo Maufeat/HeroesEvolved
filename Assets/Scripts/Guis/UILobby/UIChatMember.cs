@@ -20,8 +20,8 @@ public class UIChatMember : MonoBehaviour {
     { set; get; }
     void Init()
     {
-        NickNameLabel = this.transform.FindChild("Name").GetComponent<UILabel>();
-        CheckSprite = this.transform.FindChild("Highlight").GetComponent<UISprite>();
+        NickNameLabel = this.transform.Find("Name").GetComponent<UILabel>();
+        CheckSprite = this.transform.Find("Highlight").GetComponent<UISprite>();
         CheckButton = this.transform.GetComponent<ButtonOnPress>();
     }
     public void SetCheck(bool isCheck)

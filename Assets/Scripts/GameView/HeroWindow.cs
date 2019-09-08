@@ -53,7 +53,7 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            mMidShow = mRoot.FindChild("Animator_Area");
+            mMidShow = mRoot.Find("Animator_Area");
             mLockList.Clear();
             mHeroShowList.Clear();
             mSpriteBlackList.Clear();
@@ -66,7 +66,7 @@ namespace BlGame.View
                 ResourceUnit objUnit = ResourcesManager.Instance.loadImmediate(GameConstDefine.HeroShowBoxUI, ResourceType.PREFAB);
                 objLoad = GameObject.Instantiate(objUnit.Asset) as GameObject;
 
-                objLoad.transform.parent = mMidShow.FindChild("HeroBox").FindChild("Grid");
+                objLoad.transform.parent = mMidShow.Find("HeroBox").Find("Grid");
                 objLoad.transform.localScale = Vector3.one;
                 objLoad.transform.localPosition = Vector3.zero;
                 objLoad.name = "HeroBox" + (i + 1).ToString();
@@ -78,35 +78,35 @@ namespace BlGame.View
 
                 #region 显示英雄选择ICON图片
                 //black
-                mShowAlpha = mRoot.FindChild("Animator_Area");
-                Transform selecParent = objLoad.transform.FindChild("HeroThumbnails");
-                mSpriteBlackList.Add(selecParent.FindChild("Clip").GetComponent<UISprite>());
+                mShowAlpha = mRoot.Find("Animator_Area");
+                Transform selecParent = objLoad.transform.Find("HeroThumbnails");
+                mSpriteBlackList.Add(selecParent.Find("Clip").GetComponent<UISprite>());
                 //head
-                UISprite sprite = selecParent.FindChild("Head").GetComponent<UISprite>();
+                UISprite sprite = selecParent.Find("Head").GetComponent<UISprite>();
                 sprite.spriteName = HeroCtrl.Instance.heroInfoList[i].HeroSelectHead.ToString();
                 //lock
-                Transform lockT = objLoad.transform.FindChild("Lock");
+                Transform lockT = objLoad.transform.Find("Lock");
                 lockT.gameObject.SetActive(false);
                 mLockList.Add(lockT);
                 #endregion
 
             }
             #region 获得描述预设
-            Transform desParent = mMidShow.FindChild("HeroDestribe");
-            mHeroName = desParent.FindChild("Name").FindChild("Label").GetComponent<UILabel>();
-            Transform skillTran = desParent.FindChild("Skill");
-            mSkillDes = skillTran.FindChild("Instruction").GetComponent<UILabel>();
-            mSkillDes2 = skillTran.FindChild("Instruction2").GetComponent<UILabel>();
-            mSkillDes3 = skillTran.FindChild("Instruction3").GetComponent<UILabel>();
-            mSpriteDes = desParent.FindChild("Portrait").FindChild("Sprite").GetComponent<UISprite>();
-            mSkilltex = skillTran.FindChild("Icon1").GetComponent<UISprite>();
-            mSkilltex1 = skillTran.FindChild("Icon2").GetComponent<UISprite>();
-            mSkilltex2 = skillTran.FindChild("Icon3").GetComponent<UISprite>();
+            Transform desParent = mMidShow.Find("HeroDestribe");
+            mHeroName = desParent.Find("Name").Find("Label").GetComponent<UILabel>();
+            Transform skillTran = desParent.Find("Skill");
+            mSkillDes = skillTran.Find("Instruction").GetComponent<UILabel>();
+            mSkillDes2 = skillTran.Find("Instruction2").GetComponent<UILabel>();
+            mSkillDes3 = skillTran.Find("Instruction3").GetComponent<UILabel>();
+            mSpriteDes = desParent.Find("Portrait").Find("Sprite").GetComponent<UISprite>();
+            mSkilltex = skillTran.Find("Icon1").GetComponent<UISprite>();
+            mSkilltex1 = skillTran.Find("Icon2").GetComponent<UISprite>();
+            mSkilltex2 = skillTran.Find("Icon3").GetComponent<UISprite>();
             #endregion
 
             #region 获得英雄头像预设
-            mTeamLeft = mRoot.FindChild("TeamSelectInfo");
-            mTeamRight = mRoot.FindChild("EnemySelectInfo");
+            mTeamLeft = mRoot.Find("TeamSelectInfo");
+            mTeamRight = mRoot.Find("EnemySelectInfo");
             int index = 1;
             for (int j = 0; j < mHeroCount; j++)
             {
@@ -121,12 +121,12 @@ namespace BlGame.View
                     teamParent = mTeamRight;
                 }
 
-                Transform parent = teamParent.FindChild("Player" + index.ToString());
-                mSpriteDic[j] = parent.FindChild("Thumbnail").GetComponent<UISprite>();
-                mLabelName[j] = parent.FindChild("Name").GetComponent<UILabel>();
+                Transform parent = teamParent.Find("Player" + index.ToString());
+                mSpriteDic[j] = parent.Find("Thumbnail").GetComponent<UISprite>();
+                mLabelName[j] = parent.Find("Name").GetComponent<UILabel>();
                 mLabelName[j].text = "";
-                mSpriteSelectDic[j] = parent.FindChild("Frame").GetComponent<UISprite>();
-                mLabelDic[j] = parent.FindChild("ConfirmBar");
+                mSpriteSelectDic[j] = parent.Find("Frame").GetComponent<UISprite>();
+                mLabelDic[j] = parent.Find("ConfirmBar");
 
                 if (j % 2 != 0)
                 {
@@ -136,30 +136,30 @@ namespace BlGame.View
             #endregion
 
             #region 确定
-            mBtnSure = mMidShow.FindChild("ConfirmButton").GetComponent<ButtonOnPress>();
-            mObjHightLight = mBtnSure.transform.FindChild("Highlight").gameObject;
-            mObjCanPress = mBtnSure.transform.FindChild("Show").gameObject;
+            mBtnSure = mMidShow.Find("ConfirmButton").GetComponent<ButtonOnPress>();
+            mObjHightLight = mBtnSure.transform.Find("Highlight").gameObject;
+            mObjCanPress = mBtnSure.transform.Find("Show").gameObject;
             #endregion
 
 
             #region 购买界面
-            mBuyParent = mRoot.FindChild("SureToBuyHero");
-            Transform buyParentHero = mBuyParent.FindChild("Hero");
-            mSpriteBuyDes = buyParentHero.FindChild("Portrait").GetComponent<UISprite>();
-            mLabelBuyName = buyParentHero.FindChild("Name").GetComponent<UILabel>(); ;
-            mLabelBuySkill = buyParentHero.FindChild("Skill").FindChild("Instruction").GetComponent<UILabel>();
-            mLabelBuyDes = buyParentHero.FindChild("Story").GetComponent<UILabel>();
-            mBtnCloseBuy = mBuyParent.FindChild("Background").GetComponent<ButtonOnPress>();
-            mBtnBuy = mBuyParent.FindChild("Buy").GetComponent<ButtonOnPress>();
+            mBuyParent = mRoot.Find("SureToBuyHero");
+            Transform buyParentHero = mBuyParent.Find("Hero");
+            mSpriteBuyDes = buyParentHero.Find("Portrait").GetComponent<UISprite>();
+            mLabelBuyName = buyParentHero.Find("Name").GetComponent<UILabel>(); ;
+            mLabelBuySkill = buyParentHero.Find("Skill").Find("Instruction").GetComponent<UILabel>();
+            mLabelBuyDes = buyParentHero.Find("Story").GetComponent<UILabel>();
+            mBtnCloseBuy = mBuyParent.Find("Background").GetComponent<ButtonOnPress>();
+            mBtnBuy = mBuyParent.Find("Buy").GetComponent<ButtonOnPress>();
 
             //符文
-            mSkinsToggle = mRoot.FindChild("TurnPage/SelectSkins").GetComponent<UIToggle>();
-            mSkinsDisable = mRoot.FindChild("TurnPage/SelectSkins/Disable").gameObject;
-            mSkinsSubmit = mRoot.FindChild("SkinsInterface/ConfirmButton").GetComponent<UIButton>();
-            mRunePages = mRoot.FindChild("SkinsInterface/RunePages").GetComponent<UIPopupList>();
+            mSkinsToggle = mRoot.Find("TurnPage/SelectSkins").GetComponent<UIToggle>();
+            mSkinsDisable = mRoot.Find("TurnPage/SelectSkins/Disable").gameObject;
+            mSkinsSubmit = mRoot.Find("SkinsInterface/ConfirmButton").GetComponent<UIButton>();
+            mRunePages = mRoot.Find("SkinsInterface/RunePages").GetComponent<UIPopupList>();
 
-            mSkinsHeroName = mRoot.FindChild("SkinsInterface/DefaultSkin/NamePlate/Name").GetComponent<UILabel>();
-            mSkinsHeroIcon = mRoot.FindChild("SkinsInterface/DefaultSkin/Portrait").GetComponent<UISprite>();
+            mSkinsHeroName = mRoot.Find("SkinsInterface/DefaultSkin/NamePlate/Name").GetComponent<UILabel>();
+            mSkinsHeroIcon = mRoot.Find("SkinsInterface/DefaultSkin/Portrait").GetComponent<UISprite>();
 
             EventDelegate.Add(mRunePages.onChange, OnRunePageChange);
             #endregion
@@ -168,8 +168,8 @@ namespace BlGame.View
             #region 倒计时
             for (int i = 0; i < 2; i++)
             {
-                mSpriteTens[i] = mRoot.FindChild("TopBar" + (i + 1).ToString()).FindChild("Minute1").GetComponent<UISprite>();
-                mSpriteUnits[i] = mRoot.FindChild("TopBar" + (i + 1).ToString()).FindChild("Minute2").GetComponent<UISprite>();
+                mSpriteTens[i] = mRoot.Find("TopBar" + (i + 1).ToString()).Find("Minute1").GetComponent<UISprite>();
+                mSpriteUnits[i] = mRoot.Find("TopBar" + (i + 1).ToString()).Find("Minute2").GetComponent<UISprite>();
             }
 
             SetTime(0, mFirstCountTime);
@@ -178,9 +178,9 @@ namespace BlGame.View
             #endregion
 
 
-            mArrowUpDown[0] = mMidShow.transform.FindChild("Arrow/Left");
-            mArrowUpDown[1] = mMidShow.transform.FindChild("Arrow/Right");
-            mScrollView = mMidShow.transform.FindChild("HeroBox").GetComponent<UIScrollView>();
+            mArrowUpDown[0] = mMidShow.transform.Find("Arrow/Left");
+            mArrowUpDown[1] = mMidShow.transform.Find("Arrow/Right");
+            mScrollView = mMidShow.transform.Find("HeroBox").GetComponent<UIScrollView>();
 
             //这里出发发送服务器记录的ui点击事件消息
             SendUIEventMsg();

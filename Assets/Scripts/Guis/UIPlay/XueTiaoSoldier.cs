@@ -10,8 +10,8 @@ public class XueTiaoSoldier : XueTiaoUI
 
     void Awake()
     {
-        hpSprite = transform.FindChild("Control_Hp/Foreground").GetComponent<UISprite>();
-        labelCost = transform.FindChild("CP").GetComponent<UILabel>();
+        hpSprite = transform.Find("Control_Hp/Foreground").GetComponent<UISprite>();
+        labelCost = transform.Find("CP").GetComponent<UILabel>();
     }
     public override void SetXueTiaoInfo()
     {

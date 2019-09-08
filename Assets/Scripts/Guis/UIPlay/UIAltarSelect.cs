@@ -41,18 +41,18 @@ public class UIAltarSelect : MonoBehaviour {
         Instance = this;
         SoldierSelectBtn = new List<ButtonOnPress>();
         AltarHeadPhoto = new List<UISprite>();
-        ButtonOnPress mBtnSoldier1 = this.transform.FindChild("HeadShow/SoldierSelect/Soldier1").GetComponent<ButtonOnPress>();
+        ButtonOnPress mBtnSoldier1 = this.transform.Find("HeadShow/SoldierSelect/Soldier1").GetComponent<ButtonOnPress>();
         SoldierSelectBtn.Add(mBtnSoldier1);
         UIGuideCtrl.Instance.AddUiGuideEventBtn(mBtnSoldier1.gameObject);
-        SoldierSelectBtn.Add(this.transform.FindChild("HeadShow/SoldierSelect/Soldier2").GetComponent<ButtonOnPress>());
-        AltarHeadPhoto.Add(this.transform.FindChild("HeadShow/LastSelect/HalfPhoto").GetComponent<UISprite>());
-        AltarHeadPhoto.Add(SoldierSelectBtn[0].transform.FindChild("HalfPhoto").GetComponent<UISprite>());
-        AltarHeadPhoto.Add(SoldierSelectBtn[1].transform.FindChild("HalfPhoto").GetComponent<UISprite>());
+        SoldierSelectBtn.Add(this.transform.Find("HeadShow/SoldierSelect/Soldier2").GetComponent<ButtonOnPress>());
+        AltarHeadPhoto.Add(this.transform.Find("HeadShow/LastSelect/HalfPhoto").GetComponent<UISprite>());
+        AltarHeadPhoto.Add(SoldierSelectBtn[0].transform.Find("HalfPhoto").GetComponent<UISprite>());
+        AltarHeadPhoto.Add(SoldierSelectBtn[1].transform.Find("HalfPhoto").GetComponent<UISprite>());
         for (int id = 0; id < SoldierSelectBtn.Count; id++)
         {
             SoldierSelectBtn[id].AddListener(id, OnSoldierSelectFunc);
         }
-        ButtonOnPress BtnClose = this.transform.FindChild("CtrlBtn").GetComponent<ButtonOnPress>();
+        ButtonOnPress BtnClose = this.transform.Find("CtrlBtn").GetComponent<ButtonOnPress>();
         BtnClose.AddListener(OnUiCloseFunc);
         EventCenter.AddListener<Iplayer>(EGameEvent.eGameEvent_HeroDeathTime, ReMoveCurrGameObj);//死亡后重置祭坛
         EventCenter.AddListener<Iplayer>(EGameEvent.eGameEvent_HeroBackTown, ReMoveCurrGameObj);//回城后重置祭坛

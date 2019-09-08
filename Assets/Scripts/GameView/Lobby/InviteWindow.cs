@@ -47,9 +47,9 @@ namespace BlGame.View
         {
             StratTime = timeRelieve = DateTime.Now;
             isTimeStart = true;
-            BtnAccept = mRoot.FindChild("Accept").gameObject;
-            BtnCanel = mRoot.FindChild("Cancel").gameObject;
-            nickName = mRoot.FindChild("Tips").GetComponent<UILabel>();
+            BtnAccept = mRoot.Find("Accept").gameObject;
+            BtnCanel = mRoot.Find("Cancel").gameObject;
+            nickName = mRoot.Find("Tips").GetComponent<UILabel>();
 
             UIEventListener.Get(BtnAccept).onClick += AcceptInvite;
             UIEventListener.Get(BtnCanel).onClick += CanelInvite;

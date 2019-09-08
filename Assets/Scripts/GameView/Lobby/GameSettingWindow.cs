@@ -35,23 +35,23 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            mSoundBtn = mRoot.FindChild("SoundSwitch").gameObject;
-            mMusicBtn = mRoot.FindChild("MusicSwitch").gameObject;
-            mEffectBtn = mRoot.FindChild("EffectSwitch").gameObject;
-            mRangeBtn = mRoot.FindChild("RangeSwitch").gameObject;
-            mCloseBtn = mRoot.FindChild("CloseBtn").gameObject;
+            mSoundBtn = mRoot.Find("SoundSwitch").gameObject;
+            mMusicBtn = mRoot.Find("MusicSwitch").gameObject;
+            mEffectBtn = mRoot.Find("EffectSwitch").gameObject;
+            mRangeBtn = mRoot.Find("RangeSwitch").gameObject;
+            mCloseBtn = mRoot.Find("CloseBtn").gameObject;
 
-            mExchangeBtn = mRoot.FindChild("ExchangeBtn").GetComponent<UIButton>();
+            mExchangeBtn = mRoot.Find("ExchangeBtn").GetComponent<UIButton>();
 
-            mObjOn[0] = mSoundBtn.transform.FindChild("On").gameObject;
-            mObjOff[0] = mSoundBtn.transform.FindChild("Off").gameObject;
-            mObjOn[1] = mMusicBtn.transform.FindChild("On").gameObject;
-            mObjOff[1] = mMusicBtn.transform.FindChild("Off").gameObject;
+            mObjOn[0] = mSoundBtn.transform.Find("On").gameObject;
+            mObjOff[0] = mSoundBtn.transform.Find("Off").gameObject;
+            mObjOn[1] = mMusicBtn.transform.Find("On").gameObject;
+            mObjOff[1] = mMusicBtn.transform.Find("Off").gameObject;
 
-            mObjOn[2] = mEffectBtn.transform.FindChild("On").gameObject;
-            mObjOff[2] = mEffectBtn.transform.FindChild("Off").gameObject;
-            mObjOn[3] = mRangeBtn.transform.FindChild("On").gameObject;
-            mObjOff[3] = mRangeBtn.transform.FindChild("Off").gameObject;
+            mObjOn[2] = mEffectBtn.transform.Find("On").gameObject;
+            mObjOff[2] = mEffectBtn.transform.Find("Off").gameObject;
+            mObjOn[3] = mRangeBtn.transform.Find("On").gameObject;
+            mObjOff[3] = mRangeBtn.transform.Find("Off").gameObject;
 
             UIEventListener.Get(mCloseBtn.gameObject).onClick += ClosePress;
             UIEventListener.Get(mSoundBtn.gameObject).onClick += SoundPress;

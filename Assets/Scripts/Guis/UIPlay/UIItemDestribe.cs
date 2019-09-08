@@ -35,9 +35,9 @@ public class UIItemDestribe : MonoBehaviour
         desObj.transform.localScale = Vector3.one;
         desObj.transform.localPosition = Vector3.zero;
 
-        ItemName = desObj.transform.FindChild("Item_Name").GetComponent<UILabel>();
-        ItemDes = desObj.transform.FindChild("Item_Describe").GetComponent<UILabel>();
-        ItemCost = desObj.transform.FindChild("Item_Gold").GetComponent<UILabel>();
+        ItemName = desObj.transform.Find("Item_Name").GetComponent<UILabel>();
+        ItemDes = desObj.transform.Find("Item_Describe").GetComponent<UILabel>();
+        ItemCost = desObj.transform.Find("Item_Gold").GetComponent<UILabel>();
 
         active = false;
     }

@@ -6,8 +6,8 @@ public class UIChat : MonoBehaviour {
 
     void OnEnable()
     {
-        Input = this.transform.FindChild("Input").GetComponent<UIInput>();
-        ButtonOnPress sendBtn = this.transform.FindChild("SendMsg").GetComponent<ButtonOnPress>();
+        Input = this.transform.Find("Input").GetComponent<UIInput>();
+        ButtonOnPress sendBtn = this.transform.Find("SendMsg").GetComponent<ButtonOnPress>();
         sendBtn.AddListener(OnSendMsg);
     }
 

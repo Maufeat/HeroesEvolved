@@ -63,50 +63,50 @@ public class PlayerBattleController : MonoBehaviour {
     Transform tran = null;
     void Init()
     {
-        toggle = transform.FindChild("InfoBtn").GetComponent<ButtonOnPress>();
-        tran = transform.FindChild("Information");
-        RecordToggle = tran.FindChild("BattleBtn").GetComponent<UIToggle>();
-        AttributeToggle = tran.FindChild("StatusBtn").GetComponent<UIToggle>();
-        SystemSetToggle = tran.FindChild("SettingBtn").GetComponent<UIToggle>();
+        toggle = transform.Find("InfoBtn").GetComponent<ButtonOnPress>();
+        tran = transform.Find("Information");
+        RecordToggle = tran.Find("BattleBtn").GetComponent<UIToggle>();
+        AttributeToggle = tran.Find("StatusBtn").GetComponent<UIToggle>();
+        SystemSetToggle = tran.Find("SettingBtn").GetComponent<UIToggle>();
         BattleState = BattleCurrInfo.BattleRecord;
 
-        Transform temp = tran.FindChild("BattleInfo/Team/BlueTeam");
+        Transform temp = tran.Find("BattleInfo/Team/BlueTeam");
         int index = temp.childCount;
         for (int i = 0; i < index; i++)
         {
-            AllBlueTeam.Add(new BattleRealInfo(temp.FindChild("Player" + (i + 1))));
+            AllBlueTeam.Add(new BattleRealInfo(temp.Find("Player" + (i + 1))));
         }
-        temp = tran.FindChild("BattleInfo/Team/RedTeam");
+        temp = tran.Find("BattleInfo/Team/RedTeam");
         index = temp.childCount;
         for (int i = 0; i < index; i++)
         {
-            AllRedTeam.Add(new BattleRealInfo(temp.FindChild("Player" + (i + 1))));
+            AllRedTeam.Add(new BattleRealInfo(temp.Find("Player" + (i + 1))));
         }
-        PlayerSpeed = tran.FindChild("StatusInfo/Speed/Num").GetComponent<UILabel>();
-        AttackInterval = tran.FindChild("StatusInfo/AtkInterval/Num").GetComponent<UILabel>();
-        AttackRange = tran.FindChild("StatusInfo/AtkRange/Num").GetComponent<UILabel>();
-        ResurgenceTime = tran.FindChild("StatusInfo/ResuTime/Num").GetComponent<UILabel>();
-        PhysicAttack = tran.FindChild("StatusInfo/PhysicAtk/Num").GetComponent<UILabel>();
-        SpellsAttack = tran.FindChild("StatusInfo/SpellsAtk/Num").GetComponent<UILabel>();
-        PhysicDef = tran.FindChild("StatusInfo/PhysicDef/Num").GetComponent<UILabel>();
-        SpellsDef = tran.FindChild("StatusInfo/SpellsDef/Num").GetComponent<UILabel>();
+        PlayerSpeed = tran.Find("StatusInfo/Speed/Num").GetComponent<UILabel>();
+        AttackInterval = tran.Find("StatusInfo/AtkInterval/Num").GetComponent<UILabel>();
+        AttackRange = tran.Find("StatusInfo/AtkRange/Num").GetComponent<UILabel>();
+        ResurgenceTime = tran.Find("StatusInfo/ResuTime/Num").GetComponent<UILabel>();
+        PhysicAttack = tran.Find("StatusInfo/PhysicAtk/Num").GetComponent<UILabel>();
+        SpellsAttack = tran.Find("StatusInfo/SpellsAtk/Num").GetComponent<UILabel>();
+        PhysicDef = tran.Find("StatusInfo/PhysicDef/Num").GetComponent<UILabel>();
+        SpellsDef = tran.Find("StatusInfo/SpellsDef/Num").GetComponent<UILabel>();
 
-        CloseBtn = tran.FindChild("CloseBtn").GetComponent<ButtonOnPress>();
-        tran = tran.FindChild("SettingInfo");
+        CloseBtn = tran.Find("CloseBtn").GetComponent<ButtonOnPress>();
+        tran = tran.Find("SettingInfo");
 
-        SoundBtn = tran.FindChild("SoundSwitch").GetComponent<ButtonOnPress>();
-        MusicBtn = tran.FindChild("MusicSwitch").GetComponent<ButtonOnPress>();
-        EffectBtn = tran.FindChild("EffectSwitch").GetComponent<ButtonOnPress>();
-        RangeBtn = tran.FindChild("RangeSwitch").GetComponent<ButtonOnPress>();
-        objOn[0] = SoundBtn.transform.FindChild("On").gameObject;
-        ojbOff[0] = SoundBtn.transform.FindChild("Off").gameObject;
-        objOn[1] = MusicBtn.transform.FindChild("On").gameObject;
-        ojbOff[1] = MusicBtn.transform.FindChild("Off").gameObject;
+        SoundBtn = tran.Find("SoundSwitch").GetComponent<ButtonOnPress>();
+        MusicBtn = tran.Find("MusicSwitch").GetComponent<ButtonOnPress>();
+        EffectBtn = tran.Find("EffectSwitch").GetComponent<ButtonOnPress>();
+        RangeBtn = tran.Find("RangeSwitch").GetComponent<ButtonOnPress>();
+        objOn[0] = SoundBtn.transform.Find("On").gameObject;
+        ojbOff[0] = SoundBtn.transform.Find("Off").gameObject;
+        objOn[1] = MusicBtn.transform.Find("On").gameObject;
+        ojbOff[1] = MusicBtn.transform.Find("Off").gameObject;
 
-        objOn[2] = EffectBtn.transform.FindChild("On").gameObject;
-        ojbOff[2] = EffectBtn.transform.FindChild("Off").gameObject;
-        objOn[3] = RangeBtn.transform.FindChild("On").gameObject;
-        ojbOff[3] = RangeBtn.transform.FindChild("Off").gameObject;
+        objOn[2] = EffectBtn.transform.Find("On").gameObject;
+        ojbOff[2] = EffectBtn.transform.Find("Off").gameObject;
+        objOn[3] = RangeBtn.transform.Find("On").gameObject;
+        ojbOff[3] = RangeBtn.transform.Find("Off").gameObject;
 
         SoundBtn.AddListener((int)SystemSet.SoundButton,SoundButtonPress);
         MusicBtn.AddListener((int)SystemSet.MusicButton, SoundButtonPress);
@@ -318,20 +318,20 @@ public class PlayerBattleController : MonoBehaviour {
         {
             // TODO: Complete member initialization
             this.temp = temp;
-            PlayerName= temp.FindChild("Name/Label").GetComponent<UILabel>();
-            PlayerKills = temp.FindChild("Kill").GetComponent<UILabel>();
-            PlayerLevel = temp.FindChild("HeadPhoto/Level").GetComponent<UILabel>();
-            PlayerDeath = temp.FindChild("Death").GetComponent<UILabel>();
-            PlayerPlains = temp.FindChild("Plains").GetComponent<UILabel>();
-            PlayerIcon = temp.FindChild("HeadPhoto/Head").GetComponent<UISprite>();
-            Assist = temp.FindChild("Assists").GetComponent<UILabel>();
+            PlayerName= temp.Find("Name/Label").GetComponent<UILabel>();
+            PlayerKills = temp.Find("Kill").GetComponent<UILabel>();
+            PlayerLevel = temp.Find("HeadPhoto/Level").GetComponent<UILabel>();
+            PlayerDeath = temp.Find("Death").GetComponent<UILabel>();
+            PlayerPlains = temp.Find("Plains").GetComponent<UILabel>();
+            PlayerIcon = temp.Find("HeadPhoto/Head").GetComponent<UISprite>();
+            Assist = temp.Find("Assists").GetComponent<UILabel>();
             SetVib(false);
-            Transform tran = temp.FindChild("Items");
+            Transform tran = temp.Find("Items");
             int index = tran.childCount;
             for (int i = 0; i < index; i++)
             {
                 string str = "Item" + (i + 1) + "/icon";
-                UISprite sp = tran.FindChild(str).GetComponent<UISprite>();
+                UISprite sp = tran.Find(str).GetComponent<UISprite>();
                 sp.gameObject.SetActive(false);
                 PlayerGoodsDic.Add((i + 1), sp);
             }

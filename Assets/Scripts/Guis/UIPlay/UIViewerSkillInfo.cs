@@ -51,7 +51,7 @@ public class UIViewerSkillInfo : MonoBehaviour {
         {
             id = index;
             transfor = tran;
-            SkillPlayerIcon = tran.FindChild("CutBar_" + index).GetComponent<UISprite>();
+            SkillPlayerIcon = tran.Find("CutBar_" + index).GetComponent<UISprite>();
             cdCount = tran.GetComponent<CdCountDown>();
             SkillPlayerIcon.spriteName = "";
         }
@@ -243,7 +243,7 @@ public class UIViewerSkillInfo : MonoBehaviour {
     {
         for (int i = 0; i < transform.childCount; i++)
         {
-            Transform tran = transform.FindChild("Button_" + i );
+            Transform tran = transform.Find("Button_" + i );
             SkillSlot skillSlot = new SkillSlot(tran, i);
             skillSlots.Add(skillSlot);
             ButtonOnPress button = tran.GetComponent<ButtonOnPress>();

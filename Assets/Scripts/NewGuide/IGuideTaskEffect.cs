@@ -65,7 +65,7 @@ namespace BlGame.GuideDate
         }
 
         void ShowFlashTip() {
-            objFlash = objParent.transform.FindChild(taskData.FlashPath).gameObject;
+            objFlash = objParent.transform.Find(taskData.FlashPath).gameObject;
             TweenPosition.Begin(objFlash, 0f, taskData.FlashPos);
             objFlash.transform.localScale = Vector3.one;
             objFlash.gameObject.SetActive(true);
@@ -77,7 +77,7 @@ namespace BlGame.GuideDate
         private const float shakeDuring = 0.5f;
         private Vector3 shakeScale = new Vector3(1.1f, 1.1f, 1.1f);
         void ShowShakeTip() {
-            objShake = objParent.transform.FindChild(taskData.ShakePath).gameObject;
+            objShake = objParent.transform.Find(taskData.ShakePath).gameObject;
             objShake.transform.localPosition = taskData.ShakePos;
             objShake.transform.localScale = Vector3.one;
             objShake.gameObject.SetActive(true);
@@ -95,11 +95,11 @@ namespace BlGame.GuideDate
 
         protected virtual void ShowTextTip() {
             countText = 0;
-            objLabel = objParent.transform.FindChild(taskData.TextPath).gameObject;
+            objLabel = objParent.transform.Find(taskData.TextPath).gameObject;
             objLabel.transform.localPosition = taskData.TextPos;
             objLabel.SetActive(true);
-            labelContent = objLabel.transform.FindChild("Content").GetComponent<UILabel>();
-            labelTip = objLabel.transform.FindChild("Tip").GetComponent<UILabel>();
+            labelContent = objLabel.transform.Find("Content").GetComponent<UILabel>();
+            labelTip = objLabel.transform.Find("Tip").GetComponent<UILabel>();
             labelContent.text = taskData.TextContent.ElementAt(countText);
             btnNext = objLabel.GetComponent<ButtonOnPress>();
             btnNext.AddListener(TurnTextPage);
@@ -157,11 +157,11 @@ namespace BlGame.GuideDate
         public void ShowMark(bool show, List<GameObject> objList) {
             if (show)
             { 
-                GameObject objMark = objParent.transform.FindChild("Center/Mask").gameObject;
+                GameObject objMark = objParent.transform.Find("Center/Mask").gameObject;
                 UIPanel panelMark = objMark.GetComponentInParent<UIPanel>();               
                 UIWidget markWid = objMark.GetComponent<UIWidget>();
                 objMark.gameObject.SetActive(true);
-                GameObject tipObj = objParent.transform.FindChild(taskData.TextPath).gameObject;
+                GameObject tipObj = objParent.transform.Find(taskData.TextPath).gameObject;
                 if (objList == null) {
                     objList = new List<GameObject>();
                 }
@@ -191,7 +191,7 @@ namespace BlGame.GuideDate
             else if (!show && objWidget.Count != 0 && objmDepth.Count != 0)
             {
                 if (objP != null) {
-                    GameObject objMark = objParent.transform.FindChild("Center/Mask").gameObject;
+                    GameObject objMark = objParent.transform.Find("Center/Mask").gameObject;
                     objMark.SetActive(false);
                 }
                 for (int i = objmDepth.Count - 1; i >= 0; i--) {

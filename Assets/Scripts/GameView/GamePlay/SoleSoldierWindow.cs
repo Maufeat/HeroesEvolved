@@ -37,16 +37,16 @@ namespace BlGame.View
         {
             SoldierSelectBtn = new List<GameObject>();
             AltarHeadPhoto = new List<UISprite>();
-            SoldierSelectBtn.Add(mRoot.FindChild("Postion/HeadShow/SoldierSelect/Soldier1").gameObject);
-            SoldierSelectBtn.Add(mRoot.FindChild("Postion/HeadShow/SoldierSelect/Soldier2").gameObject);
-            AltarHeadPhoto.Add(mRoot.FindChild("Postion/HeadShow/LastSelect/HalfPhoto").GetComponent<UISprite>());
-            AltarHeadPhoto.Add(SoldierSelectBtn[1].transform.FindChild("HalfPhoto").GetComponent<UISprite>());
-            AltarHeadPhoto.Add(SoldierSelectBtn[0].transform.FindChild("HalfPhoto").GetComponent<UISprite>());
+            SoldierSelectBtn.Add(mRoot.Find("Postion/HeadShow/SoldierSelect/Soldier1").gameObject);
+            SoldierSelectBtn.Add(mRoot.Find("Postion/HeadShow/SoldierSelect/Soldier2").gameObject);
+            AltarHeadPhoto.Add(mRoot.Find("Postion/HeadShow/LastSelect/HalfPhoto").GetComponent<UISprite>());
+            AltarHeadPhoto.Add(SoldierSelectBtn[1].transform.Find("HalfPhoto").GetComponent<UISprite>());
+            AltarHeadPhoto.Add(SoldierSelectBtn[0].transform.Find("HalfPhoto").GetComponent<UISprite>());
             for (int id = 0; id < SoldierSelectBtn.Count; id++)
             {
                 UIEventListener.Get(SoldierSelectBtn[id]).onClick += OnSoldierSelectFunc;
             }
-            GameObject BtnClose = mRoot.FindChild("Postion/CtrlBtn").gameObject;
+            GameObject BtnClose = mRoot.Find("Postion/CtrlBtn").gameObject;
             UIEventListener.Get(BtnClose).onClick += OnUiCloseFunc;
         }
 

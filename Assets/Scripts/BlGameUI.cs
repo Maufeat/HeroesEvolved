@@ -61,7 +61,7 @@ public class BlGameUI : MonoBehaviour
 		mToolBarObj.transform.localPosition = new Vector3(0,0,0);
 		
 		//添加listener
-		GameObject positonObj = mToolBarObj.transform.FindChild("Position").gameObject;
+		GameObject positonObj = mToolBarObj.transform.Find("Position").gameObject;
 		ButtonOnPress positonButtonOnPress = positonObj.GetComponent<ButtonOnPress>();
 		
 		//添加listener    
@@ -98,7 +98,7 @@ public class BlGameUI : MonoBehaviour
 		
 		
 		//添加listener
-		GameObject positonObj = mToolBarObj.transform.FindChild("Position").gameObject;
+		GameObject positonObj = mToolBarObj.transform.Find("Position").gameObject;
 		ButtonOnPress positonButtonOnPress = positonObj.GetComponent<ButtonOnPress>();
 		
 		//添加listener    

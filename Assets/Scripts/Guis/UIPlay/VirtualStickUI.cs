@@ -36,7 +36,7 @@ public class VirtualStickUI : MonoBehaviour
 		Instance = this;
 		orignalPos = transform.localPosition;
         VirtualStickState = StickState.InActiveState;
-		point = transform.FindChild("stick");
+		point = transform.Find("stick");
 		btnSelf = transform.GetComponent<ButtonOnPress>();
         
         //firstInit = true;

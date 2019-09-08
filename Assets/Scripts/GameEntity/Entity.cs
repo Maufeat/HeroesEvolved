@@ -119,9 +119,9 @@ public class Entity : MonoBehaviour
     public virtual void Awake()
     {
         NavAgent = this.transform.GetComponent<UnityEngine.AI.NavMeshAgent>();
-        objAttackPoint = transform.FindChild("hitpoint");
-        objBuffPoint = transform.FindChild("buffpoint");
-        objPoint = transform.FindChild("point");
+        objAttackPoint = transform.Find("hitpoint");
+        objBuffPoint = transform.Find("buffpoint");
+        objPoint = transform.Find("point");
         if (objAttackPoint == null || objBuffPoint == null || objPoint == null)
         {
             //Debug.LogError("Entity  hitpoint or buffpoint or point is null");

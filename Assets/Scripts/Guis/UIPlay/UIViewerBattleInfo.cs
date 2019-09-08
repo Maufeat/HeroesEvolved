@@ -27,12 +27,12 @@ public class UIViewerBattleInfo : MonoBehaviour {
     void Awake()
     {
         Instance = this;
-        ObjTran = transform.FindChild("temp");
-        Transform blue = transform.FindChild("temp/Team/BlueTeam");
-        BtnOnPress = transform.FindChild("Arrow").GetComponent<ButtonOnPress>();
+        ObjTran = transform.Find("temp");
+        Transform blue = transform.Find("temp/Team/BlueTeam");
+        BtnOnPress = transform.Find("Arrow").GetComponent<ButtonOnPress>();
         for (int i = 0; i < blue.childCount; i++)
         {
-            Transform temp = blue.FindChild("Player" + (i + 1));
+            Transform temp = blue.Find("Player" + (i + 1));
             BattleInfoList.Add(new UIBattleInfo(temp));
         }
     }
@@ -240,13 +240,13 @@ public class UIViewerBattleInfo : MonoBehaviour {
         public UILabel PlayerFarm;
         public UIBattleInfo(Transform tran)
         {
-            PlayerNameLabel = tran.FindChild("Name/Label").GetComponent<UILabel>();
-            PlayerLevelLabel = tran.FindChild("Level").GetComponent<UILabel>();
-            PlayerKillsLabel = tran.FindChild("Kill").GetComponent<UILabel>();
-            PlayerDeathLabel = tran.FindChild("Death").GetComponent<UILabel>();
-            PlayerCp = tran.FindChild("CP").GetComponent<UILabel>();
-            PlayerFarm = tran.FindChild("Fram").GetComponent<UILabel>();
-            PlayerIcon = tran.FindChild("HeadPhoto/Head").GetComponent<UISprite>();
+            PlayerNameLabel = tran.Find("Name/Label").GetComponent<UILabel>();
+            PlayerLevelLabel = tran.Find("Level").GetComponent<UILabel>();
+            PlayerKillsLabel = tran.Find("Kill").GetComponent<UILabel>();
+            PlayerDeathLabel = tran.Find("Death").GetComponent<UILabel>();
+            PlayerCp = tran.Find("CP").GetComponent<UILabel>();
+            PlayerFarm = tran.Find("Fram").GetComponent<UILabel>();
+            PlayerIcon = tran.Find("HeadPhoto/Head").GetComponent<UISprite>();
             PlayerIcon.spriteName = "";
             PlayerNameLabel.text = "";
             PlayerLevelLabel.text = "";

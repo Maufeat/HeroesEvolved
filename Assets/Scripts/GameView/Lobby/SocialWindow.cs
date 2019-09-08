@@ -40,30 +40,30 @@ namespace BlGame.View{
         //窗口控件初始化
         protected override void InitWidget()
         {
-            mFriendToggle = mRoot.FindChild("MenuBtn/MyFriends").GetComponent<UIToggle>();
-            mBlackToggle = mRoot.FindChild("MenuBtn/BlackList").GetComponent<UIToggle>();
-            mRecentlyToggle = mRoot.FindChild("MenuBtn/Recently").GetComponent<UIToggle>();
-            mFriendGrid = mRoot.FindChild("MenuOptions/ListView/Grid").GetComponent<UIGrid>();
-            mAddFriendToggle = mRoot.FindChild("MenuOptions/FriendsOption/Button/AddFriends").gameObject;
+            mFriendToggle = mRoot.Find("MenuBtn/MyFriends").GetComponent<UIToggle>();
+            mBlackToggle = mRoot.Find("MenuBtn/BlackList").GetComponent<UIToggle>();
+            mRecentlyToggle = mRoot.Find("MenuBtn/Recently").GetComponent<UIToggle>();
+            mFriendGrid = mRoot.Find("MenuOptions/ListView/Grid").GetComponent<UIGrid>();
+            mAddFriendToggle = mRoot.Find("MenuOptions/FriendsOption/Button/AddFriends").gameObject;
 
-            mDelFriendToggle = mRoot.FindChild("MenuOptions/FriendsOption/Button/DeleteFriends").GetComponent<UIButton>();
-            mMoveToBlackTog = mRoot.FindChild("MenuOptions/FriendsOption/Button/MoveToBlack").GetComponent<UIButton>();
-            mSendMsgToggle = mRoot.FindChild("MenuOptions/FriendsOption/Button/SendMsg").GetComponent<UIButton>();
-            mSendAddFriend = mRoot.FindChild("MenuOptions/AddInterface/Button").gameObject;
+            mDelFriendToggle = mRoot.Find("MenuOptions/FriendsOption/Button/DeleteFriends").GetComponent<UIButton>();
+            mMoveToBlackTog = mRoot.Find("MenuOptions/FriendsOption/Button/MoveToBlack").GetComponent<UIButton>();
+            mSendMsgToggle = mRoot.Find("MenuOptions/FriendsOption/Button/SendMsg").GetComponent<UIButton>();
+            mSendAddFriend = mRoot.Find("MenuOptions/AddInterface/Button").gameObject;
 
-            mInputTemp = mRoot.FindChild("MenuOptions/AddInterface/Input/InputArea").GetComponent<UIInput>();
-            mSureDel = mRoot.FindChild("MenuOptions/FriendsOption/DeleteInterface/Confirm").gameObject;
-            mCanelDel = mRoot.FindChild("MenuOptions/FriendsOption/DeleteInterface/Cancel").gameObject;
-            ToggleID = mRoot.FindChild("MenuOptions/AddInterface/ModeSelect/ID").GetComponent<UIToggle>();
-            ToggleName = mRoot.FindChild("MenuOptions/AddInterface/ModeSelect/NickName").GetComponent<UIToggle>();
+            mInputTemp = mRoot.Find("MenuOptions/AddInterface/Input/InputArea").GetComponent<UIInput>();
+            mSureDel = mRoot.Find("MenuOptions/FriendsOption/DeleteInterface/Confirm").gameObject;
+            mCanelDel = mRoot.Find("MenuOptions/FriendsOption/DeleteInterface/Cancel").gameObject;
+            ToggleID = mRoot.Find("MenuOptions/AddInterface/ModeSelect/ID").GetComponent<UIToggle>();
+            ToggleName = mRoot.Find("MenuOptions/AddInterface/ModeSelect/NickName").GetComponent<UIToggle>();
 
-            mSureToBlack = mRoot.FindChild("MenuOptions/FriendsOption/BlackInterface/Confirm").gameObject;
-            mCanelToBlack = mRoot.FindChild("MenuOptions/FriendsOption/BlackInterface/Cancel").gameObject;
-            mRemoveToBlack = mRoot.FindChild("MenuOptions/BlackListOption/DeleteFriends").GetComponent<UIButton>();
-            mAddToBlack = mRoot.FindChild("MenuOptions/BlackListOption/AddToBlack").gameObject;
-            mDefault = mInputTemp.transform.FindChild("Num").GetComponent<UILabel>();
+            mSureToBlack = mRoot.Find("MenuOptions/FriendsOption/BlackInterface/Confirm").gameObject;
+            mCanelToBlack = mRoot.Find("MenuOptions/FriendsOption/BlackInterface/Cancel").gameObject;
+            mRemoveToBlack = mRoot.Find("MenuOptions/BlackListOption/DeleteFriends").GetComponent<UIButton>();
+            mAddToBlack = mRoot.Find("MenuOptions/BlackListOption/AddToBlack").gameObject;
+            mDefault = mInputTemp.transform.Find("Num").GetComponent<UILabel>();
 
-            CloseBtn = mRoot.FindChild("MenuOptions/AddInterface/BackButton").gameObject;
+            CloseBtn = mRoot.Find("MenuOptions/AddInterface/BackButton").gameObject;
             UIEventListener.Get(mRemoveToBlack.gameObject).onClick += RemoveBlack;
             UIEventListener.Get(mAddToBlack).onClick += OpenAddFriend;
 
@@ -204,7 +204,7 @@ namespace BlGame.View{
             {
                 SGUID = FriendManager.Instance.OnClickKey[LastObj.objParent].SGUID;
                 LastTemp = FriendManager.Instance.OnClickKey[LastObj.objParent].NiceName;
-                temp.FindChild("Name").GetComponent<UILabel>().text = LastTemp;
+                temp.Find("Name").GetComponent<UILabel>().text = LastTemp;
                 return true;
             }
             else if (LastObj == null)
@@ -473,13 +473,13 @@ namespace BlGame.View{
                     obj.transform.localScale = Vector3.one;
 
                     UIFriend friend = new UIFriend();
-                    friend.mHeadID = obj.transform.FindChild("HeadPhoto").GetComponent<UISprite>();
-                    friend.mNickName = obj.transform.FindChild("Name").GetComponent<UILabel>();
-                    friend.mVipSign = obj.transform.FindChild("VipSign").GetComponent<UILabel>();
-                    friend.mLadderIntegral = obj.transform.FindChild("Ladder/Score").GetComponent<UILabel>();
-                    friend.mHighLight = obj.transform.FindChild("HighLight").GetComponent<UISprite>();
-                    friend.mOnLine = obj.transform.FindChild("Online").gameObject;
-                    friend.mOffLine = obj.transform.FindChild("Offline").gameObject;
+                    friend.mHeadID = obj.transform.Find("HeadPhoto").GetComponent<UISprite>();
+                    friend.mNickName = obj.transform.Find("Name").GetComponent<UILabel>();
+                    friend.mVipSign = obj.transform.Find("VipSign").GetComponent<UILabel>();
+                    friend.mLadderIntegral = obj.transform.Find("Ladder/Score").GetComponent<UILabel>();
+                    friend.mHighLight = obj.transform.Find("HighLight").GetComponent<UISprite>();
+                    friend.mOnLine = obj.transform.Find("Online").gameObject;
+                    friend.mOffLine = obj.transform.Find("Offline").gameObject;
                     friend.objParent = obj;
                     FriendListUI.Add(obj,friend);
                     FriendManager.Instance.AddOnClickKey(obj, item);

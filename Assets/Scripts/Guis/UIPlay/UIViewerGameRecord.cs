@@ -32,15 +32,15 @@ public class UIViewerGameRecord : MonoBehaviour {
     }
     void Init()
     {
-        BtnOnPress = transform.FindChild("Arrow").GetComponent<ButtonOnPress>();
+        BtnOnPress = transform.Find("Arrow").GetComponent<ButtonOnPress>();
         BtnOnPress.AddListener(0, OnButtonPress);
-        AllRedKills = this.transform.FindChild("Panel/Kill/Spirit/KillLabel").GetComponent<UILabel>();
-        AllBuleKills = this.transform.FindChild("Panel/Kill/Undeath/KillLabel").GetComponent<UILabel>();
-        TimeLabel = this.transform.FindChild("Panel/Time/TimeLabel").GetComponent<UILabel>();
+        AllRedKills = this.transform.Find("Panel/Kill/Spirit/KillLabel").GetComponent<UILabel>();
+        AllBuleKills = this.transform.Find("Panel/Kill/Undeath/KillLabel").GetComponent<UILabel>();
+        TimeLabel = this.transform.Find("Panel/Time/TimeLabel").GetComponent<UILabel>();
         AllRedKills.text = "0";
         AllBuleKills.text = "0";
-        greenHp = transform.FindChild("Panel/zcxt_s/Sprite").GetComponent<UISprite>();
-        redHp = transform.FindChild("Panel/zcxt_d/Sprite").GetComponent<UISprite>();
+        greenHp = transform.Find("Panel/zcxt_s/Sprite").GetComponent<UISprite>();
+        redHp = transform.Find("Panel/zcxt_d/Sprite").GetComponent<UISprite>();
     } 
 
     void OnButtonPress(int ie , bool isPress)

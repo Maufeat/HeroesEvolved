@@ -47,7 +47,7 @@ public class fyDragRibbon : fyRibbonTrail
      
     
         //创建一个绑定节点
-        mBindTM = renderObj.transform.FindChild("BindObj");
+        mBindTM = renderObj.transform.Find("BindObj");
         if (mBindTM == null)
         {
             GameObject bindObj = new GameObject("BindObj");

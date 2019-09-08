@@ -23,8 +23,8 @@ public class UIMoneyEffect:MonoBehaviour
 
     void Init() {
 
-        team1 = transform.FindChild("TeamBackground/TeamPlateBlue");
-        team2 = transform.FindChild("TeamBackground/TeamPlateRed");
+        team1 = transform.Find("TeamBackground/TeamPlateBlue");
+        team2 = transform.Find("TeamBackground/TeamPlateRed");
 
         for (int i = 0; i < 6; i++) {
             Transform parent = team1;
@@ -33,14 +33,14 @@ public class UIMoneyEffect:MonoBehaviour
             {
                 parent = team2;
             }
-            Transform goldParent = parent.FindChild("GoldPanel");
-            Transform labelParent = goldParent.FindChild("Gold"+index.ToString());
-            Transform objIcon = labelParent.FindChild("Gold");
+            Transform goldParent = parent.Find("GoldPanel");
+            Transform labelParent = goldParent.Find("Gold"+index.ToString());
+            Transform objIcon = labelParent.Find("Gold");
             MoneyEffectClass effect = new MoneyEffectClass();
             for (int j = 0; j < 6; j++) {
-                Transform panel = labelParent.FindChild("Panel" + (j + 1).ToString());
-                UILabel labelUp = panel.FindChild("Label1").GetComponent<UILabel>();
-                UILabel labelDown = panel.FindChild("Label2").GetComponent<UILabel>();
+                Transform panel = labelParent.Find("Panel" + (j + 1).ToString());
+                UILabel labelUp = panel.Find("Label1").GetComponent<UILabel>();
+                UILabel labelDown = panel.Find("Label2").GetComponent<UILabel>();
                 effect.labelUpList.Add(labelUp);
                 effect.labelDownList.Add(labelDown);
             }

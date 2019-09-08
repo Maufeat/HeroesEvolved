@@ -38,9 +38,9 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            mContent = mRoot.FindChild("ScrollView/Text/Label").GetComponent<UILabel>();
-            mSureBtn = mRoot.FindChild("CtrlBtn").gameObject;
-            mGrid = mRoot.FindChild("List/Panel/Grid").GetComponent<UIGrid>();
+            mContent = mRoot.Find("ScrollView/Text/Label").GetComponent<UILabel>();
+            mSureBtn = mRoot.Find("CtrlBtn").gameObject;
+            mGrid = mRoot.Find("List/Panel/Grid").GetComponent<UIGrid>();
             //close = mRoot.FindChild("Background/Black").gameObject;
             UIEventListener.Get(mSureBtn).onClick += CloseNotice;
             //UIEventListener.Get(close).onClick += Close;
@@ -90,15 +90,15 @@ namespace BlGame.View
                 if (!mNoticeTitle.TryGetValue(obj, out not))
                 {
                     not = new NoticeTitle();
-                    not.mHot = obj.transform.FindChild("Status/Hot").gameObject;
-                    not.mNew = obj.transform.FindChild("Status/New").gameObject;
+                    not.mHot = obj.transform.Find("Status/Hot").gameObject;
+                    not.mNew = obj.transform.Find("Status/New").gameObject;
 
-                    not.mActivities = obj.transform.FindChild("Tip/Activities").gameObject;
-                    not.mDiscount = obj.transform.FindChild("Tip/Discount").gameObject;
-                    not.mNotify = obj.transform.FindChild("Tip/Notify").gameObject;
+                    not.mActivities = obj.transform.Find("Tip/Activities").gameObject;
+                    not.mDiscount = obj.transform.Find("Tip/Discount").gameObject;
+                    not.mNotify = obj.transform.Find("Tip/Notify").gameObject;
 
-                    not.mHighlight = obj.transform.FindChild("Highlight").gameObject;
-                    not.mNoticeName = obj.transform.FindChild("Name").GetComponent<UILabel>();
+                    not.mHighlight = obj.transform.Find("Highlight").gameObject;
+                    not.mNoticeName = obj.transform.Find("Name").GetComponent<UILabel>();
                     mNoticeTitle.Add(obj, not);
                     mNoticeContent.Add(obj, item.mNoticeContent);
                 }

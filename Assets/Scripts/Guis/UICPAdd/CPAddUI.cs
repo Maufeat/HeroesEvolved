@@ -12,9 +12,9 @@ public class CPAddUI : MonoBehaviour
 
     void Awake()
     {
-        m_listsprite.Add(transform.FindChild("cpAdd_1").GetComponent<UISprite>());
-        m_listsprite.Add(transform.FindChild("cpAdd_2").GetComponent<UISprite>());
-        m_listsprite.Add(transform.FindChild("cpAdd_3").GetComponent<UISprite>());
+        m_listsprite.Add(transform.Find("cpAdd_1").GetComponent<UISprite>());
+        m_listsprite.Add(transform.Find("cpAdd_2").GetComponent<UISprite>());
+        m_listsprite.Add(transform.Find("cpAdd_3").GetComponent<UISprite>());
     }
 
     public void Init()

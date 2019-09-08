@@ -25,7 +25,7 @@ public class UIMiniMapPlayerElement : UIMiniMapElement
         spriteSmallIcon = gameMapPitch.GetComponent<UISprite>();
         orignalSize = new Vector2(spriteSmallIcon.width, spriteSmallIcon.height);
         smallIconName = spriteSmallIcon.spriteName;
-        headBg = spriteSmallIcon.transform.FindChild("Sprite").GetComponent<UISprite>();
+        headBg = spriteSmallIcon.transform.Find("Sprite").GetComponent<UISprite>();
         headBg.gameObject.SetActive(false);
     }
 
@@ -47,7 +47,7 @@ public class UIMiniMapPlayerElement : UIMiniMapElement
 
 
     void ChangeMapState() { 
-        UISprite sprite = headBg.transform.FindChild("Sprite").GetComponent<UISprite>();
+        UISprite sprite = headBg.transform.Find("Sprite").GetComponent<UISprite>();
         if (!EntityManager.AllEntitys.ContainsKey(mapTarget))
         {
             sprite.gameObject.SetActive(false);

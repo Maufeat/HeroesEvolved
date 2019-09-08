@@ -72,7 +72,7 @@ public class UIPvpOrGuideBase : MonoBehaviour
 		BtnMove = new ButtonOnPress[BtnModeSelect.childCount]; 
 		SpriteBg = new UISprite[BtnModeSelect.childCount];
 		for (int i = 0; i < BtnModeSelect.childCount; i ++) {
-			BtnMove[i] = BtnModeSelect.FindChild(modeName[i]).GetComponent<ButtonOnPress>();
+			BtnMove[i] = BtnModeSelect.Find(modeName[i]).GetComponent<ButtonOnPress>();
 			BtnMove[i].AddListener ( i + 1, PvpBtnOnPress);
 			MoneyLabel[i] = BtnMove[i].transform.Find("bBar/num").GetComponent<UILabel>();
 			MoneyLabel[i].text = "55";
@@ -96,7 +96,7 @@ public class UIPvpOrGuideBase : MonoBehaviour
 		BtnGuide = this.transform.Find ("Training/Button");
 		for(int i = 0; i < BtnGuide.childCount; i ++)
 		{
-			ButtonOnPress btn = BtnGuide.FindChild("Guide" + (i + 1)).GetComponent<ButtonOnPress>();
+			ButtonOnPress btn = BtnGuide.Find("Guide" + (i + 1)).GetComponent<ButtonOnPress>();
 			btn.AddListener(i + 4,PvpBtnOnPress);
 		}
 		BtnCancel = this.transform.Find("Time/button").GetComponent<ButtonOnPress>();
@@ -133,13 +133,13 @@ public class UIPvpOrGuideBase : MonoBehaviour
         switch (taskId)
         {
             case EGameEvent.eGameEvent_UIGuideNewsGuideEnd:
-                objList.Add(BtnGuide.FindChild("Guide1").gameObject);
+                objList.Add(BtnGuide.Find("Guide1").gameObject);
                 break;
             case EGameEvent.eGameEvent_UIGuideSelfDefBtnEnd:
                 objList.Add(CustomButton.gameObject);
                 break; 
             case EGameEvent.eGameEvent_UIGuideMatchBtnEnd:
-                objList.Add(BtnModeSelect.FindChild(modeName[0]).gameObject);
+                objList.Add(BtnModeSelect.Find(modeName[0]).gameObject);
                 break;
         }
 
@@ -194,13 +194,13 @@ public class UIPvpOrGuideBase : MonoBehaviour
 			CustomButton.RemoveListener (PvpBtnOnPress);
 		if(BtnModeSelect != null)
 			for (int i = 0; i < BtnModeSelect.childCount; i ++) {
-				ButtonOnPress btn = BtnModeSelect.FindChild(modeName[i]).GetComponent<ButtonOnPress>();
+				ButtonOnPress btn = BtnModeSelect.Find(modeName[i]).GetComponent<ButtonOnPress>();
 				btn.RemoveListener (PvpBtnOnPress);
 			}
 		if(BtnGuide != null)
 			for(int i = 0; i < BtnGuide.childCount; i ++)
 			{
-				ButtonOnPress btn = BtnGuide.FindChild("Guide" + (i + 1)).GetComponent<ButtonOnPress>();
+				ButtonOnPress btn = BtnGuide.Find("Guide" + (i + 1)).GetComponent<ButtonOnPress>();
 				btn.RemoveListener(PvpBtnOnPress);
 			}
 		if (BtnCancel != null)

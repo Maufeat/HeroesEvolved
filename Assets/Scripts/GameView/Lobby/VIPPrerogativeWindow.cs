@@ -37,12 +37,12 @@ namespace BlGame.View
            //窗口控件初始化
         protected override void InitWidget()
         {
-            mPanel = mRoot.FindChild("ScrollView").GetComponent<UIPanel>();
-            mGrid = mRoot.FindChild("ScrollView/Grid").GetComponent<UIGrid>();
-            LastLeft = mRoot.FindChild("Arrow/Left").gameObject;
-            LastRight = mRoot.FindChild("Arrow/Right").gameObject;
-            CloseBtn = mRoot.FindChild("CloseBtn").gameObject;
-            Recharge = mRoot.FindChild("ChargeBtn").gameObject;
+            mPanel = mRoot.Find("ScrollView").GetComponent<UIPanel>();
+            mGrid = mRoot.Find("ScrollView/Grid").GetComponent<UIGrid>();
+            LastLeft = mRoot.Find("Arrow/Left").gameObject;
+            LastRight = mRoot.Find("Arrow/Right").gameObject;
+            CloseBtn = mRoot.Find("CloseBtn").gameObject;
+            Recharge = mRoot.Find("ChargeBtn").gameObject;
 
             UIEventListener.Get(LastLeft).onClick += LeftButton;
             UIEventListener.Get(LastRight).onClick += RightButton;
@@ -121,8 +121,8 @@ namespace BlGame.View
                 obj.name = (j++).ToString();
                 value = item.VipHero.Split(':');
 
-                UILabel uil = obj.transform.FindChild("InfoLabel").GetComponent<UILabel>();
-                UILabel viplevel = obj.transform.FindChild("NameLabel").GetComponent<UILabel>();
+                UILabel uil = obj.transform.Find("InfoLabel").GetComponent<UILabel>();
+                UILabel viplevel = obj.transform.Find("NameLabel").GetComponent<UILabel>();
                 viplevel.text = "VIP "+item.VipUserLevel.ToString();
                 info = ConfigReader.msgXmlInfoDic[20001];
                 for (int i = 0; i < value.Length; i++)

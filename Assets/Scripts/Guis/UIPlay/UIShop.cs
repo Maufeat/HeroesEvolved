@@ -151,14 +151,14 @@ public class UIShop : MonoBehaviour {
     public void InitShop(int shopId)
     {
         ShopId = shopId;
-        ShopItemAll.Add(ShopSelectType.TypeUser , new UserPackageItem(this.transform.FindChild("Backpackage")));
-        ShopItemAll.Add(ShopSelectType.TypeAfter, new AfterPackageItem(this.transform.FindChild("PropertyAdvanced/Grid")));
-        ShopItemAll.Add(ShopSelectType.TypeBuy , new BuyPackageItem(this.transform.FindChild("PropertySelect/Grid")));
-        ShopItemAll.Add(ShopSelectType.TypeCompose , new ComposePackageItem(this.transform.FindChild("PropertyConstruct")));
+        ShopItemAll.Add(ShopSelectType.TypeUser , new UserPackageItem(this.transform.Find("Backpackage")));
+        ShopItemAll.Add(ShopSelectType.TypeAfter, new AfterPackageItem(this.transform.Find("PropertyAdvanced/Grid")));
+        ShopItemAll.Add(ShopSelectType.TypeBuy , new BuyPackageItem(this.transform.Find("PropertySelect/Grid")));
+        ShopItemAll.Add(ShopSelectType.TypeCompose , new ComposePackageItem(this.transform.Find("PropertyConstruct")));
 
         RegistFunctionButtons();
-        itemDestribe = new ItemDestribe(transform.FindChild("PropertyDestribe"));
-        Package = new PackageSelect(this.transform.FindChild("KindSelect"), ShopId);
+        itemDestribe = new ItemDestribe(transform.Find("PropertyDestribe"));
+        Package = new PackageSelect(this.transform.Find("KindSelect"), ShopId);
         UserPackageItem use = (UserPackageItem)ShopItemAll[ShopSelectType.TypeUser];
         EventCenter.AddListener(EGameEvent.eGameEvent_UpdateUserGameItems, use.OnShowItemInUserInterface);        
          
@@ -167,14 +167,14 @@ public class UIShop : MonoBehaviour {
 
     private void RegistFunctionButtons()
     {
-        UIButton mCancel = this.transform.FindChild("CancelButton").GetComponent<UIButton>();
+        UIButton mCancel = this.transform.Find("CancelButton").GetComponent<UIButton>();
         UIGuideCtrl.Instance.AddUiGuideEventBtn(mCancel.gameObject);
 
-        UIButton mBuy = this.transform.FindChild("Backpackage/BuyBtn").GetComponent<UIButton>();
+        UIButton mBuy = this.transform.Find("Backpackage/BuyBtn").GetComponent<UIButton>();
         EventDelegate.Add(mBuy.onClick, OnBuyButtonClick);
         UIGuideCtrl.Instance.AddUiGuideEventBtn(mBuy.gameObject);
 
-        ButtonOnPress mSell = this.transform.FindChild("Backpackage/SellBtn").GetComponent<ButtonOnPress>();
+        ButtonOnPress mSell = this.transform.Find("Backpackage/SellBtn").GetComponent<ButtonOnPress>();
         EventDelegate.Add(mCancel.onClick, OnShopClose);
         mSell.AddListener((int)FuncButtons.SellBtn, FeatureButtonFunc);
     }
@@ -196,9 +196,9 @@ public class UIShop : MonoBehaviour {
 
 
     void Awake() {
-        labelCp = transform.FindChild("CPShow/CP/Label").GetComponent<UILabel>();
-        gold = transform.FindChild("CPShow/Gold/Label").GetComponent<UILabel>();
-        teampCp = transform.FindChild("CPShow/TeamCP/Label").GetComponent<UILabel>();
+        labelCp = transform.Find("CPShow/CP/Label").GetComponent<UILabel>();
+        gold = transform.Find("CPShow/Gold/Label").GetComponent<UILabel>();
+        teampCp = transform.Find("CPShow/TeamCP/Label").GetComponent<UILabel>();
     }
 
 	// Use this for initialization
@@ -387,7 +387,7 @@ public class UserPackageItem : ShopItemBase
         for (int ct = 0; ct < UserItemBtnCount; ct++)
         {
             int ctt = ct + 1;
-            DbClickBotton click = head.FindChild("Item" + ctt.ToString()).GetComponent<DbClickBotton>();
+            DbClickBotton click = head.Find("Item" + ctt.ToString()).GetComponent<DbClickBotton>();
             click.AddListener(ct, OnButtonClickFunc);
             click.AddListenerDb(ct, OnButtolDbClickFunc);
             ButtonUis.Add(click);
@@ -427,8 +427,8 @@ public class UserPackageItem : ShopItemBase
      {
          if (index < 0 || index >= ButtonUis.Count) return;
          DbClickBotton click = ButtonUis.ElementAt(index);
-         UISprite sprite = click.transform.FindChild("icon").GetComponent<UISprite>();
-         UILabel label = click.transform.FindChild("Label").GetComponent<UILabel>();
+         UISprite sprite = click.transform.Find("icon").GetComponent<UISprite>();
+         UILabel label = click.transform.Find("Label").GetComponent<UILabel>();
          sprite.gameObject.SetActive(enable);
          label.gameObject.SetActive(enable);
      }
@@ -463,9 +463,9 @@ public class UserPackageItem : ShopItemBase
 
          int index = GetIndexOfItem(obj);
          SetItemEnableByIndex(index, false);
-         objMove = obj.transform.FindChild("SpriteMove").gameObject;
+         objMove = obj.transform.Find("SpriteMove").gameObject;
          UISprite sprite = objMove.GetComponent<UISprite>();
-         UISprite spriteIcon = obj.transform.FindChild("icon").GetComponent<UISprite>();
+         UISprite spriteIcon = obj.transform.Find("icon").GetComponent<UISprite>();
          sprite.spriteName = spriteIcon.spriteName;
          objMove.gameObject.SetActive(true);
      }
@@ -530,11 +530,11 @@ public class UserPackageItem : ShopItemBase
         {
             int itemId = -1;
             DbClickBotton click = ButtonUis.ElementAt(ct);
-            UISprite sprite = click.transform.FindChild("icon").GetComponent<UISprite>();
+            UISprite sprite = click.transform.Find("icon").GetComponent<UISprite>();
             localPlayer.UserGameItems.TryGetValue(ct,out itemId);
             int count = 0;
             localPlayer.UserGameItemsCount.TryGetValue(ct, out count);
-            UILabel label = click.transform.FindChild("Label").GetComponent<UILabel>();
+            UILabel label = click.transform.Find("Label").GetComponent<UILabel>();
             if (count == 0 || !ConfigReader.ItemXmlInfoDict.ContainsKey(itemId))
             {
                 sprite.gameObject.SetActive(false); 
@@ -566,7 +566,7 @@ public class UserPackageItem : ShopItemBase
     protected override void  SetSelectSpriteVisiable(int index, bool visiable)
     {
         if (ButtonUis.Count <= index || index < 0) return;
-        UISprite sprite = ButtonUis.ElementAt(index).transform.FindChild("SpriteSelect").GetComponent<UISprite>();
+        UISprite sprite = ButtonUis.ElementAt(index).transform.Find("SpriteSelect").GetComponent<UISprite>();
         sprite.gameObject.SetActive(visiable);        
     }
 
@@ -629,9 +629,9 @@ public class BuyPackageItem : ShopItemBase
         orignalPos = ScView.transform.localPosition;
         orignalRangle = ScView.GetComponent<UIPanel>().baseClipRegion;
         orginalOffset = ScView.GetComponent<UIPanel>().clipOffset;
-        Transform btnParent = UIShop.Instance.transform.FindChild("SelectBG/InfoPageCtrl");
+        Transform btnParent = UIShop.Instance.transform.Find("SelectBG/InfoPageCtrl");
         for (int i = 0; i < 2; i++) {
-            arrowUpDown[i] = btnParent.FindChild("Btn" + (i + 1).ToString());
+            arrowUpDown[i] = btnParent.Find("Btn" + (i + 1).ToString());
         }
         arrowUpDown[0].gameObject.SetActive(false);
         arrowUpDown[1].gameObject.SetActive(true);
@@ -732,7 +732,7 @@ public class BuyPackageItem : ShopItemBase
     protected override void SetSelectSpriteVisiable(int index, bool visiable)
     {
         if (ButtonUis.Count <= index || index < 0) return;
-        UISprite sprite = ButtonUis.ElementAt(index).transform.FindChild("Item/SpriteSelect").GetComponent<UISprite>();
+        UISprite sprite = ButtonUis.ElementAt(index).transform.Find("Item/SpriteSelect").GetComponent<UISprite>();
         sprite.gameObject.SetActive(visiable);
     }    
 
@@ -757,9 +757,9 @@ public class BuyPackageItem : ShopItemBase
         for (int ct = 0; ct < ButtonUis.Count; ct++)
         {
             DbClickBotton click = ButtonUis[ct];
-            UISprite sprite = click.transform.FindChild("Item/icon").GetComponent<UISprite>();
+            UISprite sprite = click.transform.Find("Item/icon").GetComponent<UISprite>();
           
-            UILabel price = click.transform.FindChild("Price/Label").GetComponent<UILabel>();
+            UILabel price = click.transform.Find("Price/Label").GetComponent<UILabel>();
             if (ct >= ItemsInUserInterface.Count ) 
             { 
                 //click.gameObject.SetActive(false); 
@@ -782,19 +782,19 @@ public class BuyPackageItem : ShopItemBase
             sprite.gameObject.SetActive(true);
             sprite.spriteName = ConfigReader.ItemXmlInfoDict[item].sIcon;
             if (UIShop.isRecommendEquip && PlayerManager.Instance.LocalAccount.ObType == ObPlayerOrPlayer.PlayerType) {                
-                Transform parentKind = click.gameObject.transform.FindChild("Recommend");
+                Transform parentKind = click.gameObject.transform.Find("Recommend");
                 HeroConfigInfo info = ConfigReader.GetHeroInfo(PlayerManager.Instance.LocalPlayer.NpcGUIDType);
 				//策划说，初级推荐装备，中级，高级都小于6个  
 				int index = (info.HeroPreEquip.Count == 0) ? 0 : (info.HeroPreEquip.Count / 6 + 1) * 6;
 				int index2 = (info.HeroMidEquip.Count == 0) ? 0 : (info.HeroMidEquip.Count / 6 + 1) * 6 ;
 				if (info.HeroPreEquip.Contains(item) && ct < (info.HeroPreEquip.Count / 6 + 1) * 6 ) {
-                    parentKind.FindChild("Early").gameObject.SetActive(true);
+                    parentKind.Find("Early").gameObject.SetActive(true);
                 }
 				else if (info.HeroMidEquip.Contains(item) && ct < (info.HeroMidEquip.Count / 6 + 1) * 6 + index ){
-                    parentKind.FindChild("Medium").gameObject.SetActive(true);
+                    parentKind.Find("Medium").gameObject.SetActive(true);
                 }
 				else if (info.HeroLatEquip.Contains(item) && ct < (info.HeroLatEquip.Count / 6 + 1) * 6 + index+ index2) {
-                    parentKind.FindChild("Later").gameObject.SetActive(true);
+                    parentKind.Find("Later").gameObject.SetActive(true);
                 }
             }
         } 
@@ -881,7 +881,7 @@ public class ComposePackageItem : ShopItemBase
         for (int ct = 0; ct < ComposeBtnCount; ct++)
         {
             int ctt = ct + 1;
-            DbClickBotton click = head.FindChild("Button" + ctt.ToString()).GetComponent<DbClickBotton>();
+            DbClickBotton click = head.Find("Button" + ctt.ToString()).GetComponent<DbClickBotton>();
             click.AddListener(ct, OnButtonClickFunc);
             click.AddListenerDb(ct, OnButtolDbClickFunc);
             ButtonUis.Add(click);
@@ -897,7 +897,7 @@ public class ComposePackageItem : ShopItemBase
         for (int ct = 0; ct < ButtonUis.Count; ct++)
         {
             DbClickBotton click = ButtonUis[ct];
-            UISprite sprite = click.transform.FindChild("icon").GetComponent<UISprite>();
+            UISprite sprite = click.transform.Find("icon").GetComponent<UISprite>();
            
             if (ct >= ItemsInUserInterface.Count)
             {
@@ -923,7 +923,7 @@ public class ComposePackageItem : ShopItemBase
     protected override void SetSelectSpriteVisiable(int index, bool visiable)
     {
         if (ButtonUis.Count <= index || index < 0) return;
-        UISprite sprite = ButtonUis.ElementAt(index).transform.FindChild("SpriteSelect").GetComponent<UISprite>();
+        UISprite sprite = ButtonUis.ElementAt(index).transform.Find("SpriteSelect").GetComponent<UISprite>();
         sprite.gameObject.SetActive(visiable);
     }
 
@@ -994,7 +994,7 @@ public class AfterPackageItem : ShopItemBase
     protected override void SetSelectSpriteVisiable(int index, bool visiable)
     {
         if (ButtonUis.Count <= index || index < 0) return;
-        UISprite sprite = ButtonUis.ElementAt(index).transform.FindChild("SpriteSelect").GetComponent<UISprite>();
+        UISprite sprite = ButtonUis.ElementAt(index).transform.Find("SpriteSelect").GetComponent<UISprite>();
         sprite.gameObject.SetActive(visiable);
     }
 
@@ -1029,7 +1029,7 @@ public class AfterPackageItem : ShopItemBase
         for (int ct = 0; ct < ButtonUis.Count; ct++)
         {
             DbClickBotton click = ButtonUis[ct];
-            UISprite sprite = click.transform.FindChild("icon").GetComponent<UISprite>();
+            UISprite sprite = click.transform.Find("icon").GetComponent<UISprite>();
            
             if (ct >= ItemsInUserInterface.Count)
             {
@@ -1115,7 +1115,7 @@ public class PackageSelect
                     items = UIShop.Instance.GetHeroRecommendEquip();
                     break;
             }
-            ButtonOnPress click = head.FindChild("Kind" + ctt.ToString()).GetComponent<ButtonOnPress>();
+            ButtonOnPress click = head.Find("Kind" + ctt.ToString()).GetComponent<ButtonOnPress>();
             if (items == null || items.Count == 0)
             {
                 click.GetComponent<BoxCollider>().enabled = false;
@@ -1133,10 +1133,10 @@ public class PackageSelect
         {
             if (btn.PrIe == index)
             {
-                btn.transform.FindChild("SpriteSelect").gameObject.SetActive(true);
+                btn.transform.Find("SpriteSelect").gameObject.SetActive(true);
                 continue;
             }
-            btn.transform.FindChild("SpriteSelect").gameObject.SetActive(false);
+            btn.transform.Find("SpriteSelect").gameObject.SetActive(false);
         }
 
         BuyPackageItem buyPack = (BuyPackageItem)UIShop.Instance.ShopItemAll[UIShop.ShopSelectType.TypeBuy];
@@ -1325,9 +1325,9 @@ public class ItemDestribe
     }
     public ItemDestribe(Transform head)
     {
-        itemIcon = head.FindChild("Item/Icon").GetComponent<UISprite>();
-        itemName = head.FindChild("Item/Label").GetComponent<UILabel>();
-        itemMoney = head.FindChild("Gold/Label").GetComponent<UILabel>();
+        itemIcon = head.Find("Item/Icon").GetComponent<UISprite>();
+        itemName = head.Find("Item/Label").GetComponent<UILabel>();
+        itemMoney = head.Find("Gold/Label").GetComponent<UILabel>();
         itemDes = head.GetComponent<UITextList>();
         ItemId = -1;
     }

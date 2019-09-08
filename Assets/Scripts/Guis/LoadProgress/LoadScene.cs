@@ -40,8 +40,8 @@ public class LoadScene : MonoBehaviour {
 	void Awake () {
 		Instance = this;
         startX = m_ProGressbar.foregroundWidget.transform.localPosition.x;// +xOffset;
-        objEffect = m_ProGressbar.transform.FindChild("load_flash").gameObject;
-        labelTip = transform.FindChild("ShowTip/ShowTip_001/TipLabel/randLable1").GetComponent<UILabel>();
+        objEffect = m_ProGressbar.transform.Find("load_flash").gameObject;
+        labelTip = transform.Find("ShowTip/ShowTip_001/TipLabel/randLable1").GetComponent<UILabel>();
 	}
 
     int Progress;
@@ -81,7 +81,7 @@ public class LoadScene : MonoBehaviour {
                 OnLoadFinish(GState);
                 isEnd = true;
                
-                //½øÈëÓÎÏ·³¡¾°Ç°Ô¤¼ÓÔØÌØÐ§ 
+                //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ï¿½Ç°Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ 
                 ReadPreLoadConfig.Instance.PreLoad();
             }	
             if(isCloseBySelf)
@@ -107,9 +107,9 @@ public class LoadScene : MonoBehaviour {
 
     public void ReleaseResource()
     {
-        //½øÈëÓÎÏ·Ç°½øÐÐ×ÊÔ´ÇåÀí
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½
 
-        //Ç¿ÖÆÊÍ·Å½çÃæÌùÍ¼×ÊÔ´
+        //Ç¿ï¿½ï¿½ï¿½Í·Å½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ô´
         ReadReleaseResourceConfig.Instance.ForceReleaseResource();
         //UIDrawCall.ReleaseAll();
         Resources.UnloadUnusedAssets();
@@ -147,9 +147,9 @@ public class LoadScene : MonoBehaviour {
     //}
 	public void LoadAsignedSene(string name)
     {
-        //¼ÓÔØ³¡¾°Ö®Ç°ÐèÒª½øÐÐÇå³ý²Ù×÷
+        //ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½Ö®Ç°ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         BlGame.Effect.EffectManager.Instance.DestroyAllEffect();
-        //Çå³ýGameObjectPoolÊý¾Ý
+        //ï¿½ï¿½ï¿½GameObjectPoolï¿½ï¿½ï¿½ï¿½
         GameObjectPool.Instance.Clear();
 
         async = ResourcesManager.Instance.loadLevel(name, null);

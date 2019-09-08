@@ -39,20 +39,20 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         { 
-            mTemp = mRoot.FindChild("MailIntroduction");
+            mTemp = mRoot.Find("MailIntroduction");
             curMailObj = new UIMail();
             //右边窗体内容
-            curMailObj.mMailTitleTxt = mRoot.FindChild("MailIntroduction/Scroll View/Table/Title").GetComponent<UILabel>();
-            curMailObj.mMailContentTxt = mRoot.FindChild("MailIntroduction/Scroll View/Table/Content").GetComponent<UILabel>();
-            curMailObj.mMailCreateTimeTxt = mRoot.FindChild("MailIntroduction/Scroll View/Table/PublishDate").GetComponent<UILabel>();
-            curMailObj.mMailSenderTxt = mRoot.FindChild("MailIntroduction/Scroll View/Table/Sender").GetComponent<UILabel>();
+            curMailObj.mMailTitleTxt = mRoot.Find("MailIntroduction/Scroll View/Table/Title").GetComponent<UILabel>();
+            curMailObj.mMailContentTxt = mRoot.Find("MailIntroduction/Scroll View/Table/Content").GetComponent<UILabel>();
+            curMailObj.mMailCreateTimeTxt = mRoot.Find("MailIntroduction/Scroll View/Table/PublishDate").GetComponent<UILabel>();
+            curMailObj.mMailSenderTxt = mRoot.Find("MailIntroduction/Scroll View/Table/Sender").GetComponent<UILabel>();
 
-            curMailObj.mGrid = mRoot.FindChild("MailIntroduction/Scroll View/Table/Presents/Grid").GetComponent<UIGrid>();
-            curMailObj.mCloseMailBtn = mRoot.FindChild("Button").gameObject;
+            curMailObj.mGrid = mRoot.Find("MailIntroduction/Scroll View/Table/Presents/Grid").GetComponent<UIGrid>();
+            curMailObj.mCloseMailBtn = mRoot.Find("Button").gameObject;
 
-            closeBtn = mRoot.FindChild("CloseBtn").gameObject;
+            closeBtn = mRoot.Find("CloseBtn").gameObject;
             //左边邮件列表 
-            leftMailGrid = mRoot.FindChild("MailList/Panel/Grid").GetComponent<UIGrid>();
+            leftMailGrid = mRoot.Find("MailList/Panel/Grid").GetComponent<UIGrid>();
 
             UIEventListener.Get(curMailObj.mCloseMailBtn).onClick += AskCloseOrGetMailGift;
 
@@ -171,9 +171,9 @@ namespace BlGame.View
                     obj.transform.localScale = Vector3.one;
 
                     MailName mail = new MailName();
-                    mail.currMailSelect = obj.transform.FindChild("Highlight").GetComponent<UISprite>();
-                    mail.currMailName = obj.transform.FindChild("Name").GetComponent<UILabel>();
-                    mail.readedMailName = obj.transform.FindChild("NameRead").GetComponent<UILabel>();
+                    mail.currMailSelect = obj.transform.Find("Highlight").GetComponent<UISprite>();
+                    mail.currMailName = obj.transform.Find("Name").GetComponent<UILabel>();
+                    mail.readedMailName = obj.transform.Find("NameRead").GetComponent<UILabel>();
                     
                     mail.currMailId = kv.Key;
 
@@ -336,12 +336,12 @@ namespace BlGame.View
                             case MailGiftType.eMerchType_Gold:
                                 {
                                     obj.GetComponent<UISprite>().spriteName = "9";
-                                    obj.transform.FindChild("Label").GetComponent<UILabel>().text = giftStr[2];
+                                    obj.transform.Find("Label").GetComponent<UILabel>().text = giftStr[2];
                                 } break;
                             case MailGiftType.eMerchType_Diamond:
                                 {
                                     obj.GetComponent<UISprite>().spriteName = "10";
-                                    obj.transform.FindChild("Label").GetComponent<UILabel>().text = giftStr[2];
+                                    obj.transform.Find("Label").GetComponent<UILabel>().text = giftStr[2];
                                 } break; 
                                //HeroBuyCfg:100001-109999
                               //  SkinCfg:110001-119999
@@ -358,7 +358,7 @@ namespace BlGame.View
 
                                         obj.GetComponent<UISprite>().atlas = uia_hero;
                                         obj.GetComponent<UISprite>().spriteName = buyInfo.DefaultIcon.ToString();
-                                        obj.transform.FindChild("Label").GetComponent<UILabel>().text = giftStr[2];
+                                        obj.transform.Find("Label").GetComponent<UILabel>().text = giftStr[2];
                                     }
                                 }
                                 else if (goodsId >= 120001 && goodsId <= 129999)
@@ -367,7 +367,7 @@ namespace BlGame.View
                                     if (runeInfo != null)
                                     {
                                         obj.GetComponent<UISprite>().spriteName = runeInfo.Icon.ToString();
-                                        obj.transform.FindChild("Label").GetComponent<UILabel>().text = giftStr[2];
+                                        obj.transform.Find("Label").GetComponent<UILabel>().text = giftStr[2];
                                     }
                                 }
                                 else if (goodsId >= 110001 && goodsId <= 119999)
@@ -376,7 +376,7 @@ namespace BlGame.View
                                     if (skinInfo != null)
                                     {
                                         obj.GetComponent<UISprite>().spriteName = skinInfo.Icon.ToString();
-                                        obj.transform.FindChild("Label").GetComponent<UILabel>().text = giftStr[2];
+                                        obj.transform.Find("Label").GetComponent<UILabel>().text = giftStr[2];
                                     }
                                     
                                 }
@@ -386,7 +386,7 @@ namespace BlGame.View
                                     if (otherInfo != null)
                                     {
                                         obj.GetComponent<UISprite>().spriteName = otherInfo.icon;
-                                        obj.transform.FindChild("Label").GetComponent<UILabel>().text = giftStr[2];
+                                        obj.transform.Find("Label").GetComponent<UILabel>().text = giftStr[2];
                                     }
                                 }
                             } break; 

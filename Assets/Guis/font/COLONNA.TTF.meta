@@ -1,14 +1,19 @@
 fileFormatVersion: 2
 guid: c38a5ee9d258f4c45826cf3bd62c8497
 TrueTypeFontImporter:
-  serializedVersion: 2
+  serializedVersion: 4
   fontSize: 100
   forceTextureCase: -2
-  characterSpacing: 1
-  characterPadding: 0
+  characterSpacing: 0
+  characterPadding: 1
   includeFontData: 1
-  use2xBehaviour: 0
-  fontNames: []
+  fontName: Colonna MT
+  fontNames:
+  - Colonna MT
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 3
+  ascentCalculationMode: 1
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -37,9 +37,9 @@ namespace BlGame.View
         protected override void InitWidget()
         {
             //地图
-            mTipLabel = mRoot.FindChild("Tips").GetComponent<UILabel>();
-            mAccept = mRoot.FindChild("Accept").GetComponent<UIButton>();
-            mCancel = mRoot.FindChild("Cancel").GetComponent<UIButton>();
+            mTipLabel = mRoot.Find("Tips").GetComponent<UILabel>();
+            mAccept = mRoot.Find("Accept").GetComponent<UIButton>();
+            mCancel = mRoot.Find("Cancel").GetComponent<UIButton>();
 
             EventDelegate.Add(mAccept.onClick, OnAccept);
             EventDelegate.Add(mCancel.onClick, OnmCancel);

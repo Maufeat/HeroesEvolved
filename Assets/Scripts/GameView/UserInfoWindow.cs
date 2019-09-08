@@ -47,42 +47,42 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            spriteHead = mRoot.FindChild("Headselect/Background").GetComponent<UISprite>();
+            spriteHead = mRoot.Find("Headselect/Background").GetComponent<UISprite>();
 
-            pass = mRoot.FindChild("Pass");
-            noPass = mRoot.FindChild("Nopass");
-            nickNameInput = mRoot.FindChild("Nickname").GetComponent<UIInput>();
+            pass = mRoot.Find("Pass");
+            noPass = mRoot.Find("Nopass");
+            nickNameInput = mRoot.Find("Nickname").GetComponent<UIInput>();
 
-            Transform sexParent = mRoot.FindChild("Sex");
+            Transform sexParent = mRoot.Find("Sex");
             boySelect = mRoot.Find("Sex/Male").GetComponent<UIToggle>();
             girlSelect = mRoot.Find("Sex/Female").GetComponent<UIToggle>();
      
             boySelect.group = sexSelectGroup;
             girlSelect.group = sexSelectGroup;
 
-            tip = mRoot.FindChild("Tips1").gameObject;
-            labelTip = mRoot.FindChild("Tips1/Label").GetComponent<UILabel>();
-            labelTip2 = mRoot.FindChild("Tips2/Label").gameObject;
+            tip = mRoot.Find("Tips1").gameObject;
+            labelTip = mRoot.Find("Tips1/Label").GetComponent<UILabel>();
+            labelTip2 = mRoot.Find("Tips2/Label").gameObject;
 
 
-            view = mRoot.FindChild("Head");
+            view = mRoot.Find("Head");
 
-            selectObj = mRoot.FindChild("Head/Highlight").gameObject;
-            arrowObj = mRoot.transform.FindChild("Head/Highlight/Arrow").gameObject;
+            selectObj = mRoot.Find("Head/Highlight").gameObject;
+            arrowObj = mRoot.transform.Find("Head/Highlight/Arrow").gameObject;
 
             FindHeroHead();
             CreateHead();
 
-            submitBtn = mRoot.FindChild("Commit").GetComponent<UIButton>();
+            submitBtn = mRoot.Find("Commit").GetComponent<UIButton>();
             submitBtn.isEnabled = false;
-            scrollView = mRoot.FindChild("Head").GetComponent<UIScrollView>();
+            scrollView = mRoot.Find("Head").GetComponent<UIScrollView>();
             
 
 
-            arrowLeftRight[0] = mRoot.FindChild("Arrow/Left");
-            arrowLeftRight[1] = mRoot.FindChild("Arrow/Right");
+            arrowLeftRight[0] = mRoot.Find("Arrow/Left");
+            arrowLeftRight[1] = mRoot.Find("Arrow/Right");
 
-            btnDice = mRoot.FindChild("RandomName").GetComponent<ButtonOnPress>();
+            btnDice = mRoot.Find("RandomName").GetComponent<ButtonOnPress>();
 
             UIEventListener.Get(scrollView.gameObject).onPress += OnPress;
             scrollView.onDragStarted += OnDragStart;
@@ -115,7 +115,7 @@ namespace BlGame.View
       
         public void CreateHead()
         {
-            Transform headParent = mRoot.FindChild("Head/Panel");
+            Transform headParent = mRoot.Find("Head/Panel");
             GameObject headPanel = headParent.gameObject;
             ResourceUnit objUnit = ResourcesManager.Instance.loadImmediate(GameConstDefine.LoadGameHeroHead, ResourceType.PREFAB);
 
@@ -132,9 +132,9 @@ namespace BlGame.View
                 }
 
 
-                UISprite sp = hd.transform.FindChild("Portrait/Sprite").GetComponent<UISprite>();
+                UISprite sp = hd.transform.Find("Portrait/Sprite").GetComponent<UISprite>();
                 sp.spriteName = ConfigReader.HeadSelectXmlInfoDict[headsBoy[i]].HeroHeadAtlas_Num;
-                ButtonOnPress toggle = headParent.FindChild("Head" + (i + 1).ToString()).GetComponent<ButtonOnPress>();
+                ButtonOnPress toggle = headParent.Find("Head" + (i + 1).ToString()).GetComponent<ButtonOnPress>();
                 headList.Add(toggle);
             }
         }
@@ -160,13 +160,13 @@ namespace BlGame.View
         public void showHeroHead(List<int> headsBoyOrGirl)
         {
 
-            GameObject headPanel = mRoot.FindChild("Head/Panel").gameObject;
+            GameObject headPanel = mRoot.Find("Head/Panel").gameObject;
             const float distance = 175 * 4;
             UIGrid mGrid = headPanel.GetComponent<UIGrid>();
-            UIScrollView mScroll = mRoot.FindChild("Head").GetComponent<UIScrollView>();
+            UIScrollView mScroll = mRoot.Find("Head").GetComponent<UIScrollView>();
             for (int i = 0; i < ConfigReader.HeadSelectXmlInfoDict.Count;  i++)
             {
-                Transform headParent = headPanel.transform.FindChild("Head" +(i + 1).ToString());
+                Transform headParent = headPanel.transform.Find("Head" +(i + 1).ToString());
                 GameObject head = headParent.gameObject;
                 if(i >= headsBoyOrGirl.Count)
                 {
@@ -174,7 +174,7 @@ namespace BlGame.View
                     continue;
                 }
                 head.SetActive(true);
-                UISprite sp = headParent.transform.FindChild("Portrait/Sprite").GetComponent<UISprite>();
+                UISprite sp = headParent.transform.Find("Portrait/Sprite").GetComponent<UISprite>();
                 sp.spriteName = ConfigReader.HeadSelectXmlInfoDict[headsBoyOrGirl[i]].HeroHeadAtlas_Num;
                 ButtonOnPress toggle = headParent.GetComponent<ButtonOnPress>();
                 headList.Add(toggle);
@@ -483,7 +483,7 @@ namespace BlGame.View
         {
             ButtonOnPress btn = headList.ElementAt(ie);
             Transform headParent = btn.transform;
-            spriteHead.spriteName = headParent.FindChild("Portrait").FindChild("Sprite").GetComponent<UISprite>().spriteName;
+            spriteHead.spriteName = headParent.Find("Portrait").Find("Sprite").GetComponent<UISprite>().spriteName;
             ShowSelect(btn);
             lastToggle = btn;
 

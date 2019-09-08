@@ -3,5 +3,6 @@
   <English>
     <string name="lbl_username">Username</string>
     <string name="lbl_password">Password</string>
+    <string name="lbl_login">Login</string>
   </English>
 </languages>

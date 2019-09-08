@@ -44,23 +44,23 @@ public class AbsorbMonsterHead : MonoBehaviour
         }
         void OnEnable()
         {
-            Transform trans = transform.FindChild("Creep1");
+            Transform trans = transform.Find("Creep1");
             //creep1 = trans.gameObject;
-            bar1 = trans.FindChild("Bar").gameObject.GetComponent<UISprite>();
-            cha1 = trans.FindChild("Cha").gameObject.GetComponent<UISprite>();
+            bar1 = trans.Find("Bar").gameObject.GetComponent<UISprite>();
+            cha1 = trans.Find("Cha").gameObject.GetComponent<UISprite>();
             ButtonOnPress press = trans.GetComponent<ButtonOnPress>();
-            trans = trans.FindChild("Head");
+            trans = trans.Find("Head");
             head1 = trans.GetComponent<UISprite>();         
             press.AddListener(0, OnHeadPressFunc);
 
 
             //
-            trans = transform.FindChild("Creep2");
-            bar2 = trans.FindChild("Bar").gameObject.GetComponent<UISprite>();
-            cha2 = trans.FindChild("Cha").gameObject.GetComponent<UISprite>();
+            trans = transform.Find("Creep2");
+            bar2 = trans.Find("Bar").gameObject.GetComponent<UISprite>();
+            cha2 = trans.Find("Cha").gameObject.GetComponent<UISprite>();
             //creep2 = trans.gameObject;
             press = trans.GetComponent<ButtonOnPress>();
-            trans = trans.FindChild("Head");
+            trans = trans.Find("Head");
             head2 = trans.GetComponent<UISprite>();           
             press.AddListener(1, OnHeadPressFunc);
             //

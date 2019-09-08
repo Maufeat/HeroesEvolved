@@ -49,7 +49,7 @@ public class JxBlGame : MonoBehaviour {
     public List<string> ipList = new List<string>();
 
   //  public List<string> ServerIpList = new List<string>();
-    public string LoginServerAdress { get { return "104.168.222.21"; } set { } }
+    public string LoginServerAdress { get { return "127.0.0.1"; } set { } }
     public int LoginServerPort = 49996;
 
     public LanguageManager lang

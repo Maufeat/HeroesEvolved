@@ -22,13 +22,13 @@ public class UIGameSetting : MonoBehaviour
 
     void Awake()
     {
-        btnChange = transform.FindChild("ChangeAccount").GetComponent<ButtonOnPress>();
-        btnVoice = transform.FindChild("MusicSwitch").GetComponent<ButtonOnPress>();
-        btnSoundEffect = transform.FindChild("SoundSwitch").GetComponent<ButtonOnPress>();
-        objVoice[0] = btnVoice.transform.FindChild("On").gameObject;
-        objVoice[1] = btnVoice.transform.FindChild("Off").gameObject;
-        ojbSound[0] = btnSoundEffect.transform.FindChild("On").gameObject;
-        ojbSound[1] = btnSoundEffect.transform.FindChild("Off").gameObject;
+        btnChange = transform.Find("ChangeAccount").GetComponent<ButtonOnPress>();
+        btnVoice = transform.Find("MusicSwitch").GetComponent<ButtonOnPress>();
+        btnSoundEffect = transform.Find("SoundSwitch").GetComponent<ButtonOnPress>();
+        objVoice[0] = btnVoice.transform.Find("On").gameObject;
+        objVoice[1] = btnVoice.transform.Find("Off").gameObject;
+        ojbSound[0] = btnSoundEffect.transform.Find("On").gameObject;
+        ojbSound[1] = btnSoundEffect.transform.Find("Off").gameObject;
     }
 
     void OnEnable()

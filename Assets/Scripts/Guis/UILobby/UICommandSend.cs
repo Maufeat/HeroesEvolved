@@ -19,9 +19,9 @@ public class UICommandSend : MonoBehaviour
     }
     void Init()
     {
-        SendBtn = this.transform.FindChild("SendMsg").GetComponent<ButtonOnPress>();
-        InputCommand = this.transform.FindChild("Input").GetComponent<UIInput>();
-        InputType = this.transform.FindChild("type").GetComponent<UIInput>();
+        SendBtn = this.transform.Find("SendMsg").GetComponent<ButtonOnPress>();
+        InputCommand = this.transform.Find("Input").GetComponent<UIInput>();
+        InputType = this.transform.Find("type").GetComponent<UIInput>();
 
         UIEventListener.Get(InputCommand.gameObject).onSelect += ResetDefaultInput;
 

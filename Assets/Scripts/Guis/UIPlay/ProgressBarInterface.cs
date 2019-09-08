@@ -60,8 +60,8 @@ class ProgressBarInterface : MonoBehaviour
 
     void OnEnable()
     {
-        GameObject obj = transform.FindChild("Postion").transform.FindChild("Foreground").gameObject;
-        objEffect = transform.FindChild("Postion").transform.FindChild("load_flash").gameObject;
+        GameObject obj = transform.Find("Postion").transform.Find("Foreground").gameObject;
+        objEffect = transform.Find("Postion").transform.Find("load_flash").gameObject;
         if (obj != null)
         {
             progressBar = obj.GetComponent<UISprite>();

@@ -26,7 +26,7 @@ public class UIGuideOver : MonoBehaviour
     void Awake() {
        // objUI.gameObject.SetActive(false);
         BaseDaBomb.StartEffectEvent += StartGuideOver;
-        btnPress = transform.FindChild("Position").GetComponent<ButtonOnPress>();
+        btnPress = transform.Find("Position").GetComponent<ButtonOnPress>();
     }
 
     void PressOver(int ie, bool Press) { 
@@ -89,7 +89,7 @@ public class UIGuideOver : MonoBehaviour
         obj.transform.parent = UINewsGuide.Instance.transform;
         obj.transform.localPosition = Vector3.zero;
         obj.transform.localScale = Vector3.one;
-        objUI = obj.transform.FindChild("Position").gameObject;
+        objUI = obj.transform.Find("Position").gameObject;
         objUI.SetActive(false);
 
         if (SceneGuideTaskManager.Instance().sceneGuideTask != null && SceneGuideTaskManager.Instance().sceneGuideTask.currentTask != null)

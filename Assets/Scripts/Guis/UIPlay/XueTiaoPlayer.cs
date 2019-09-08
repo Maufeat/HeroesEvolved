@@ -34,12 +34,12 @@ public class XueTiaoPlayer : XueTiaoUI
     Transform hideSlider = null;
     void Awake()
     {
-        hpSprite = transform.FindChild("Control_Hp/Foreground").GetComponent<UISprite>();
-        mpSprite = transform.FindChild("Control_Mp/Foreground").GetComponent<UISprite>();
-        labelLevel = transform.FindChild("Level").FindChild("Label").GetComponent<UILabel>();
-        labelName = transform.FindChild("Name").GetComponent<UILabel>();
-        hideSlider = transform.transform.FindChild("Control_Hp/ProgressHide");
-        hideSprite = hideSlider.transform.FindChild("HideBg").GetComponent<UISprite>();
+        hpSprite = transform.Find("Control_Hp/Foreground").GetComponent<UISprite>();
+        mpSprite = transform.Find("Control_Mp/Foreground").GetComponent<UISprite>();
+        labelLevel = transform.Find("Level").Find("Label").GetComponent<UILabel>();
+        labelName = transform.Find("Name").GetComponent<UILabel>();
+        hideSlider = transform.transform.Find("Control_Hp/ProgressHide");
+        hideSprite = hideSlider.transform.Find("HideBg").GetComponent<UISprite>();
         hideSprite.fillAmount = 0;
     }
 

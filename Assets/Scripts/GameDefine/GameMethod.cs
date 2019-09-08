@@ -27,7 +27,7 @@ namespace GameDefine
 			get{
                 if (UICamera.currentCamera == null)
                 {
-                    UICamera.currentCamera = BlGameUI.Instance.transform.FindChild("Camera").GetComponent<Camera>();
+                    UICamera.currentCamera = BlGameUI.Instance.transform.Find("Camera").GetComponent<Camera>();
                 }
 				return UICamera.currentCamera;
 			}
@@ -371,7 +371,7 @@ namespace GameDefine
 //             }
             //root = GameObject.Instantiate(obj , entity.realObject.transform.position , Quaternion.identity) as GameObject;
 
-            GameObject root = entity.realObject.transform.FindChild(rp).gameObject;
+            GameObject root = entity.realObject.transform.Find(rp).gameObject;
             root.SetActive(true);
             root.transform.parent = null;
             root.transform.rotation = entity.realObject.transform.rotation;

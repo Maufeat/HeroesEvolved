@@ -8,8 +8,8 @@ public class XueTiaoMonster : XueTiaoUI
 {	
     void Awake()
     {
-        hpSprite = transform.FindChild("Control - Hp/Foreground").GetComponent<UISprite>();
-        labelCost = transform.FindChild("CP").GetComponent<UILabel>();
+        hpSprite = transform.Find("Control - Hp/Foreground").GetComponent<UISprite>();
+        labelCost = transform.Find("CP").GetComponent<UILabel>();
     }
 	public override void SetXueTiaoInfo ()
 	{

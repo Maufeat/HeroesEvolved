@@ -39,21 +39,21 @@ namespace BlGame.View
         protected override void InitWidget()
         {
             StratTime = timeRelieve = DateTime.Now;
-            BtnStore = mRoot.FindChild("Store").GetComponent<UIButton>();
-            TimeRes = mRoot.FindChild("ResurrectionTime/Label").GetComponent<UILabel>();
-            MoneyLabel = mRoot.FindChild("RecoveryBtn/Gold/Number").GetComponent<UILabel>();
-            RecoveryNums = mRoot.FindChild("RecoveryBtn/Remain").GetComponent<UILabel>();
-            NumberSprite = mRoot.FindChild("ResurrectionTime/Minute1").GetComponent<UISprite>();
-            DecadeSprite = mRoot.FindChild("ResurrectionTime/Minute2").GetComponent<UISprite>();
-            HundredsSprite = mRoot.FindChild("ResurrectionTime/Minute3").GetComponent<UISprite>();
-            RecoveryBtn = mRoot.FindChild("RecoveryBtn/Button").GetComponent<UIButton>();
-            RecoveryLabel = mRoot.FindChild("RecoveryBtn/Remain_Label").GetComponent<UILabel>();
+            BtnStore = mRoot.Find("Store").GetComponent<UIButton>();
+            TimeRes = mRoot.Find("ResurrectionTime/Label").GetComponent<UILabel>();
+            MoneyLabel = mRoot.Find("RecoveryBtn/Gold/Number").GetComponent<UILabel>();
+            RecoveryNums = mRoot.Find("RecoveryBtn/Remain").GetComponent<UILabel>();
+            NumberSprite = mRoot.Find("ResurrectionTime/Minute1").GetComponent<UISprite>();
+            DecadeSprite = mRoot.Find("ResurrectionTime/Minute2").GetComponent<UISprite>();
+            HundredsSprite = mRoot.Find("ResurrectionTime/Minute3").GetComponent<UISprite>();
+            RecoveryBtn = mRoot.Find("RecoveryBtn/Button").GetComponent<UIButton>();
+            RecoveryLabel = mRoot.Find("RecoveryBtn/Remain_Label").GetComponent<UILabel>();
             NumberSprite.gameObject.SetActive(false);
             DecadeSprite.gameObject.SetActive(false);
             HundredsSprite.gameObject.SetActive(false);
             EventDelegate.Add(RecoveryBtn.onClick,BtnOnPressRecovery);
             EventDelegate.Add(BtnStore.onClick,BtnOnPressStore);
-            mMoveMainCamerBtn = mRoot.FindChild("Background").GetComponent<UIDragObCamera>();
+            mMoveMainCamerBtn = mRoot.Find("Background").GetComponent<UIDragObCamera>();
             UIEventListener.Get(mMoveMainCamerBtn.gameObject).onDrag += MoveMian;
         }
 

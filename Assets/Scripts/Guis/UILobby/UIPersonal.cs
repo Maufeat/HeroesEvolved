@@ -68,22 +68,22 @@ public class UIPersonal : MonoBehaviour {
     }
 
 	void Init(){
-		GameInnsLabel = transform.FindChild("Items/Item1/Number").GetComponent<UILabel>();
-        WinInnsLabel = transform.FindChild("Items/Item2/Number").GetComponent<UILabel>();
-        KillNumLabel = transform.FindChild("Items/Item3/Number").GetComponent<UILabel>();
+		GameInnsLabel = transform.Find("Items/Item1/Number").GetComponent<UILabel>();
+        WinInnsLabel = transform.Find("Items/Item2/Number").GetComponent<UILabel>();
+        KillNumLabel = transform.Find("Items/Item3/Number").GetComponent<UILabel>();
         BuildingDemoliLabel = transform.Find("Items/Item4/Number").GetComponent<UILabel>();
-        DeadNumLabel = transform.FindChild("Items/Item5/Number").GetComponent<UILabel>();
-        AchievNumLabel = transform.FindChild("Items/Item6/Number").GetComponent<UILabel>();
-        LevelLabel = transform.FindChild("player/Level/Number").GetComponent<UILabel>();
-        ExpSlier = transform.FindChild("player/EXP").GetComponent<UISlider>();
-		ExpLabel = ExpSlier.transform.FindChild("Number").GetComponent<UILabel>();
-		BarSprite = ExpSlier.transform.FindChild("Bar").GetComponent<UISprite>();
-        HeadIcon = transform.FindChild("player/HeadPhoto/Portrait").GetComponent<UISprite>();
-        VipLabel = transform.FindChild("player/VIP/TimeRemaining").GetComponent<UILabel>();
-        NameLabel = transform.FindChild("player/Name/NickName").GetComponent<UILabel>();
-        Transform itemParent = transform.FindChild("Items");
+        DeadNumLabel = transform.Find("Items/Item5/Number").GetComponent<UILabel>();
+        AchievNumLabel = transform.Find("Items/Item6/Number").GetComponent<UILabel>();
+        LevelLabel = transform.Find("player/Level/Number").GetComponent<UILabel>();
+        ExpSlier = transform.Find("player/EXP").GetComponent<UISlider>();
+		ExpLabel = ExpSlier.transform.Find("Number").GetComponent<UILabel>();
+		BarSprite = ExpSlier.transform.Find("Bar").GetComponent<UISprite>();
+        HeadIcon = transform.Find("player/HeadPhoto/Portrait").GetComponent<UISprite>();
+        VipLabel = transform.Find("player/VIP/TimeRemaining").GetComponent<UILabel>();
+        NameLabel = transform.Find("player/Name/NickName").GetComponent<UILabel>();
+        Transform itemParent = transform.Find("Items");
         for (int i = 0; i < itemParent.childCount; i++) {
-            Transform add = itemParent.FindChild("Item"+(i+1).ToString());
+            Transform add = itemParent.Find("Item"+(i+1).ToString());
             infoList.Add(add);
         }
 	}
@@ -127,7 +127,7 @@ public class UIPersonal : MonoBehaviour {
     }
 
     void DoHeadIn() { 
-        GameObject obj = transform.FindChild("player").gameObject;
+        GameObject obj = transform.Find("player").gameObject;
         TweenPosition.Begin(obj,0f,new Vector3(-xMove,0f,0f));
         tweenHeadIn = TweenPosition.Begin(obj, moveDuring, new Vector3(xMove, 0f, 0f));
         tweenHeadIn.method = UITweener.Method.EaseIn;

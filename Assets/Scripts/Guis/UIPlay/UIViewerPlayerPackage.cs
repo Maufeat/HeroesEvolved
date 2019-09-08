@@ -22,10 +22,10 @@ public class UIViewerPlayerPackage : MonoBehaviour {
     }
     void Init()
     {
-        Transform temp = transform.FindChild("Item");
+        Transform temp = transform.Find("Item");
         for (int i = 0; i < temp.childCount; i++)
         {
-            Transform tran = temp.FindChild("Item" + (i + 1));
+            Transform tran = temp.Find("Item" + (i + 1));
             PlayerPackage.Add(i,new PlayerPackageInfo(tran));
             ButtonOnPress button = tran.GetComponent<ButtonOnPress>();
             button.AddListener(i, OnPress);
@@ -139,9 +139,9 @@ public class UIViewerPlayerPackage : MonoBehaviour {
         public CdCountDown cdDown;
         public PlayerPackageInfo(Transform tran){
             itemId = 0;
-            PackageIcon = tran.FindChild("icon").GetComponent<UISprite>();
-            PackageNum = tran.FindChild("LabelCount").GetComponent<UILabel>();
-            PackageSelect = tran.FindChild("SpriteSelect").GetComponent<UISprite>();
+            PackageIcon = tran.Find("icon").GetComponent<UISprite>();
+            PackageNum = tran.Find("LabelCount").GetComponent<UILabel>();
+            PackageSelect = tran.Find("SpriteSelect").GetComponent<UISprite>();
             cdDown = tran.GetComponent<CdCountDown>();
             PackageIcon.spriteName = "";
             PackageIcon.gameObject.SetActive(false);

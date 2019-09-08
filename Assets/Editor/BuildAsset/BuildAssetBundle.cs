@@ -65,7 +65,7 @@ public class BuildAssetBundle
             Directory.Delete(ResourceCommon.assetbundleFilePath, true);
 
         //刷新数据
-        Caching.CleanCache();
+        Caching.ClearCache();
         AssetDatabase.Refresh();
 
         //获取资源信息
@@ -268,7 +268,7 @@ public class BuildAssetBundle
             Directory.Delete(ResourceCommon.assetbundleFilePath, true);
 
         //刷新数据
-        Caching.CleanCache();
+        Caching.ClearCache();
         AssetDatabase.Refresh();
 
         //获取资源信息

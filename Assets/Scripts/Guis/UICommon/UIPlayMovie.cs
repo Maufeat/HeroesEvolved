@@ -52,7 +52,7 @@ public class UIPlayMovie : MonoBehaviour
         objMark.transform.parent = GameMethod.GetUiCamera.transform;
         objMark.transform.localScale = Vector3.one;
         objMark.transform.localPosition = Vector3.zero;
-        UISprite sprite = objMark.transform.FindChild("Background").GetComponent<UISprite>();
+        UISprite sprite = objMark.transform.Find("Background").GetComponent<UISprite>();
         TweenAlpha.Begin(sprite.gameObject, 0f, 1f); 
     }
 

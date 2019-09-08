@@ -41,11 +41,11 @@ namespace BlGame.View
          //窗口控件初始化
         protected override void InitWidget()
         {
-            ToggleFriend = mRoot.FindChild("FriendListBtn").GetComponent<UIToggle>();
-            ToggleLobby = mRoot.FindChild("LobbyListBtn").GetComponent<UIToggle>();
-            mOnLineGrid = mRoot.FindChild("ShowList/Panel/Grid").GetComponent<UIGrid>();
-            InviteBtn = mRoot.FindChild("InviteBtn").GetComponent<UIButton>();
-            CloseBtn = mRoot.FindChild("CloseBtn").GetComponent<UIButton>();
+            ToggleFriend = mRoot.Find("FriendListBtn").GetComponent<UIToggle>();
+            ToggleLobby = mRoot.Find("LobbyListBtn").GetComponent<UIToggle>();
+            mOnLineGrid = mRoot.Find("ShowList/Panel/Grid").GetComponent<UIGrid>();
+            InviteBtn = mRoot.Find("InviteBtn").GetComponent<UIButton>();
+            CloseBtn = mRoot.Find("CloseBtn").GetComponent<UIButton>();
             nickName.Clear();
             OnLineNickName.Clear();
             InviteBtn.isEnabled = (bool)(nickName.Count != 0);
@@ -90,8 +90,8 @@ namespace BlGame.View
                     obj.transform.localScale = Vector3.one;
 
                     olf = new OnLineFriend();
-                    olf.mHeroHeadIcon = obj.transform.FindChild("Portrait/Head").GetComponent<UISprite>();
-                    olf.mHeadName = obj.transform.FindChild("Name/Label").GetComponent<UILabel>();
+                    olf.mHeroHeadIcon = obj.transform.Find("Portrait/Head").GetComponent<UISprite>();
+                    olf.mHeadName = obj.transform.Find("Name/Label").GetComponent<UILabel>();
                     olf.mSelect = obj.GetComponent<UIToggle>();
                     OnLineNickName.Add(item.Key, olf);
                     EventDelegate.Add(olf.mSelect.onChange, OnSelectName);

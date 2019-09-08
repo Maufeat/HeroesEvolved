@@ -82,7 +82,7 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            m_RuneIcon = mRoot.FindChild("Icon").GetComponent<UISprite>();
+            m_RuneIcon = mRoot.Find("Icon").GetComponent<UISprite>();
             m_TotConsume = mRoot.Find("TotalLabel").GetComponent<UILabel>();
 
             m_DecNumBtn = mRoot.Find("SelectNum/MinusButton").GetComponent<UIButton>();

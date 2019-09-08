@@ -24,16 +24,16 @@ public class UIGameBattleInfo : MonoBehaviour {
 	void Awake()
 	{
 		Instance = this;
-		ObjTran = transform.FindChild("temp");
-		Transform blue = transform.FindChild ("temp/Team/BlueTeam");
-		Transform red = transform.FindChild("temp/Team/RedTeam");
-		BtnOnPress = transform.FindChild("BottomBar/Arrow").GetComponent<ButtonOnPress>();
+		ObjTran = transform.Find("temp");
+		Transform blue = transform.Find ("temp/Team/BlueTeam");
+		Transform red = transform.Find("temp/Team/RedTeam");
+		BtnOnPress = transform.Find("BottomBar/Arrow").GetComponent<ButtonOnPress>();
 		for (int i = 0; i < blue.childCount; i++) {
-			Transform temp = blue.FindChild("Player" + (i+1));
+			Transform temp = blue.Find("Player" + (i+1));
 			BattleInfoList.Add(new UIBattleInfo(temp));
 		}
 		for (int i = 0; i < blue.childCount; i++) {
-			Transform temp = red.FindChild("Player" + (i+1));
+			Transform temp = red.Find("Player" + (i+1));
 			BattleInfoList.Add(new UIBattleInfo(temp));
 		}
         ObjTran.gameObject.SetActive(false);
@@ -218,11 +218,11 @@ public class UIGameBattleInfo : MonoBehaviour {
 		public UISprite PlayerIcon;
 		public UIBattleInfo(Transform tran)
 		{
-			PlayerNameLabel = tran.FindChild("Name/Label").GetComponent<UILabel>();
-			PlayerLevelLabel = tran.FindChild("Level").GetComponent<UILabel>();
-			PlayerKillsLabel = tran.FindChild("Kill").GetComponent<UILabel>();
-			PlayerDeathLabel = tran.FindChild("Death").GetComponent<UILabel>();
-			PlayerIcon = tran.FindChild("HeadPhoto/Head").GetComponent<UISprite>();
+			PlayerNameLabel = tran.Find("Name/Label").GetComponent<UILabel>();
+			PlayerLevelLabel = tran.Find("Level").GetComponent<UILabel>();
+			PlayerKillsLabel = tran.Find("Kill").GetComponent<UILabel>();
+			PlayerDeathLabel = tran.Find("Death").GetComponent<UILabel>();
+			PlayerIcon = tran.Find("HeadPhoto/Head").GetComponent<UISprite>();
 			PlayerIcon.spriteName = "";
 			PlayerNameLabel.text = "";
 			PlayerLevelLabel.text = "";

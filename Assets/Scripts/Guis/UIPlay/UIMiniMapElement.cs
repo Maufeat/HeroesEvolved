@@ -85,7 +85,7 @@ public class UIMiniMapElement : MonoBehaviour
 
 
     protected virtual void Awake() {        
-        gameMapPitch = transform.FindChild("IconPoint");        
+        gameMapPitch = transform.Find("IconPoint");        
         gameMapPitch.localPosition = new Vector3(0f, 0f, -1f);        
 
     }   

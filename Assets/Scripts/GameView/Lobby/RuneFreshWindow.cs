@@ -114,7 +114,7 @@ namespace BlGame.View
             {
                 string index = Convert.ToString(i + 1);
                 string fileStr = slotPerStr + index;
-                m_Slot_SpriteArray[i] = mRoot.FindChild(fileStr).GetComponent<UISprite>();
+                m_Slot_SpriteArray[i] = mRoot.Find(fileStr).GetComponent<UISprite>();
                 m_Slot_SpriteArray[i].name = Convert.ToString(i);
                 m_Slot_SpriteArray[i].spriteName = "";
             }
@@ -122,13 +122,13 @@ namespace BlGame.View
             UIEventListener.Get(m_Slot_SpriteArray[GameDefine.GameConstDefine.RefreshRuneSlotIndex].gameObject).onClick += onClickSlot;
             UIEventListener.Get(m_Slot_SpriteArray[GameDefine.GameConstDefine.RefreshRuneCardIndex].gameObject).onClick += onClickRefreshSlot;
 
-            m_Close_Btn = mRoot.FindChild("CloseBtn").GetComponent<UIButton>();
+            m_Close_Btn = mRoot.Find("CloseBtn").GetComponent<UIButton>();
             EventDelegate.Add(m_Close_Btn.onClick, Hide);
 
-            mPopupListBtn = mRoot.FindChild("RuneSelect/PopupList").GetComponent<UIButton>();
+            mPopupListBtn = mRoot.Find("RuneSelect/PopupList").GetComponent<UIButton>();
             EventDelegate.Add(mPopupListBtn.onClick, OnShowLevel);
 
-            m_RuneLevelGo = mRoot.FindChild("RuneSelect/RuneLevel").gameObject;
+            m_RuneLevelGo = mRoot.Find("RuneSelect/RuneLevel").gameObject;
 
             m_LevelLabelArray = new GameObject[GameDefine.GameConstDefine.MaxRuneLevel];
             string resFile = "RuneSelect/RuneLevel/Level";
@@ -137,25 +137,25 @@ namespace BlGame.View
                 string indexStr = Convert.ToString(i);
                 string filename = resFile + indexStr;
 
-                GameObject levelGo = mRoot.FindChild(filename).gameObject;
+                GameObject levelGo = mRoot.Find(filename).gameObject;
                 levelGo.name = indexStr;
                 UIEventListener.Get(levelGo).onClick += onClickLevel;
                 m_LevelLabelArray[i] = levelGo;
             }
 
-            m_WashBtn = mRoot.FindChild("CombineBtn").GetComponent<UIButton>();
+            m_WashBtn = mRoot.Find("CombineBtn").GetComponent<UIButton>();
             EventDelegate.Add(m_WashBtn.onClick, onClickWash);
             m_WashBtn.isEnabled = false;
 
-            m_PopList_Label = mRoot.FindChild("RuneSelect/PopupList/Label").GetComponent<UILabel>();
+            m_PopList_Label = mRoot.Find("RuneSelect/PopupList/Label").GetComponent<UILabel>();
 
-            m_BagScroll = mRoot.FindChild("Package").GetComponent<UIScrollView>();
-            m_BagGrid = mRoot.FindChild("Package/Grid").GetComponent<UIGrid>();
+            m_BagScroll = mRoot.Find("Package").GetComponent<UIScrollView>();
+            m_BagGrid = mRoot.Find("Package/Grid").GetComponent<UIGrid>();
 
-            m_RefreshScroll = mRoot.FindChild("ScrollPackage/List").GetComponent<UIScrollView>();
-            m_RefreshGrid = mRoot.FindChild("ScrollPackage/List/Grid").GetComponent<UIGrid>();
+            m_RefreshScroll = mRoot.Find("ScrollPackage/List").GetComponent<UIScrollView>();
+            m_RefreshGrid = mRoot.Find("ScrollPackage/List/Grid").GetComponent<UIGrid>();
 
-            m_BackGroundGO = mRoot.FindChild("Background").gameObject;
+            m_BackGroundGO = mRoot.Find("Background").gameObject;
             LoadRunes();
 
             LoadRefresh();
@@ -196,13 +196,13 @@ namespace BlGame.View
             obj.transform.localPosition = Vector3.zero;
             obj.name = (refreshID).ToString();
 
-            var icon = obj.transform.FindChild("Icon").GetComponent<UISprite>();
+            var icon = obj.transform.Find("Icon").GetComponent<UISprite>();
             icon.spriteName = cfg.icon;
 
-            var numLabel = obj.transform.FindChild("NumLabel").GetComponent<UILabel>();
+            var numLabel = obj.transform.Find("NumLabel").GetComponent<UILabel>();
             numLabel.text = num.ToString();
 
-            var levelLabel = obj.transform.FindChild("LevelLabel").GetComponent<UILabel>();
+            var levelLabel = obj.transform.Find("LevelLabel").GetComponent<UILabel>();
             levelLabel.text = cfg.effectvalue.ToString();
 
             RefreshCardInfo sInfo = new RefreshCardInfo();
@@ -248,7 +248,7 @@ namespace BlGame.View
             }
             else
             {
-                var numLabel = go.transform.FindChild("NumLabel").GetComponent<UILabel>();
+                var numLabel = go.transform.Find("NumLabel").GetComponent<UILabel>();
                 numLabel.text = num.ToString();
             }
 
@@ -272,7 +272,7 @@ namespace BlGame.View
                     }
                     else
                     {
-                        var numLabel = freshCardInfo.go.transform.FindChild("NumLabel").GetComponent<UILabel>();
+                        var numLabel = freshCardInfo.go.transform.Find("NumLabel").GetComponent<UILabel>();
                         numLabel.text = oriInfo.mNum.ToString();
                     }
                 }
@@ -324,7 +324,7 @@ namespace BlGame.View
             {
                 var freshCardInfo = refreshCardListID2GoDict[m_RefreshCardSlotInfo.runeID];
 
-                var numLabel = freshCardInfo.go.transform.FindChild("NumLabel").GetComponent<UILabel>();
+                var numLabel = freshCardInfo.go.transform.Find("NumLabel").GetComponent<UILabel>();
                 numLabel.text = oriInfo.mNum.ToString();
                 freshCardInfo.go.SetActive(true);
             }
@@ -523,7 +523,7 @@ namespace BlGame.View
             else
             {
                 var info = refreshCardListID2GoDict[cardid];
-                info.go.transform.FindChild("NumLabel").GetComponent<UILabel>().text = num.ToString(); 
+                info.go.transform.Find("NumLabel").GetComponent<UILabel>().text = num.ToString(); 
             }
 
             m_RefreshCardSlotInfo = null;
@@ -634,7 +634,7 @@ namespace BlGame.View
                 }
                 else
                 {
-                    UILabel levelLabel = go.transform.FindChild("NumLabel").GetComponent<UILabel>();
+                    UILabel levelLabel = go.transform.Find("NumLabel").GetComponent<UILabel>();
 
                     levelLabel.text = Convert.ToString(num);
                 }
@@ -668,7 +668,7 @@ namespace BlGame.View
                     }
                     else
                     {
-                        UILabel levelLabel = go.transform.FindChild("NumLabel").GetComponent<UILabel>();
+                        UILabel levelLabel = go.transform.Find("NumLabel").GetComponent<UILabel>();
 
                         levelLabel.text = Convert.ToString(num);
                     }
@@ -705,13 +705,13 @@ namespace BlGame.View
 
                 obj.name = (runeid).ToString();
 
-                UISprite icon = obj.transform.FindChild("Icon").GetComponent<UISprite>();
+                UISprite icon = obj.transform.Find("Icon").GetComponent<UISprite>();
                 icon.spriteName = sRuneConfigInfo.Icon;
 
-                UILabel levelLabel = obj.transform.FindChild("NumLabel").GetComponent<UILabel>();
+                UILabel levelLabel = obj.transform.Find("NumLabel").GetComponent<UILabel>();
                 levelLabel.text = Convert.ToString(num);
 
-                UILabel desptionLabel = obj.transform.FindChild("StausLabel").GetComponent<UILabel>();
+                UILabel desptionLabel = obj.transform.Find("StausLabel").GetComponent<UILabel>();
                 desptionLabel.text = sRuneConfigInfo.Description;
 
                 nowAllRuneGOCache snowAllRuneGOCache = new nowAllRuneGOCache();
@@ -725,7 +725,7 @@ namespace BlGame.View
             {
                 var obj = nowAllRuneGO[runeid];
 
-                UILabel levelLabel = obj.go.transform.FindChild("NumLabel").GetComponent<UILabel>();
+                UILabel levelLabel = obj.go.transform.Find("NumLabel").GetComponent<UILabel>();
                 levelLabel.text = Convert.ToString(num);
             }
         }

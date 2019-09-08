@@ -13,7 +13,7 @@ public class UIAltarInHead : MonoBehaviour
 	{
 		_mainCamera = Camera.main;
 		_ui2dCamera = GameMethod.GetUiCamera;
-		HeadIcon = this.transform.FindChild("Head").GetComponent<UISprite>(); 
+		HeadIcon = this.transform.Find("Head").GetComponent<UISprite>(); 
     }
     void OnDisable()
     {

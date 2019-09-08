@@ -70,7 +70,7 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            mBtnClose = mRoot.FindChild("CloseBtn").GetComponent<UIButton>();
+            mBtnClose = mRoot.Find("CloseBtn").GetComponent<UIButton>();
 
             RuneConfigInfo sRuneConfigInfo = ConfigReader.GetRuneFromID((UInt32)m_MarketGoodsInfo.mGoodsId);
             if (null == sRuneConfigInfo)
@@ -79,23 +79,23 @@ namespace BlGame.View
                 return;
             }
 
-            UISprite icon = mRoot.FindChild("Icon").GetComponent<UISprite>();
+            UISprite icon = mRoot.Find("Icon").GetComponent<UISprite>();
             icon.spriteName = sRuneConfigInfo.Icon;
 
             //如果只有一个金钱需要居中
             bool ifNeedCentral = m_MarketGoodsInfo.RLGoldPrice < 0 || m_MarketGoodsInfo.RLDiamondPrice < 0;
             if (ifNeedCentral)
             {
-                m_SingleBuyBtn = mRoot.FindChild("BuyBtn/Single").GetComponent<UIButton>();
+                m_SingleBuyBtn = mRoot.Find("BuyBtn/Single").GetComponent<UIButton>();
                 if (m_MarketGoodsInfo.RLGoldPrice >= 0)
                 {
-                    UILabel label = m_SingleBuyBtn.gameObject.transform.FindChild("Gold/label").GetComponent<UILabel>();
+                    UILabel label = m_SingleBuyBtn.gameObject.transform.Find("Gold/label").GetComponent<UILabel>();
                     label.text = Convert.ToString(m_MarketGoodsInfo.RLGoldPrice);
                     UIEventListener.Get(m_SingleBuyBtn.gameObject).onClick += OnBuyByGold;
                 }
                 else
                 {
-                    UILabel label = m_SingleBuyBtn.gameObject.transform.FindChild("Crystal/label").GetComponent<UILabel>();
+                    UILabel label = m_SingleBuyBtn.gameObject.transform.Find("Crystal/label").GetComponent<UILabel>();
                     label.text = Convert.ToString(m_MarketGoodsInfo.RLGoldPrice);
                     UIEventListener.Get(m_SingleBuyBtn.gameObject).onClick += OnBuyByDiamond;
                 }
@@ -104,23 +104,23 @@ namespace BlGame.View
             }
             else
             {
-                GameObject bothGo = mRoot.FindChild("BuyBtn/Both").gameObject;
+                GameObject bothGo = mRoot.Find("BuyBtn/Both").gameObject;
                 bothGo.SetActive(true);
 
-                GameObject singleGo = mRoot.FindChild("BuyBtn/Single").gameObject;
+                GameObject singleGo = mRoot.Find("BuyBtn/Single").gameObject;
                 singleGo.SetActive(false);
 
-                mBtnGold = mRoot.FindChild("BuyBtn/Both/Gold").GetComponent<UIButton>();
+                mBtnGold = mRoot.Find("BuyBtn/Both/Gold").GetComponent<UIButton>();
                 mBtnGold.gameObject.SetActive(true);
 
-                UILabel label = mBtnGold.gameObject.transform.FindChild("label").GetComponent<UILabel>();
+                UILabel label = mBtnGold.gameObject.transform.Find("label").GetComponent<UILabel>();
                 label.text = Convert.ToString(m_MarketGoodsInfo.RLGoldPrice);
 
                 mBtnGold.gameObject.name = Convert.ToString(m_MarketGoodsInfo.mGoodsId);
 
-                mBtnDiamond = mRoot.FindChild("BuyBtn/BuyBtn/Crystal").GetComponent<UIButton>();
+                mBtnDiamond = mRoot.Find("BuyBtn/BuyBtn/Crystal").GetComponent<UIButton>();
                 mBtnDiamond.gameObject.SetActive(true);
-                UILabel diamondLabel = mBtnDiamond.gameObject.transform.FindChild("label").GetComponent<UILabel>();
+                UILabel diamondLabel = mBtnDiamond.gameObject.transform.Find("label").GetComponent<UILabel>();
                 diamondLabel.text = Convert.ToString(m_MarketGoodsInfo.RLDiamondPrice);
 
                 mBtnDiamond.gameObject.name = Convert.ToString(m_MarketGoodsInfo.mGoodsId);
@@ -129,10 +129,10 @@ namespace BlGame.View
                 UIEventListener.Get(mBtnDiamond.gameObject).onClick += OnBuyByDiamond;
             }
 
-            m_NameLabel = mRoot.FindChild("Name").GetComponent<UILabel>();
+            m_NameLabel = mRoot.Find("Name").GetComponent<UILabel>();
             m_NameLabel.text = sRuneConfigInfo.RuneName;
 
-            m_DesptionLabel = mRoot.FindChild("RuneStatus").GetComponent<UILabel>();
+            m_DesptionLabel = mRoot.Find("RuneStatus").GetComponent<UILabel>();
             m_DesptionLabel.text = "属性：" + sRuneConfigInfo.Description;
 
             mRoot.gameObject.SetActive(true);

@@ -256,9 +256,9 @@ namespace BlGame.View
         public EnemyHeadInfo(ButtonOnPress team)
         {
             teamPress = team.transform;
-            ShowSprite = team.transform.FindChild("SpriteShow").GetComponent<UISprite>();
-            SelectSprite = team.transform.FindChild("SpriteSelect").GetComponent<UISprite>();
-            HpSlider = team.transform.FindChild("Progress Bar").FindChild("Foreground").GetComponent<UISprite>();
+            ShowSprite = team.transform.Find("SpriteShow").GetComponent<UISprite>();
+            SelectSprite = team.transform.Find("SpriteSelect").GetComponent<UISprite>();
+            HpSlider = team.transform.Find("Progress Bar").Find("Foreground").GetComponent<UISprite>();
             //ShowSprite.gameObject.SetActive (false);
             SelectSprite.gameObject.SetActive(false);
             orignalPos = team.transform.localPosition;

@@ -38,21 +38,21 @@ namespace BlGame.View
         //窗口控件初始化
         protected override void InitWidget()
         {
-            mSkillCd = mRoot.FindChild("Skill_Cooldown").GetComponent<UILabel>();
+            mSkillCd = mRoot.Find("Skill_Cooldown").GetComponent<UILabel>();
 
-            mSkillDes = mRoot.FindChild("Skill_Describe").GetComponent<UILabel>();
+            mSkillDes = mRoot.Find("Skill_Describe").GetComponent<UILabel>();
 
-            mSkillLv = mRoot.FindChild("Skill_Level").GetComponent<UILabel>();
+            mSkillLv = mRoot.Find("Skill_Level").GetComponent<UILabel>();
 
-            mSkillName = mRoot.FindChild("Skill_Name").GetComponent<UILabel>();
+            mSkillName = mRoot.Find("Skill_Name").GetComponent<UILabel>();
 
-            mSkillDis = mRoot.FindChild("Skill_Distance").GetComponent<UILabel>();
+            mSkillDis = mRoot.Find("Skill_Distance").GetComponent<UILabel>();
 
-            mSkillMpCost = mRoot.FindChild("Skill_MP").GetComponent<UILabel>();
+            mSkillMpCost = mRoot.Find("Skill_MP").GetComponent<UILabel>();
 
-            mSkillHpCost = mRoot.FindChild("Skill_HP").GetComponent<UILabel>();
+            mSkillHpCost = mRoot.Find("Skill_HP").GetComponent<UILabel>();
 
-            mSkillCpCost = mRoot.FindChild("Skill_CP").GetComponent<UILabel>();
+            mSkillCpCost = mRoot.Find("Skill_CP").GetComponent<UILabel>();
         }
 
         //窗口控件释放

@@ -39,40 +39,40 @@ namespace BlGame.View
           //窗口控件初始化
         protected override void InitWidget()
         {
-            mHeadIcon = mRoot.FindChild("OptionItems/OptionPersionalData/player/HeadPhoto").GetComponent<UISprite>();
-            mNickName = mRoot.FindChild("OptionItems/OptionPersionalData/player/Name").GetComponent <UILabel>();
-            mLevel = mRoot.FindChild("OptionItems/OptionPersionalData/player/Level/Number").GetComponent<UILabel>();
-            mExp = mRoot.FindChild("OptionItems/OptionPersionalData/player/EXP/Number").GetComponent<UILabel>();
+            mHeadIcon = mRoot.Find("OptionItems/OptionPersionalData/player/HeadPhoto").GetComponent<UISprite>();
+            mNickName = mRoot.Find("OptionItems/OptionPersionalData/player/Name").GetComponent <UILabel>();
+            mLevel = mRoot.Find("OptionItems/OptionPersionalData/player/Level/Number").GetComponent<UILabel>();
+            mExp = mRoot.Find("OptionItems/OptionPersionalData/player/EXP/Number").GetComponent<UILabel>();
 
-            mGameInning = mRoot.FindChild("OptionItems/OptionPersionalData/Items/Item1/Number").GetComponent<UILabel>();
-            mWinInning = mRoot.FindChild("OptionItems/OptionPersionalData/Items/Item2/Number").GetComponent<UILabel>();
-            mKillAll = mRoot.FindChild("OptionItems/OptionPersionalData/Items/Item3/Number").GetComponent<UILabel>();
-            mDestrucBuild = mRoot.FindChild("OptionItems/OptionPersionalData/Items/Item4/Number").GetComponent<UILabel>();
+            mGameInning = mRoot.Find("OptionItems/OptionPersionalData/Items/Item1/Number").GetComponent<UILabel>();
+            mWinInning = mRoot.Find("OptionItems/OptionPersionalData/Items/Item2/Number").GetComponent<UILabel>();
+            mKillAll = mRoot.Find("OptionItems/OptionPersionalData/Items/Item3/Number").GetComponent<UILabel>();
+            mDestrucBuild = mRoot.Find("OptionItems/OptionPersionalData/Items/Item4/Number").GetComponent<UILabel>();
 
-            mDeathAll = mRoot.FindChild("OptionItems/OptionPersionalData/Items/Item5/Number").GetComponent<UILabel>();
-            mAchievement = mRoot.FindChild("OptionItems/OptionPersionalData/Items/Item6/Number").GetComponent<UILabel>();
-            mAssistAll = mRoot.FindChild("OptionItems/OptionPersionalData/Items/Item7/Number").GetComponent<UILabel>();
-            mBelongGuild = mRoot.FindChild("OptionItems/OptionPersionalData/Items/Item8/Number").GetComponent<UILabel>();
+            mDeathAll = mRoot.Find("OptionItems/OptionPersionalData/Items/Item5/Number").GetComponent<UILabel>();
+            mAchievement = mRoot.Find("OptionItems/OptionPersionalData/Items/Item6/Number").GetComponent<UILabel>();
+            mAssistAll = mRoot.Find("OptionItems/OptionPersionalData/Items/Item7/Number").GetComponent<UILabel>();
+            mBelongGuild = mRoot.Find("OptionItems/OptionPersionalData/Items/Item8/Number").GetComponent<UILabel>();
 
-            mIntegral = mRoot.FindChild("OptionItems/OptionPersionalData/Items/Item9/Number").GetComponent<UILabel>();
-            mShowInterName = mRoot.FindChild("OptionItems/OptionPersionalData/player/ChangeName").gameObject;
-            mShowInterHeadIncon = mRoot.FindChild("OptionItems/OptionPersionalData/player/ChangeHead").gameObject;
-            mTempName = mRoot.FindChild("OptionItems/OptionPersionalData/NameChange");
-            mTempHeadIcon = mRoot.FindChild("OptionItems/OptionPersionalData/HeadPick");
+            mIntegral = mRoot.Find("OptionItems/OptionPersionalData/Items/Item9/Number").GetComponent<UILabel>();
+            mShowInterName = mRoot.Find("OptionItems/OptionPersionalData/player/ChangeName").gameObject;
+            mShowInterHeadIncon = mRoot.Find("OptionItems/OptionPersionalData/player/ChangeHead").gameObject;
+            mTempName = mRoot.Find("OptionItems/OptionPersionalData/NameChange");
+            mTempHeadIcon = mRoot.Find("OptionItems/OptionPersionalData/HeadPick");
 
-            mLogOutBtn = mRoot.FindChild("OptionItems/OptionPersionalData/LogoutBtn").gameObject;
+            mLogOutBtn = mRoot.Find("OptionItems/OptionPersionalData/LogoutBtn").gameObject;
 
-            mCloseHeadBtn = mTempHeadIcon.FindChild("Background").gameObject;
-            mCloseBtn = mRoot.FindChild("CloseBtn").gameObject;
-            mNewTemp = mTempName.FindChild("Name").GetComponent<UIInput>();
-            mSureBtn = mTempName.FindChild("ConfirmBtn").GetComponent<UIButton>();
-            mVipLevel = mRoot.FindChild("OptionItems/OptionPersionalData/player/VIPLevelUp/Level").GetComponent<UISprite>();
-            mVipPriv = mRoot.FindChild("OptionItems/OptionPersionalData/player/VIPInfo").gameObject;
-            VIPLevelUp = mRoot.FindChild("OptionItems/OptionPersionalData/player/VIPLevelUp").GetComponent<UILabel>();
-            mDoubleExp = mRoot.FindChild("OptionItems/OptionPersionalData/player/EXPCardTime/Time").GetComponent<UILabel>();
-            mDoubleGold = mRoot.FindChild("OptionItems/OptionPersionalData/player/GoldCardTime/Time").GetComponent<UILabel>();
-            mCloseChangeNameBtn = mTempName.FindChild("CancelBtn").gameObject;
-            mGrid = mTempHeadIcon.FindChild("ScrollView/Grid").GetComponent<UIGrid>();
+            mCloseHeadBtn = mTempHeadIcon.Find("Background").gameObject;
+            mCloseBtn = mRoot.Find("CloseBtn").gameObject;
+            mNewTemp = mTempName.Find("Name").GetComponent<UIInput>();
+            mSureBtn = mTempName.Find("ConfirmBtn").GetComponent<UIButton>();
+            mVipLevel = mRoot.Find("OptionItems/OptionPersionalData/player/VIPLevelUp/Level").GetComponent<UISprite>();
+            mVipPriv = mRoot.Find("OptionItems/OptionPersionalData/player/VIPInfo").gameObject;
+            VIPLevelUp = mRoot.Find("OptionItems/OptionPersionalData/player/VIPLevelUp").GetComponent<UILabel>();
+            mDoubleExp = mRoot.Find("OptionItems/OptionPersionalData/player/EXPCardTime/Time").GetComponent<UILabel>();
+            mDoubleGold = mRoot.Find("OptionItems/OptionPersionalData/player/GoldCardTime/Time").GetComponent<UILabel>();
+            mCloseChangeNameBtn = mTempName.Find("CancelBtn").gameObject;
+            mGrid = mTempHeadIcon.Find("ScrollView/Grid").GetComponent<UIGrid>();
             heroInfoList = new List<HeadSelectConfigInfo>();
 
             for (int i = 0; i < ConfigReader.HeadSelectXmlInfoDict.Count; i++)
@@ -203,7 +203,7 @@ namespace BlGame.View
                     HeroHeadIcon icon = new HeroHeadIcon();
                     mHeroShowList.Add(objLoad);
                     icon.mHeroIcon = objLoad.GetComponent<UISprite>();
-                    icon.mVipLevel = objLoad.transform.FindChild("VIPSign/Label").GetComponent<UILabel>();
+                    icon.mVipLevel = objLoad.transform.Find("VIPSign/Label").GetComponent<UILabel>();
                     icon.mHeroIcon.spriteName = icon.mIconName = item.HeroHeadAtlas_Num.ToString();
                     icon.LastObj = objLoad;
                     mHeadIconList.Add(icon);
