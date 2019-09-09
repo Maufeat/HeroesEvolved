@@ -1,0 +1,5 @@
+01:57:31 : load Assets/Scenes/Pvp_002/pvp_002/002LightProbes.asset failed!!!
+01:57:31 : build assetbundle Assets/assetbundles/Scenes/Pvp_002/pvp_002/002LightProbes.asset.bytes failed!!!
+01:58:23 : load Assets/Scenes/Pvp_004/pvp_004/004LightProbes.asset failed!!!
+01:58:23 : build assetbundle Assets/assetbundles/Scenes/Pvp_004/pvp_004/004LightProbes.asset.bytes failed!!!
+02:04:17 : BuildResource finish

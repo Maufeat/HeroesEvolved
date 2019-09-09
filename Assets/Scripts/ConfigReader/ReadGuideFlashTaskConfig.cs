@@ -56,7 +56,7 @@ public class ReadGuideFlashTaskConfig  {
                         flashInfo.TargetEffect = Convert.ToString(xEle.InnerText);            
                         break;
                     case "frequency":
-                        flashInfo.During = Convert.ToSingle(xEle.InnerText);            
+                        flashInfo.During = float.Parse(xEle.InnerText);            
                         break;
                     case "form":
                         flashInfo.EffectType = (UITweener.Method)Convert.ToInt32(xEle.InnerText);  

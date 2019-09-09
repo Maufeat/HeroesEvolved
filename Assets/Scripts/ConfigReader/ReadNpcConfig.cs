@@ -49,7 +49,7 @@ public class ReadNpcConfig
                         NpcSelectInfo.ENPCCateChild = Convert.ToInt32(xEle.InnerText);
                         break;
                     case "XuetiaoHeight":
-                        NpcSelectInfo.NpcXueTiaoHeight = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcXueTiaoHeight = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "eRace":
                         NpcSelectInfo.NpcRace = Convert.ToInt32(xEle.InnerText);
@@ -61,7 +61,7 @@ public class ReadNpcConfig
                         NpcSelectInfo.NpcMagicCate = Convert.ToInt32(xEle.InnerText);
                         break;
                     case "n32AttackDist":
-                        NpcSelectInfo.NpcAtkDis = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcAtkDis = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "eAICate":
                         NpcSelectInfo.NpcAiCate = Convert.ToInt32(xEle.InnerText);
@@ -70,61 +70,61 @@ public class ReadNpcConfig
                         NpcSelectInfo.NpcAiTarId = Convert.ToInt32(xEle.InnerText);
                         break;
                     case "n32PursueDist":
-                        NpcSelectInfo.NpcPursueDis = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcPursueDis = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32GuardDist":
-                        NpcSelectInfo.NpcGuardDis = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcGuardDis = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "eAttackMode":
                         NpcSelectInfo.NpcAtkMode = Convert.ToInt32(xEle.InnerText);
                         break;
                     case "n32AttackPower":
-                        NpcSelectInfo.NpcAtkPower = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcAtkPower = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32MagAttackPower":
-                        NpcSelectInfo.NpcMagAtkPower = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcMagAtkPower = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32DefenseAbility":
-                        NpcSelectInfo.NpcDef = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcDef = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32MagDefenseAbility":
-                        NpcSelectInfo.NpcMagDef = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcMagDef = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32MoveSpeed":
-                        NpcSelectInfo.NpcMoveSpeed = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcMoveSpeed = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32BaseMoveSpeedScaling":
-                        NpcSelectInfo.n32BaseMoveSpeedScaling = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.n32BaseMoveSpeedScaling = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32AttackCD":
-                        NpcSelectInfo.NpcAtkCd = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcAtkCd = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32MaxHP":
-                        NpcSelectInfo.NpcMaxHp = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcMaxHp = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32MaxMP":
-                        NpcSelectInfo.NpcMaxMp = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcMaxMp = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32GotExp":
-                        NpcSelectInfo.NpcGotExp = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcGotExp = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32ConsumeCP":
-                        NpcSelectInfo.NpcConsumeCp = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcConsumeCp = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32KillCP":
-                        NpcSelectInfo.NpcKillCp = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcKillCp = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "bIfCanControl":
                         NpcSelectInfo.NpcCanControl = Convert.ToInt32(xEle.InnerText);
                         break;
                     case "n32HPRecover":
-                        NpcSelectInfo.NpcHpRecover = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcHpRecover = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32MPRecover":
-                        NpcSelectInfo.NpcMpRecover = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcMpRecover = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32CollideRadius":
-                        NpcSelectInfo.NpcCollideRadius = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.NpcCollideRadius = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "un32WalkSound":
                         NpcSelectInfo.NpcWalkSound = Convert.ToString(xEle.InnerText);
@@ -160,7 +160,7 @@ public class ReadNpcConfig
                         NpcSelectInfo.NpcJianTaDeath = Convert.ToString(xEle.InnerText);
                         break;
                     case "n32LockRadius":
-                        NpcSelectInfo.n32LockRadius = Convert.ToSingle(xEle.InnerText);
+                        NpcSelectInfo.n32LockRadius = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         break;
                     case "n32Script1Rate":
                         NpcSelectInfo.n32Script1Rate = Convert.ToString(xEle.InnerText);

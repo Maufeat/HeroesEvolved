@@ -52,10 +52,10 @@ public class ReadGuideCameraTaskConfig
                         info.mAspect = GameMethod.ResolveToVector3AsServer(xEle.InnerText);
                         break;
                     case "time":
-                        info.mDurTime = Convert.ToSingle(xEle.InnerText);
+                        info.mDurTime = float.Parse(xEle.InnerText);
                         break;
                     case "Nexttime":
-                        info.mNextTime = Convert.ToSingle(xEle.InnerText);
+                        info.mNextTime = float.Parse(xEle.InnerText);
                         break;
                     case "goon":
                         info.mGoon = Convert.ToInt32(xEle.InnerText);

@@ -49,85 +49,85 @@ public class ReadHeroConfig  {
 					HeroSelectInfo.HeroXueTiaoHeight = Convert.ToInt32(xEle.InnerText);
 					break;
 				case "n32AttackDist":
-					HeroSelectInfo.HeroAtkDis = Convert.ToSingle(xEle.InnerText);
+					HeroSelectInfo.HeroAtkDis = float.Parse(xEle.InnerText);
 					break;
 				case "n32BaseExp":
-					HeroSelectInfo.HeroBaseExp = Convert.ToSingle(xEle.InnerText);   
+					HeroSelectInfo.HeroBaseExp = float.Parse(xEle.InnerText);   
 					break;
 				case "n32BasePhyAttPower":
-					HeroSelectInfo.HeroPhyAtt = Convert.ToSingle(xEle.InnerText);
+					HeroSelectInfo.HeroPhyAtt = float.Parse(xEle.InnerText);
 					break;	
 				case "n32BaseMagAttPower":
-					HeroSelectInfo.HeroMagAtt =  Convert.ToSingle(xEle.InnerText);
+					HeroSelectInfo.HeroMagAtt =  float.Parse(xEle.InnerText);
 					break;
 				case "n32BasePhyDef":
-					HeroSelectInfo.HeroPhyDef =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroPhyDef =  float.Parse(xEle.InnerText); 
 					break;
 				case "n32BaseMagDef":
-					HeroSelectInfo.HeroMagDef =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroMagDef =  float.Parse(xEle.InnerText); 
 					break;		
 				case "n32BaseMoveSpeed":
-					HeroSelectInfo.HeroMoveSpeed =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroMoveSpeed =  float.Parse(xEle.InnerText); 
 					break;		
                  case "n32BaseMoveSpeedScaling":
-                    HeroSelectInfo.n32BaseMoveSpeedScaling = Convert.ToSingle(xEle.InnerText);
+                    HeroSelectInfo.n32BaseMoveSpeedScaling = float.Parse(xEle.InnerText);
                     break;
 				case "n32BaseAttackCD":
-					HeroSelectInfo.HeorBaseAtkCd =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeorBaseAtkCd =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32BaseMaxHP":
-					HeroSelectInfo.HeroMaxHp =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroMaxHp =  float.Parse(xEle.InnerText); 
 					break;		
 				case "n32BaseMaxMP":
-					HeroSelectInfo.HeroMaxMp =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroMaxMp =  float.Parse(xEle.InnerText); 
 					break;		
 				case "n32BaseHPRecover":
-					HeroSelectInfo.HeroHpRecover =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroHpRecover =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32BaseMPRecover":
-					HeroSelectInfo.HeroMpRecover =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroMpRecover =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32BaseReliveTime":
-					HeroSelectInfo.HeroRelieveTime =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroRelieveTime =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32ExpGrowth":
-					HeroSelectInfo.HeroExpGrowth =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroExpGrowth =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32PhyAttGrowth":
-					HeroSelectInfo.HeroPhyAttGrowth =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroPhyAttGrowth =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32MagAttGrowth":
-					HeroSelectInfo.HeroMagAttGrowth =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroMagAttGrowth =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32PhyDefGrowth":
-					HeroSelectInfo.HeroPhyDefGrowth =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroPhyDefGrowth =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32MagDefGrowth":
-					HeroSelectInfo.HeroMagDefGrowth =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroMagDefGrowth =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32AttackCDGrowth":
-					HeroSelectInfo.HeroAtkCdGrowth =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroAtkCdGrowth =  float.Parse(xEle.InnerText); 
 					break;	
 				case "32MaxHPGrowth":
-					HeroSelectInfo.HeroMaxHpGrowth =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroMaxHpGrowth =  float.Parse(xEle.InnerText); 
 					break;	
 				case "32MaxMPGrowth":
-					HeroSelectInfo.HeroMaxMpGrowth =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroMaxMpGrowth =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32HPRecoverGrowth":
-					HeroSelectInfo.HeroHpRecoverGrowth =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroHpRecoverGrowth =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32MPRecoverGrowth":
-					HeroSelectInfo.HeroHpRecoverGrowth =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroHpRecoverGrowth =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32ReliveGrowth":
-					HeroSelectInfo.HeroHpRecoverGrowth =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroHpRecoverGrowth =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32CPRecover":
-					HeroSelectInfo.HeroCpRecover =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroCpRecover =  float.Parse(xEle.InnerText); 
 					break;	
 				case "n32CollideRadious":
-					HeroSelectInfo.HeroCollideRadious =  Convert.ToSingle(xEle.InnerText); 
+					HeroSelectInfo.HeroCollideRadious =  float.Parse(xEle.InnerText); 
 					break;	
 				case "un32DeathSould":
 					HeroSelectInfo.HeroDeathSould =  Convert.ToString(xEle.InnerText); 
@@ -160,7 +160,7 @@ public class ReadHeroConfig  {
                     HeroSelectInfo.HeroSkillType6 = Convert.ToInt32(xEle.InnerText);
                     break;
                 case "n32LockRadious":
-                    HeroSelectInfo.n32LockRadious = Convert.ToSingle(xEle.InnerText); 
+                    HeroSelectInfo.n32LockRadious = float.Parse(xEle.InnerText); 
                     break;
                 case "n32RandomAttack":
                     HeroSelectInfo.n32RandomAttack = GameDefine.GameMethod.ResolveToStrList(xEle.InnerText);

@@ -69,13 +69,13 @@ public class RuneConfig
                     RuneSelectInfo.Icon = xEle.InnerText;
 					break;
                 case "n32EffectVal":
-                    RuneSelectInfo.effectVal = Convert.ToDouble(xEle.InnerText);
+                    RuneSelectInfo.effectVal = Convert.ToDouble(xEle.InnerText, CultureInfo.InvariantCulture.NumberFormat);
                     break;
                 case "fEffectPer":
-                    RuneSelectInfo.effectPer = Convert.ToDouble(xEle.InnerText);
+                    RuneSelectInfo.effectPer = Convert.ToDouble(xEle.InnerText, CultureInfo.InvariantCulture.NumberFormat);
                     break;
                 case "un8EffectID":
-                    RuneSelectInfo.effectID = Convert.ToUInt32(xEle.InnerText);
+                    RuneSelectInfo.effectID = Convert.ToUInt32(xEle.InnerText, CultureInfo.InvariantCulture.NumberFormat);
                     break;
 				}
 			}

@@ -51,7 +51,7 @@ public class ReadSelectHeroConfig  {
 					HeroSelectInfo.HeroSelectCostType = Convert.ToInt32(xEle.InnerText);   
 					break;
 				case "n32cost":
-					HeroSelectInfo.HeroSelectCost = Convert.ToSingle(xEle.InnerText);
+					HeroSelectInfo.HeroSelectCost = float.Parse(xEle.InnerText);
 					break;	
 				case "hero_des":
 					HeroSelectInfo.HeroSelectDes =  Convert.ToString(xEle.InnerText);

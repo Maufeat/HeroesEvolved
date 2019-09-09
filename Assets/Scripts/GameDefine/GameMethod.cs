@@ -390,7 +390,7 @@ namespace GameDefine
             {
                 Debug.LogError("Vector3 Convert Error: " + values);
             }
-            return new Vector3(Convert.ToSingle(value[0]), Convert.ToSingle(value[1]), Convert.ToSingle(value[2]));
+            return new Vector3(float.Parse(value[0], System.Globalization.CultureInfo.InvariantCulture.NumberFormat), float.Parse(value[1], System.Globalization.CultureInfo.InvariantCulture.NumberFormat), float.Parse(value[2], System.Globalization.CultureInfo.InvariantCulture.NumberFormat));
         }
 
         /// <summary>
@@ -405,7 +405,7 @@ namespace GameDefine
             {
                 Debug.LogError("Vector3 Convert Error: " + values);
             }
-            return new Vector3(Convert.ToSingle(value[0]) / 100f, Convert.ToSingle(value[1]) / 100f, Convert.ToSingle(value[2]) / 100f);
+            return new Vector3(float.Parse(value[0]) / 100f, float.Parse(value[1]) / 100f, float.Parse(value[2]) / 100f);
         }
 
         public static Color ResolveToColor(string values)
@@ -415,7 +415,7 @@ namespace GameDefine
             {
                 Debug.LogError("Vector3 Convert Error: " + values);
             }
-            return new Color(Convert.ToSingle(value[0]) / 255f, Convert.ToSingle(value[1]) / 255f, Convert.ToSingle(value[2]) / 255f);
+            return new Color(float.Parse(value[0]) / 255f, float.Parse(value[1]) / 255f, float.Parse(value[2]) / 255f);
         }
 
         public static Vector2 ResolveToVector2(string values)
@@ -425,7 +425,7 @@ namespace GameDefine
             {
                 Debug.LogError("Vector3 Convert Error: " + values);
             }
-            return new Vector2(Convert.ToSingle(value[0]), Convert.ToSingle(value[1]));
+            return new Vector2(float.Parse(value[0], System.Globalization.CultureInfo.InvariantCulture.NumberFormat), float.Parse(value[1], System.Globalization.CultureInfo.InvariantCulture.NumberFormat));
         }
 
         public static List<int> ResolveToIntList(string values, char sp = ',')
@@ -449,7 +449,7 @@ namespace GameDefine
             List<float> ItList = new List<float>();
             foreach (string it in value)
             {
-                ItList.Add(Convert.ToSingle(it));
+                ItList.Add(float.Parse(it));
             }
             return ItList;
         }
@@ -693,8 +693,6 @@ namespace GameDefine
             {
                 split.Add(item.Trim());
             }
-
-            Console.ReadLine(); 
         }
 
         private static List<string> split;

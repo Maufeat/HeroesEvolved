@@ -69,7 +69,7 @@ using BlGame.Resource;
                             itemInfo.sIcon = xEle.InnerText;
                             break;
                         case "un32CdTime":
-                            itemInfo.un32CdTime = Convert.ToSingle (xEle.InnerText);
+                            itemInfo.un32CdTime = float.Parse (xEle.InnerText);
                             break;
                         case "bUniqueID":
                             itemInfo.bUniqueID = Convert.ToInt32(xEle.InnerText);

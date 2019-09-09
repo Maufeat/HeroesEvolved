@@ -40,8 +40,8 @@ public class ShowPathRoute : EditorWindow
 				spChld.transform.localScale = new Vector3(0.5f , 0.5f , 0.5f);
 
 				string[] vec = cont.Split(',');
-				float x = Convert.ToSingle(vec[0]) / 2 + 0.25f;
-				float z = Convert.ToSingle(vec[1]) / 2 + 0.25f;
+				float x = float.Parse(vec[0]) / 2 + 0.25f;
+				float z = float.Parse(vec[1]) / 2 + 0.25f;
 				spChld.transform.position = new Vector3(x , 0.0f , z) ;
 
 			}

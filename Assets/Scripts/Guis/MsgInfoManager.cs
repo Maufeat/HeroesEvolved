@@ -588,7 +588,7 @@ public class MsgInfoManager
         {
             AudioRand temp = new AudioRand();
             temp.AudioName = val[i];
-            temp.RandNum = Convert.ToSingle(val1[i]) % 90000;
+            temp.RandNum = float.Parse(val1[i]) % 90000;
             randa.Add(temp);
         }
         return randa;

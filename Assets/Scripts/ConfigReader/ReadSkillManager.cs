@@ -135,17 +135,17 @@ class ReadSkillManager
                             break;
                         case "n32UseMP":
                             {
-                                skillinfo.mpUse = Convert.ToSingle(xEle.InnerText);
+                                skillinfo.mpUse = float.Parse(xEle.InnerText);
                             }
                             break;
                         case "n32UseHP":
                             {
-                                skillinfo.hpUse = Convert.ToSingle(xEle.InnerText);
+                                skillinfo.hpUse = float.Parse(xEle.InnerText);
                             }
                             break;
                         case "n32UseCP":
                             {
-                                skillinfo.cpUse = Convert.ToSingle(xEle.InnerText);
+                                skillinfo.cpUse = float.Parse(xEle.InnerText);
                             }
                             break;
                     #endregion

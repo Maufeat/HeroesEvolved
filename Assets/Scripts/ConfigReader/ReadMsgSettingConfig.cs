@@ -76,7 +76,7 @@ using BlGame.Resource;
                             }
                             break;
                         case "position_time_in":
-                            msgSettingInfo.position_time_in = Convert.ToSingle(xEle.InnerText);
+                            msgSettingInfo.position_time_in = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                             break;
                         case "position_start_out":
                             {
@@ -89,7 +89,7 @@ using BlGame.Resource;
                             }
                             break;
                         case "position_time_out":
-                            msgSettingInfo.position_time_out = Convert.ToSingle(xEle.InnerText);
+                            msgSettingInfo.position_time_out = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                             break;
                         case "rotation_start_in":
                             {
@@ -102,7 +102,7 @@ using BlGame.Resource;
                             }
                             break;
                         case "rotation_time_in":
-                            msgSettingInfo.rotation_time_in = Convert.ToSingle(xEle.InnerText);
+                            msgSettingInfo.rotation_time_in = float.Parse(xEle.InnerText);
                             break;
                         case "rotation_start_out":
                             {
@@ -115,7 +115,7 @@ using BlGame.Resource;
                             }
                             break;
                         case "rotation_time_out":
-                            msgSettingInfo.rotation_time_out = Convert.ToSingle(xEle.InnerText);
+                            msgSettingInfo.rotation_time_out = float.Parse(xEle.InnerText);
                             break;
                         case "scale_start_in":
                             {
@@ -128,7 +128,7 @@ using BlGame.Resource;
                             }
                             break;
                         case "scale_time_in":
-                            msgSettingInfo.scale_time_in = Convert.ToSingle(xEle.InnerText);
+                            msgSettingInfo.scale_time_in = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                             break;
                         case "scale_start_out":
                             {
@@ -141,33 +141,33 @@ using BlGame.Resource;
                             }
                             break;
                         case "scale_time_out":
-                            msgSettingInfo.scale_time_out = Convert.ToSingle(xEle.InnerText);
+                            msgSettingInfo.scale_time_out = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                             break;
                         case "alpha_start_in":
                             {
-                                msgSettingInfo.alpha_start_in = Convert.ToSingle(xEle.InnerText);
+                                msgSettingInfo.alpha_start_in = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                             }
                             break;
                         case "alpha_end_in":
                             {
-                                msgSettingInfo.alpha_end_in = Convert.ToSingle(xEle.InnerText);
+                                msgSettingInfo.alpha_end_in = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                             }
                             break;
                         case "alpha_time_in":
-                            msgSettingInfo.alpha_time_in = Convert.ToSingle(xEle.InnerText);
+                            msgSettingInfo.alpha_time_in = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                             break;
                         case "alpha_start_out":
                             {
-                                msgSettingInfo.alpha_start_out = Convert.ToSingle(xEle.InnerText);
+                                msgSettingInfo.alpha_start_out = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                             }
                             break;
                         case "alpha_end_out":
                             {
-                                msgSettingInfo.alpha_end_out = Convert.ToSingle(xEle.InnerText);
+                                msgSettingInfo.alpha_end_out = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                             }
                             break;
                         case "alpha_time_out":
-                            msgSettingInfo.alpha_time_out = Convert.ToSingle(xEle.InnerText);
+                            msgSettingInfo.alpha_time_out = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                             break;
                         case "if_frame":
                             msgSettingInfo.if_frame = Convert.ToInt32(xEle.InnerText);

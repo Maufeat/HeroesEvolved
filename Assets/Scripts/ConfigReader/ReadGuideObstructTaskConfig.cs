@@ -53,7 +53,7 @@ public class ReadGuideObstructTaskConfig
                         obstructInfo.ObsTip = Convert.ToString(xEle.InnerText); 
                         break;
                     case "time":
-                        obstructInfo.ObsShowTime = Convert.ToSingle(xEle.InnerText);
+                        obstructInfo.ObsShowTime = float.Parse(xEle.InnerText);
                         break;
                     case "path":
                         obstructInfo.ObsPath = Convert.ToString(xEle.InnerText);

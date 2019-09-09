@@ -203,7 +203,7 @@ namespace BlGame.View
 
         string GetFloatTemp(string oldTemp, string newTemp, int index)
         {
-            float temp = 100 * Convert.ToSingle(newTemp);
+            float temp = 100 * float.Parse(newTemp);
             MsgConfigInfo info = ConfigReader.msgXmlInfoDic[index];
             if (temp != 0)
             {

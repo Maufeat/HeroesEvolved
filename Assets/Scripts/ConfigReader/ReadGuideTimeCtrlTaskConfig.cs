@@ -42,7 +42,7 @@ public class ReadGuideTimeCtrlTaskConfig
                 switch (xEle.Name)
                 {
                     case "endtime":
-                        timeTaskInfo.TimeLimit = Convert.ToSingle(xEle.InnerText);
+                        timeTaskInfo.TimeLimit = float.Parse(xEle.InnerText);
                         break;   
 
                 }

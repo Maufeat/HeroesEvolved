@@ -45,7 +45,7 @@ public class ReadGuidePathTaskConfig
                         info.mDesPos = GameMethod.ResolveToVector3(Convert.ToString(xEle.InnerText));
                         break;
                     case "dis":
-                        info.mDistance = Convert.ToSingle(xEle.InnerText);
+                        info.mDistance = float.Parse(xEle.InnerText);
                         break;
                 }
                 #endregion

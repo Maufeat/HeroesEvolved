@@ -47,28 +47,28 @@ class ReadSkillFlyConfig
                         break;
                     case "n32RaiseSpeed":
                         {
-                            skillinfo.raiseSpeed = Convert.ToSingle(xEle.InnerText);
+                            skillinfo.raiseSpeed = float.Parse(xEle.InnerText);
                         }
                         break;
                     case "n32AccSpeed":
                         {
-                            skillinfo.raiseAccSpeed = Convert.ToSingle(xEle.InnerText);
+                            skillinfo.raiseAccSpeed = float.Parse(xEle.InnerText);
                         }
                         break;
                     case "n32FallSpeed":
                         {
-                            skillinfo.fallSpeed = Convert.ToSingle(xEle.InnerText);
+                            skillinfo.fallSpeed = float.Parse(xEle.InnerText);
                         }
                         break;
                     case "n32FallAccSpeed":
                         {
-                            skillinfo.fallAccSpeed = Convert.ToSingle(xEle.InnerText);
+                            skillinfo.fallAccSpeed = float.Parse(xEle.InnerText);
                         }
                         break;
 
                     case "n32StayTime":
                         {
-                            skillinfo.stayTime = Convert.ToSingle(xEle.InnerText)/1000.0f;
+                            skillinfo.stayTime = float.Parse(xEle.InnerText)/1000.0f;
                         }break;
                     case "n32MoveAction":
                         {

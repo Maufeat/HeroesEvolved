@@ -39,7 +39,7 @@ class ReadSkillCameraConfig
             {
                 switch (xEle.Name)
                 {
-                    #region 搜索
+                    #region Search for
                     case "szName:":
                         {
                             skillinfo.name = Convert.ToString(xEle.InnerText);
@@ -47,11 +47,11 @@ class ReadSkillCameraConfig
                         break;
                     case "mPeriod":
                         {
-                            skillinfo.mPeriod = Convert.ToSingle(xEle.InnerText);
+                            skillinfo.mPeriod = float.Parse(xEle.InnerText);
                         } break;
                     case "mOffPeriod":
                         {
-                            skillinfo.mOffPeriod = Convert.ToSingle(xEle.InnerText);
+                            skillinfo.mOffPeriod = float.Parse(xEle.InnerText);
                         } break;
                     case "mShakeOrient":
                         {
@@ -63,12 +63,12 @@ class ReadSkillCameraConfig
                         } break;
                     case "mMaxWave":
                         {
-                            skillinfo.mMaxWave = Convert.ToSingle(xEle.InnerText);
+							skillinfo.mMaxWave = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
                         } break;
                     case "mMinWave":
                         {
-                            skillinfo.mMinWave = Convert.ToSingle(xEle.InnerText);
-                        } break;
+							skillinfo.mMinWave = float.Parse(xEle.InnerText, System.Globalization.CultureInfo.InvariantCulture.NumberFormat);
+						} break;
 
                     #endregion
                 }

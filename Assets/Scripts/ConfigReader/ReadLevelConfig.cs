@@ -40,7 +40,7 @@ public class ReadLevelConfig
                 switch (xEle.Name)
                 {                    
                     case "LevelUpExp":
-                        levelInfo.LevelUpExp = Convert.ToSingle(xEle.InnerText);
+                        levelInfo.LevelUpExp = float.Parse(xEle.InnerText);
                         break;
                 }
 

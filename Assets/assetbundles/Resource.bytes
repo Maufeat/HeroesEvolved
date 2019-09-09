@@ -704,6 +704,9 @@
     <file name="Resources/Guis/Play/UIAltarSoldierSelect" type="prefab" />
     <file name="Resources/Guis/Play/UISoulsReplace" type="prefab" />
     <file name="Resources/Guis/Play/Update" type="prefab" />
+    <file name="Resources/Lang/English" type="xml" />
+    <file name="Resources/Lang/French" type="xml" />
+    <file name="Resources/Lang/German" type="xml" />
     <file name="Resources/LoadPros/LoadProcess" type="prefab" />
     <file name="Resources/Map/1001" type="map" />
     <file name="Resources/Map/1002" type="map" />

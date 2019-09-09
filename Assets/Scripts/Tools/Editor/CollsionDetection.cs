@@ -39,8 +39,8 @@ public class CollsionDetection:MonoBehaviour
 			for(int j = 0;j < map_width;j++)
 			{
 
-				float a =  Convert.ToSingle(j / 2.00f + 0.25f);			 
-				float b =Convert.ToSingle(i / 2.00f + 0.25f);		 
+				float a =  (j / 2.00f + 0.25f);			 
+				float b = (i / 2.00f + 0.25f);		 
 				Vector3 pos = new Vector3(a,66.00f,b);
 				bool isBunker = Physics.CheckSphere(pos,0.2f,layer); 
 
@@ -74,8 +74,8 @@ public class CollsionDetection:MonoBehaviour
 		{ 
 			for(int j = 0;j < map_width;j++)
 			{
-                float a =  Convert.ToSingle(j + 0.5f);			 
-                float b = Convert.ToSingle(i + 0.5f);		 
+                float a = (j + 0.5f);			 
+                float b = (i + 0.5f);		 
                 Vector3 pos = new Vector3(a,66.00f,b);
 				bool isBunker = Physics.CheckSphere(pos,0.5f,layer); 
 				
@@ -111,8 +111,8 @@ public class CollsionDetection:MonoBehaviour
 		{
 			for(int j = 0;j < map_width;j++)
 			{
-				float a =  Convert.ToSingle(j / 2.00f + 0.25f);			 
-				float b =Convert.ToSingle(i / 2.00f + 0.25f);		 
+				float a = (j / 2.00f + 0.25f);			 
+				float b = (i / 2.00f + 0.25f);		 
 				Vector3 pos = new Vector3(a,66.00f,b);
 				bool isBunker = Physics.CheckSphere(pos,0.2f,layer);
 				if(i == 0 && j < 5)

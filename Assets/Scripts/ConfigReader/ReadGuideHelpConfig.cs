@@ -50,7 +50,7 @@ public class ReadGuideHelpConfig
                         helpInfo.helpTriggerEvent = Convert.ToInt32(xEle.InnerText);
                         break;                       
                     case "tipShowTimes":
-                        helpInfo.helpShowTime = Convert.ToSingle(xEle.InnerText);
+                        helpInfo.helpShowTime = float.Parse(xEle.InnerText);
                         break;
                 }
                 #endregion

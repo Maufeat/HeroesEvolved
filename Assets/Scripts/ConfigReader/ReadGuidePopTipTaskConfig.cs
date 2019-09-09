@@ -53,7 +53,7 @@ public class ReadGuidePopTipTaskConfig
                         info.mRate = GameMethod.ResolveToVector3(xEle.InnerText);
                         break;
                     case "mTime":
-                        info.mTime = Convert.ToSingle(xEle.InnerText);
+                        info.mTime = float.Parse(xEle.InnerText);
                         break;
                 }
 				#endregion
